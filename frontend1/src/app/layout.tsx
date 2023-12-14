@@ -1,0 +1,22 @@
+import type { Metadata } from "next";
+import { Inter, Cormorant_Infant, Josefin_Sans } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "frontend1",
+  description: "Created by @katsuro",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={`${inter.className} bg-fuchsia-950`}>{children}</body>
+    </html>
+  );
+}
