@@ -1,3 +1,6 @@
+import { AppButton } from "./AppButton";
+import Image from "next/image";
+
 type HeaderProps = {
   active_page: string;
 };
@@ -6,13 +9,15 @@ export function Header({ active_page }: HeaderProps) {
   return (
     <>
       {/* Header top */}
-      <div className="flex items-center w-full my-10 text-center bg-green-50">
-        <div className="h-44 w-1/3 bg-blue-300">
-          <button>call</button>
+      <div className="flex items-center w-full my-10 text-center">
+        <div className="h-44 w-1/3 flex items-center justify-center">
+          <AppButton color="border-app-yellow" fill="" fontcolor="" text="Call - 987 654 321" />
         </div>
-        <div className="h-44 w-1/3 bg-green-300">logo</div>
-        <div className="h-44 w-1/3 bg-yellow-300">
-          <button>reservation</button>
+        <div className="h-44 w-1/3 flex items-center justify-center">
+          <Image src="/logo.svg" width={400} height={400} alt="logo" />
+        </div>
+        <div className="h-44 w-1/3 flex items-center justify-center">
+          <AppButton color="border-app-yellow" fill="bg-app-yellow" fontcolor="text-black" text="Reservation" />
         </div>
       </div>
       <hr />
