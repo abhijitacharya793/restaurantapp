@@ -13,7 +13,7 @@ export default function Home() {
             <h1 className="text-6xl">Welcome to Restaurantate</h1>
             <p className="text-sm">
               Simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard dummy .
+              Ipsum has been the industry standard dummy .
             </p>
             <button className="py-5 px-2">View Menu</button>
           </div>
