@@ -1,5 +1,7 @@
+import { AppButton } from "@/components/AppButton";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { ClockIcon, MapPinIcon, PencilSquareIcon } from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
@@ -7,15 +9,24 @@ export default function Home() {
       {/* HEADER */}
       <Header active_page={"home"} />
       {/* SECTION 1 */}
-      <div className="flex w-full my-10 text-center bg-green-50">
-        <div className="w-3/5 flex items-center bg-blue-300">
+      <div className="flex w-full my-10 text-center">
+        <div className="w-3/5 flex items-center">
           <div className="items-center text-left p-20">
-            <h1 className="text-6xl">Welcome to Restaurantate</h1>
-            <p className="text-sm">
+            <h1 className="text-6xl text-white app-header">
+              Welcome to Restaurantate
+            </h1>
+            <p className="text-sm text-white pt-8">
               Simply dummy text of the printing and typesetting industry. Lorem
               Ipsum has been the industry standard dummy .
             </p>
-            <button className="py-5 px-2">View Menu</button>
+            <div className="py-8">
+              <AppButton
+                color="border-app-yellow"
+                fill=""
+                fontcolor="text-white"
+                text="View Menu"
+              />
+            </div>
           </div>
         </div>
         <div className="w-2/5 bg-green-300 relative">
@@ -33,8 +44,10 @@ export default function Home() {
         <div className="flex items-center text-center">
           <div className="w-1/3 py-16 px-8">
             <div className="flex text-left">
-              <div className="w-1/3 bg-slate-200 h-16"></div>
-              <div className="w-2/3 bg-red-200 h-16 p-2">
+              <div className="w-1/4 h-16 flex items-center justify-end">
+                <MapPinIcon className="w-10 h-10 bg-black text-white p-1 rounded-full" />
+              </div>
+              <div className="w-3/4 h-16 p-2">
                 <p className="text-lg">Locate us</p>
                 <p className="text-xs">
                   Riverside 25, San Francisco, California
@@ -44,23 +57,23 @@ export default function Home() {
           </div>
           <div className="w-1/3 py-16 px-8">
             <div className="flex text-left">
-              <div className="w-1/3 bg-slate-200 h-16"></div>
-              <div className="w-2/3 bg-red-200 h-16 p-2">
-                <p className="text-lg">Locate us</p>
-                <p className="text-xs">
-                  Riverside 25, San Francisco, California
-                </p>
+              <div className="w-1/4 h-16 flex items-center justify-end">
+                <ClockIcon className="w-10 h-10 bg-black text-white p-1 rounded-full" />
+              </div>
+              <div className="w-3/4 h-16 p-2">
+                <p className="text-lg">Open Hours</p>
+                <p className="text-xs">Mon To Fri 9:00 AM - 9:00 PM</p>
               </div>
             </div>
           </div>
           <div className="w-1/3 py-16 px-8">
             <div className="flex text-left">
-              <div className="w-1/3 bg-slate-200 h-16"></div>
-              <div className="w-2/3 bg-red-200 h-16 p-2">
-                <p className="text-lg">Locate us</p>
-                <p className="text-xs">
-                  Riverside 25, San Francisco, California
-                </p>
+              <div className="w-1/4 h-16 flex items-center justify-end">
+                <PencilSquareIcon className="w-10 h-10 bg-black text-white p-1 rounded-full" />
+              </div>
+              <div className="w-3/4 h-16 p-2">
+                <p className="text-lg">Reservation</p>
+                <p className="text-xs">hirestaurantate@gmail.com</p>
               </div>
             </div>
           </div>

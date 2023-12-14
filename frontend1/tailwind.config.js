@@ -10,9 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        'app-yellow':'#E1B168'
-      }
+      colors: {
+        "app-yellow": "#E1B168",
+      },
     },
   },
   plugins: [],

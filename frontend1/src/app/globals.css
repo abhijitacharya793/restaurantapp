@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.app-header {
+  font-family: "Cormorant Infant";
+}
+
+p,
+div,
+.app-text {
+  font-family: "Josefin Sans";
+}

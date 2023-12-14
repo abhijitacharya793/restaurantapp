@@ -11,7 +11,7 @@ export function Header({ active_page }: HeaderProps) {
       {/* Header top */}
       <div className="flex items-center w-full my-10 text-center">
         <div className="h-44 w-1/3 flex items-center justify-center">
-          <AppButton color="border-app-yellow" fill="" fontcolor="" text="Call - 987 654 321" />
+          <AppButton color="border-app-yellow" fill="" fontcolor="text-white" text="Call - 987 654 321" />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-center">
           <Image src="/logo.svg" width={400} height={400} alt="logo" />
@@ -26,13 +26,13 @@ export function Header({ active_page }: HeaderProps) {
         {/* space */}
         <div className="w-1/6 h-10 py-2"></div>
         {/* 7 parts of 12 */}
-        <div className="w-1/12 h-10 py-2 bg-blue-300">home</div>
-        <div className="w-1/12 h-10 py-2 bg-blue-300">about</div>
-        <div className="w-1/12 h-10 py-2 bg-blue-300">menu</div>
-        <div className="w-1/12 h-10 py-2 bg-blue-300">reservation</div>
-        <div className="w-1/12 h-10 py-2 bg-blue-300">gallery</div>
-        <div className="w-1/12 h-10 py-2 bg-blue-300">blog</div>
-        <div className="w-1/12 h-10 py-2 bg-blue-300">contact</div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize">home</div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize">about</div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize">menu</div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize">reservation</div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize">gallery</div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize">blog</div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize">contact</div>
         {/* space */}
         <div className="w-1/6 h-10 py-2"></div>
         {/* socials */}

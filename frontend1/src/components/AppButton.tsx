@@ -8,7 +8,7 @@ type AppButtonProps = {
 export function AppButton({ color, fill, text,fontcolor }: AppButtonProps) {
   return (
     <>
-      <button className={`text-white py-2 px-4 border ${color} ${fill} ${fontcolor} w-48`}>
+      <button className={`py-2 px-4 border ${color} ${fill} ${fontcolor} w-48`}>
         {text}
       </button>
     </>
