@@ -108,8 +108,9 @@ export default function Home() {
             <h1>The Story</h1>
             <p>
               Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using &apos;Content here, content gfshere&apos;,
-              makinlook like readable English. Many desktop publishing packages.
+              letters, as opposed to using &apos;Content here, content
+              gfshere&apos;, makinlook like readable English. Many desktop
+              publishing packages.
             </p>
             <div className="flex">
               <div className="w-1/2">
@@ -128,20 +129,215 @@ export default function Home() {
             </div>
             <p>JOSEFINE</p>
             <Image
-                src="/sign.svg"
-                width="100"
-                height="100"
-                alt="home"
-                className=""
-              />
+              src="/sign.svg"
+              width="100"
+              height="100"
+              alt="home"
+              className=""
+            />
           </div>
         </div>
       </div>
       {/* SECTION 3 */}
       <div className="bg-white">
-        <div className="flex items-center text-center">
-          <div className="w-1/2 bg-red-100">1</div>
-          <div className="w-1/2 bg-green-100">1</div>
+        <div className="flex text-left">
+          <div className="flex w-2/5 p-10 justify-end">
+            <div className="w-2/3">
+              <p className="pt-2">MENU</p>
+              <p className="text-2xl pt-2">Try Our Special Offers</p>
+              <p className="pt-2">
+                Lorem Ipsum is that it has a more-or-less normal distribution of
+                letters, as opposed to using &apos;Content here, content making
+                it look like readable English.
+              </p>
+              <Image
+                src="/menu1.png"
+                width="300"
+                height="500"
+                alt="home"
+                className="pt-4"
+              />
+              <div className="pt-4">
+                <AppButton
+                  color="border-app-yellow"
+                  fill=""
+                  fontcolor="text-yellow-600"
+                  text="View Menu"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-3/5 p-10">
+            <div>
+              <p>Starters</p>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+            </div>
+            <div>
+              <p>Starters</p>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+            </div>
+            <div>
+              <p>Starters</p>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+              <div className="flex w-full p-4">
+                <div className="p-2">
+                  <Image
+                    src="/menu2.jpg"
+                    width="32"
+                    height="32"
+                    alt="home"
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="w-4/6">
+                  <p>Raw Scallops from Erquy</p>
+                  <p>Candied Jerusalem artichokes, truffle</p>
+                </div>
+                <div className="w-1/6">$40</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/* TESTIMONIAL */}
