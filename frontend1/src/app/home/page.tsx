@@ -348,11 +348,19 @@ export default function Home() {
         </div>
       </div>
       {/* IMAGE */}
-      <div className="bg-gray-200 h-32">1</div>
+      <div className="bg-gray-200">
+        <div className="w-full h-64 overflow-hidden">
+          <img
+            className="w-full h-full object-cover"
+            src="/testimonial.jpeg"
+            alt="Your Image"
+          />
+        </div>
+      </div>
       {/* OFFER */}
-      <div className="bg-white h-32">1</div>
+      <div className="bg-white h-32">2</div>
       {/* MENU */}
-      <div className="bg-white h-32">1</div>
+      <div className="bg-white h-32">2</div>
       {/* SERVICES */}
       <div className="bg-fuchsia-950 h-32">
         <div className="flex items-center text-center">
