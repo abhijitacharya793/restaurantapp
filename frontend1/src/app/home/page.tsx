@@ -115,7 +115,7 @@ export default function Home() {
               <div className="w-1/2">
                 <p>1996</p>
                 <p>
-                  Lorem Ipsum is that it has a more-or-less normal distribution{" "}
+                  Lorem Ipsum is that it has a more-or-less normal distribution
                 </p>
               </div>
               <div className="w-1/2">
