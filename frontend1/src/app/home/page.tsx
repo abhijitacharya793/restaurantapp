@@ -1,7 +1,12 @@
 import { AppButton } from "@/components/AppButton";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { ClockIcon, MapPinIcon, PencilSquareIcon } from "@heroicons/react/24/outline";
+import {
+  ClockIcon,
+  MapPinIcon,
+  PencilSquareIcon,
+} from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -30,11 +35,19 @@ export default function Home() {
           </div>
         </div>
         <div className="w-2/5 bg-green-300 relative">
-          <div className="absolute right-20 top-10">
+          <div className="flex items-center justify-center top-10">
             <div className="bg-blue-200 w-40 h-40 rounded-full"></div>
           </div>
           <div className="absolute top-10 left-10">
-            <div className="bg-red-200 w-72 h-96 rounded-t-full"></div>
+            <div className="bg-red-800 w-72 h-96 rounded-t-full">
+              <Image
+                src="/home.svg"
+                width={100}
+                height={100}
+                alt="home"
+                className="bg-red-800 w-72 h-96 rounded-t-full"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -81,9 +94,47 @@ export default function Home() {
         {/* P2 */}
         <div className="flex">
           <div className="w-1/2">
-            <div className="bg-red-200 w-60 h-60"></div>
+            <div className="flex w-full items-center justify-center p-8">
+              <Image
+                src="/story.jpg"
+                width="300"
+                height="300"
+                alt="home"
+                className=""
+              />
+            </div>
           </div>
-          <div className="w-1/2">1</div>
+          <div className="w-1/2">
+            <h1>The Story</h1>
+            <p>
+              Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content gfshere',
+              makinlook like readable English. Many desktop publishing packages.
+            </p>
+            <div className="flex">
+              <div className="w-1/2">
+                <p>1996</p>
+                <p>
+                  Lorem Ipsum is that it has a more-or-less normal distribution{" "}
+                </p>
+              </div>
+              <div className="w-1/2">
+                <p>2021</p>
+                <p>
+                  Lorem Ipsum is that it has a more-or-less normal Content
+                  content
+                </p>
+              </div>
+            </div>
+            <p>JOSEFINE</p>
+            <Image
+                src="/sign.svg"
+                width="100"
+                height="100"
+                alt="home"
+                className=""
+              />
+          </div>
         </div>
       </div>
       {/* SECTION 3 */}
