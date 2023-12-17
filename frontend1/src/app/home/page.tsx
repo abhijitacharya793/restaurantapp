@@ -108,7 +108,7 @@ export default function Home() {
             <h1>The Story</h1>
             <p>
               Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using 'Content here, content gfshere',
+              letters, as opposed to using &apos;Content here, content gfshere&apos;,
               makinlook like readable English. Many desktop publishing packages.
             </p>
             <div className="flex">
