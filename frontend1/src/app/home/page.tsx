@@ -24,7 +24,7 @@ export default function Home() {
         <Section2 />
       </div>
       {/* SECTION 3 */}
-      <div className="bg-white">
+      <div className="bg-white pb-20">
         <Section3 />
       </div>
       {/* TESTIMONIAL */}

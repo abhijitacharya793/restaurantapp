@@ -9,7 +9,7 @@ export function Header({ active_page }: HeaderProps) {
   return (
     <>
       {/* Header top */}
-      <div className="flex items-center lg:max-w-screen-lg sm:max-w-screen-sm mx-auto my-10">
+      <div className="flex items-center lg:max-w-screen-lg sm:max-w-screen-sm mx-auto my-5">
         <div className="h-44 w-1/3 flex items-center justify-start">
           <AppButton
             color="border-app-yellow"
@@ -19,7 +19,7 @@ export function Header({ active_page }: HeaderProps) {
           />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-center">
-          <Image src="/logo.svg" width={300} height={300} alt="logo" />
+          <Image src="/logo.svg" width={250} height={250} alt="logo" />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-end">
           <AppButton

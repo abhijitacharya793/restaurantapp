@@ -16,7 +16,7 @@ export function Section2() {
             </div>
             <div className="w-5/6 h-16 p-2">
               <p className="text-lg">Locate us</p>
-              <p className="text-xs">Riverside 25, San Francisco, California</p>
+              <p className="text-xs text-app-gray">Riverside 25, San Francisco, California</p>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ export function Section2() {
             </div>
             <div className="w-4/6 h-16 p-2">
               <p className="text-lg">Open Hours</p>
-              <p className="text-xs">Mon To Fri 9:00 AM - 9:00 PM</p>
+              <p className="text-xs text-app-gray">Mon To Fri 9:00 AM - 9:00 PM</p>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ export function Section2() {
             </div>
             <div className="w-3/6 h-16 p-2">
               <p className="text-lg">Reservation</p>
-              <p className="text-xs">hirestaurantate@gmail.com</p>
+              <p className="text-xs text-app-gray">hirestaurantate@gmail.com</p>
             </div>
           </div>
         </div>
@@ -51,8 +51,8 @@ export function Section2() {
           </div>
         </div>
         <div className="w-1/2 ml-8">
-          <h1 className="app-header text-3xl font-bold">The Story</h1>
-          <p>
+          <h1 className="app-header text-3xl font-bold pb-2">The Story</h1>
+          <p className="text-xs text-app-gray">
             Lorem Ipsum is that it has a more-or-less normal distribution of
             letters, as opposed to using &apos;Content here, content
             gfshere&apos;, makinlook like readable English. Many desktop
@@ -60,14 +60,14 @@ export function Section2() {
           </p>
           <div className="flex pt-4">
             <div className="w-1/2">
-              <p className="app-header text-3xl font-bold">1996</p>
-              <p>
+              <p className="app-header text-3xl font-bold pb-2">1996</p>
+              <p className="text-xs text-app-gray">
                 Lorem Ipsum is that it has a more-or-less normal distribution
               </p>
             </div>
             <div className="w-1/2">
-              <p className="app-header text-3xl font-bold">2021</p>
-              <p>
+              <p className="app-header text-3xl font-bold pb-2">2021</p>
+              <p className="text-xs text-app-gray">
                 Lorem Ipsum is that it has a more-or-less normal Content content
               </p>
             </div>

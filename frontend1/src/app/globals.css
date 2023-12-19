@@ -11,3 +11,7 @@ div,
 .app-text {
   font-family: "Josefin Sans";
 }
+
+.app-pattern {
+  right: -80px;
+}
