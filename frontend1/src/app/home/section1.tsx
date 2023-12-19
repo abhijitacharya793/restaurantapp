@@ -22,7 +22,7 @@ export function Section1() {
         </div>
       </div>
       <div className="w-1/2 relative">
-        <img src="/home.png" alt="home" className="w-82 h-96 opacity-0" />
+        <img src="/home.png" alt="home" className="w-72 h-96 opacity-0" />
         <div className="absolute top-5 left-10 z-10">
           <img
             src="/home.png"

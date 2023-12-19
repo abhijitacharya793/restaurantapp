@@ -8,6 +8,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { Section1 } from "./section1";
+import { Section2 } from "./section2";
 
 export default function Home() {
   return (
@@ -20,84 +21,7 @@ export default function Home() {
       </div>
       {/* SECTION 2 */}
       <div className="bg-orange-50">
-        {/* P1 */}
-        <div className="flex items-center text-center">
-          <div className="w-1/3 py-16 px-8">
-            <div className="flex text-left">
-              <div className="w-1/4 h-16 flex items-center justify-end">
-                <MapPinIcon className="w-10 h-10 bg-black text-white p-1 rounded-full" />
-              </div>
-              <div className="w-3/4 h-16 p-2">
-                <p className="text-lg">Locate us</p>
-                <p className="text-xs">
-                  Riverside 25, San Francisco, California
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-1/3 py-16 px-8">
-            <div className="flex text-left">
-              <div className="w-1/4 h-16 flex items-center justify-end">
-                <ClockIcon className="w-10 h-10 bg-black text-white p-1 rounded-full" />
-              </div>
-              <div className="w-3/4 h-16 p-2">
-                <p className="text-lg">Open Hours</p>
-                <p className="text-xs">Mon To Fri 9:00 AM - 9:00 PM</p>
-              </div>
-            </div>
-          </div>
-          <div className="w-1/3 py-16 px-8">
-            <div className="flex text-left">
-              <div className="w-1/4 h-16 flex items-center justify-end">
-                <PencilSquareIcon className="w-10 h-10 bg-black text-white p-1 rounded-full" />
-              </div>
-              <div className="w-3/4 h-16 p-2">
-                <p className="text-lg">Reservation</p>
-                <p className="text-xs">hirestaurantate@gmail.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* P2 */}
-        <div className="flex">
-          <div className="w-1/2">
-            <div className="flex w-full items-center justify-center p-8">
-              <img src="/story.jpg" alt="home" className="w-auto h-64" />
-            </div>
-          </div>
-          <div className="w-1/2">
-            <h1>The Story</h1>
-            <p>
-              Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using &apos;Content here, content
-              gfshere&apos;, makinlook like readable English. Many desktop
-              publishing packages.
-            </p>
-            <div className="flex">
-              <div className="w-1/2">
-                <p>1996</p>
-                <p>
-                  Lorem Ipsum is that it has a more-or-less normal distribution
-                </p>
-              </div>
-              <div className="w-1/2">
-                <p>2021</p>
-                <p>
-                  Lorem Ipsum is that it has a more-or-less normal Content
-                  content
-                </p>
-              </div>
-            </div>
-            <p>JOSEFINE</p>
-            <Image
-              src="/sign.svg"
-              width="100"
-              height="100"
-              alt="home"
-              className=""
-            />
-          </div>
-        </div>
+        <Section2 />
       </div>
       {/* SECTION 3 */}
       <div className="bg-white">
