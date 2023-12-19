@@ -1,4 +1,3 @@
-import { AppButton } from "@/components/AppButton";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import {
@@ -9,6 +8,7 @@ import {
 import Image from "next/image";
 import { Section1 } from "./section1";
 import { Section2 } from "./section2";
+import { Section3 } from "./section3";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       {/* HEADER */}
       <Header active_page={"home"} />
       {/* SECTION 1 */}
-      <div className="2xl:max-w-screen-2xl lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-center">
+      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-center">
         <Section1 />
       </div>
       {/* SECTION 2 */}
@@ -25,205 +25,7 @@ export default function Home() {
       </div>
       {/* SECTION 3 */}
       <div className="bg-white">
-        <div className="flex text-left">
-          <div className="flex w-2/5 p-10 justify-end">
-            <div className="w-2/3">
-              <p className="pt-2">MENU</p>
-              <p className="text-2xl pt-2">Try Our Special Offers</p>
-              <p className="pt-2">
-                Lorem Ipsum is that it has a more-or-less normal distribution of
-                letters, as opposed to using &apos;Content here, content making
-                it look like readable English.
-              </p>
-              <Image
-                src="/menu1.png"
-                width="300"
-                height="500"
-                alt="home"
-                className="pt-4"
-              />
-              <div className="pt-4">
-                <AppButton
-                  color="border-app-yellow"
-                  fill=""
-                  fontcolor="text-yellow-600"
-                  text="View Menu"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="w-3/5 p-10">
-            <div>
-              <p>Starters</p>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-            </div>
-            <div>
-              <p>Starters</p>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-            </div>
-            <div>
-              <p>Starters</p>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-              <div className="flex w-full p-4">
-                <div className="p-2">
-                  <Image
-                    src="/menu2.jpg"
-                    width="32"
-                    height="32"
-                    alt="home"
-                    className="rounded-full"
-                  />
-                </div>
-                <div className="w-4/6">
-                  <p>Raw Scallops from Erquy</p>
-                  <p>Candied Jerusalem artichokes, truffle</p>
-                </div>
-                <div className="w-1/6">$40</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Section3 />
       </div>
       {/* TESTIMONIAL */}
       <div className="bg-app-purple">
