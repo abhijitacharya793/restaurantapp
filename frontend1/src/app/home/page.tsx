@@ -15,8 +15,8 @@ export default function Home() {
       {/* HEADER */}
       <Header active_page={"home"} />
       {/* SECTION 1 */}
-      <div className="flex w-full my-10 text-center">
-        <Section1/>
+      <div className="max-w-screen-lg mx-auto flex text-center">
+        <Section1 />
       </div>
       {/* SECTION 2 */}
       <div className="bg-orange-50">
@@ -62,11 +62,7 @@ export default function Home() {
         <div className="flex">
           <div className="w-1/2">
             <div className="flex w-full items-center justify-center p-8">
-              <img
-                src="/story.jpg"
-                alt="home"
-                className="w-auto h-64"
-              />
+              <img src="/story.jpg" alt="home" className="w-auto h-64" />
             </div>
           </div>
           <div className="w-1/2">

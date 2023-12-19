@@ -9,7 +9,7 @@ export function Header({ active_page }: HeaderProps) {
   return (
     <>
       {/* Header top */}
-      <div className="flex items-center w-full my-10 text-center">
+      <div className="flex items-center max-w-screen-lg mx-10 my-10 text-left">
         <div className="h-44 w-1/3 flex items-center justify-center">
           <AppButton color="border-app-yellow" fill="" fontcolor="text-white" text="Call - 987 654 321" />
         </div>
@@ -22,9 +22,9 @@ export function Header({ active_page }: HeaderProps) {
       </div>
       <hr className="border-slate-400"/>
       {/* Header nav */}
-      <div className="flex w-full text-center py-2">
+      <div className="max-w-screen-lg mx-auto flex text-left py-2">
         {/* space */}
-        <div className="w-1/6 h-10 py-2"></div>
+
         {/* 7 parts of 12 */}
         <div className="w-1/12 h-10 py-2 text-white capitalize">home</div>
         <div className="w-1/12 h-10 py-2 text-white capitalize">about</div>
@@ -43,7 +43,7 @@ export function Header({ active_page }: HeaderProps) {
           <img src="/pintrest.svg" className="h-5 w-5 mx-2" />
         </div>
         {/* space */}
-        <div className="w-1/6 h-10 py-2"></div>
+        
       </div>
       <hr className="border-slate-400"/>
     </>

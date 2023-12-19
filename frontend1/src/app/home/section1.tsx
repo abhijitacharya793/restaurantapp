@@ -2,9 +2,9 @@ import { AppButton } from "@/components/AppButton";
 export function Section1() {
   return (
     <>
-      <div className="w-3/5 flex items-center">
-        <div className="items-center text-left p-20">
-          <h1 className="text-6xl text-white app-header">
+      <div className="w-1/2 flex items-center mr-20">
+        <div className="items-center text-left">
+          <h1 className="text-6xl text-white app-header font-bold">
             Welcome to Restaurantate
           </h1>
           <p className="text-sm text-white pt-8">
@@ -21,18 +21,17 @@ export function Section1() {
           </div>
         </div>
       </div>
-      <div className="w-2/5 bg-green-300 relative">
-        <div className="flex items-center justify-center top-10">
-          <div className="bg-blue-200 w-40 h-40 rounded-full"></div>
+      <div className="w-1/2 relative">
+        <img src="/home.png" alt="home" className="w-82 h-96 opacity-0" />
+        <div className="absolute top-5 left-10 z-10">
+          <img
+            src="/home.png"
+            alt="home"
+            className="w-72 h-96 rounded-t-full border-8 border-white border-opacity-20"
+          />
         </div>
-        <div className="absolute top-10 left-10">
-          <div className="bg-red-800 w-72 h-96 rounded-t-full">
-            <img
-              src="/home.svg"
-              alt="home"
-              className="bg-red-800 w-72 h-96 rounded-t-full"
-            />
-          </div>
+        <div className="absolute top-5 right-10 z-0">
+          <img src="/pattern.svg" alt="home" className="w-52 h-52" />
         </div>
       </div>
     </>
