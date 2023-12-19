@@ -19,7 +19,7 @@ export function Header({ active_page }: HeaderProps) {
           />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-center">
-          <Image src="/logo.svg" width={250} height={250} alt="logo" />
+          <img src="/logo.svg" width={250} height={250} alt="logo" />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-end">
           <AppButton
@@ -36,15 +36,27 @@ export function Header({ active_page }: HeaderProps) {
         {/* space */}
 
         {/* 7 parts of 12 */}
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">home</div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">about</div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">menu</div>
         <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
-          reservation
+          <a href="/home">home</a>
         </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">gallery</div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">blog</div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">contact</div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+          <a href="/about">about</a>
+        </div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+          <a href="/menu">menu</a>
+        </div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+          <a href="/reservation">reservation</a>
+        </div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+          <a href="/gallery">gallery</a>
+        </div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+          <a href="/blog">blog</a>
+        </div>
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+          <a href="/contact">contact</a>
+        </div>
         {/* space */}
         <div className="w-1/3 h-10 py-2"></div>
         {/* socials */}

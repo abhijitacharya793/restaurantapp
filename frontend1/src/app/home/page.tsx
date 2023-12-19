@@ -12,6 +12,9 @@ import { Section3 } from "./section3";
 import { Section4 } from "./section4";
 import { Section5 } from "./section5";
 import { Section6 } from "./section6";
+import { Section7 } from "./section7";
+import { Section8 } from "./section8";
+import { Section9 } from "./section9";
 
 export default function Home() {
   return (
@@ -53,31 +56,19 @@ export default function Home() {
         <Section6 />
       </div>
       {/* SERVICES */}
-      <div className="bg-app-purple h-32">
-        <div className="flex items-center text-center">
-          <div className="w-2/5">What we offer</div>
-          <div className="w-3/5">
-            <div className="flex">
-              <div className="w-1/3">1</div>
-              <div className="w-1/3">1</div>
-              <div className="w-1/3">1</div>
-            </div>
-          </div>
-        </div>
+      <div className="bg-app-purple pb-20 pt-10">
+        <Section7 />
       </div>
       {/* BLOG */}
-      <div className="bg-white h-32">
-        <div className="flex items-center text-center">
-          <div className="w-1/2">
-            <div className="">1</div>
-          </div>
-          <div className="w-1/2">1</div>
-        </div>
+      <div className="bg-white">
+        <Section8 />
       </div>
       {/* RESERVATION */}
-      <div className="bg-app-purple h-32">1</div>
+      <div className="">
+        <Section9 />
+      </div>
       {/* FOOTER */}
-      <Footer active_page={""} />
+      <Footer />
     </div>
   );
 }

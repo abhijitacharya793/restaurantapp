@@ -93,7 +93,6 @@ export function Section4() {
                     about the There are many passages whole probls small niche,
                     friendly.&quot;
                     <br/>
-                    <br/>
                   </p>
                 </div>
               </div>

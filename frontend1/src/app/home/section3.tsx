@@ -25,7 +25,7 @@ export function Section3() {
               alt="home"
               className="pt-4"
             />
-            <div className="pt-4">
+            <div className="pt-8">
               <AppButton
                 color="border-app-yellow"
                 fill=""
