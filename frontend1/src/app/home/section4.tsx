@@ -34,9 +34,9 @@ export function Section4() {
                 <hr className="border border-slate-500 my-3" />
                 <div className="mt-4">
                   <p className="app-header text-white italic">
-                    "It is professional, considers everyone&apos;s time, can think
+                    &quot;It is professional, considers everyone&apos;s time, can think
                     about the There are many variations of passages whole probls
-                    small niche, friendly."
+                    small niche, friendly.&quot;
                   </p>
                 </div>
               </div>
@@ -61,8 +61,8 @@ export function Section4() {
                 <hr className="border border-slate-500 my-3" />
                 <div className="mt-4">
                   <p className="app-header text-white italic">
-                    ""It is professional, considers everyone&apos;s time, can think
-                    about the There are many variations of passages."
+                  &quot;It is professional, considers everyone&apos;s time, can think
+                    about the There are many variations of passages.&quot;
                     <br/>
                     <br/>
                   </p>
@@ -89,9 +89,9 @@ export function Section4() {
                 <hr className="border border-slate-500 my-3" />
                 <div className="mt-4">
                   <p className="app-header text-white italic">
-                    "It is professional, considers everyone&apos;s time, can think
+                  &quot;It is professional, considers everyone&apos;s time, can think
                     about the There are many passages whole probls small niche,
-                    friendly.
+                    friendly.&quot;
                     <br/>
                     <br/>
                   </p>
