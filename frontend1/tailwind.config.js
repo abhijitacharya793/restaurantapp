@@ -17,12 +17,13 @@ module.exports = {
       4: "4px",
       6: "6px",
       8: "8px",
-      18:"18px"
+      18: "18px",
     },
     extend: {
       colors: {
         "app-yellow": "#E1B168",
         "app-purple": "#3C1742",
+        "app-dark-purple": "#230a28",
         "app-gray": "#555555",
       },
     },

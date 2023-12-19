@@ -9,6 +9,7 @@ import Image from "next/image";
 import { Section1 } from "./section1";
 import { Section2 } from "./section2";
 import { Section3 } from "./section3";
+import { Section4 } from "./section4";
 
 export default function Home() {
   return (
@@ -29,10 +30,7 @@ export default function Home() {
       </div>
       {/* TESTIMONIAL */}
       <div className="bg-app-purple">
-        <div className="flex items-center text-center h-40">
-          <div className="w-1/2 bg-red-100">1</div>
-          <div className="w-1/2 bg-green-100">1</div>
-        </div>
+        <Section4 />
       </div>
       {/* IMAGE */}
       <div className="bg-gray-200">
