@@ -10,6 +10,8 @@ import { Section1 } from "./section1";
 import { Section2 } from "./section2";
 import { Section3 } from "./section3";
 import { Section4 } from "./section4";
+import { Section5 } from "./section5";
+import { Section6 } from "./section6";
 
 export default function Home() {
   return (
@@ -43,9 +45,13 @@ export default function Home() {
         </div>
       </div>
       {/* OFFER */}
-      <div className="bg-white h-32">2</div>
+      <div className="bg-white">
+        <Section5 />
+      </div>
       {/* MENU */}
-      <div className="bg-white h-32">2</div>
+      <div className="bg-white">
+        <Section6 />
+      </div>
       {/* SERVICES */}
       <div className="bg-app-purple h-32">
         <div className="flex items-center text-center">
