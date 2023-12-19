@@ -9,14 +9,14 @@ export function Header({ active_page }: HeaderProps) {
   return (
     <>
       {/* Header top */}
-      <div className="flex items-center max-w-screen-lg mx-10 my-10 text-left">
-        <div className="h-44 w-1/3 flex items-center justify-center">
+      <div className="flex items-center max-w-screen-lg mx-auto my-10">
+        <div className="h-44 w-1/3 flex items-center justify-start">
           <AppButton color="border-app-yellow" fill="" fontcolor="text-white" text="Call - 987 654 321" />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-center">
           <Image src="/logo.svg" width={300} height={300} alt="logo" />
         </div>
-        <div className="h-44 w-1/3 flex items-center justify-center">
+        <div className="h-44 w-1/3 flex items-center justify-end">
           <AppButton color="border-app-yellow" fill="bg-app-yellow" fontcolor="text-black" text="Reservation" />
         </div>
       </div>
@@ -34,9 +34,9 @@ export function Header({ active_page }: HeaderProps) {
         <div className="w-1/12 h-10 py-2 text-white capitalize">blog</div>
         <div className="w-1/12 h-10 py-2 text-white capitalize">contact</div>
         {/* space */}
-        <div className="w-1/6 h-10 py-2"></div>
+        <div className="w-1/3 h-10 py-2"></div>
         {/* socials */}
-        <div className="flex w-1/6 h-10 py-2">
+        <div className="flex w-1/6 h-10 py-2 justify-end">
           <img src="/insta.svg" className="h-5 w-5 mx-2" />
           <img src="/facebook.svg" className="h-5 w-5 mx-2" />
           <img src="/twitter.svg" className="h-5 w-5 mx-2" />
