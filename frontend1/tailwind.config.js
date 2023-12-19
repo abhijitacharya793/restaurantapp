@@ -25,6 +25,7 @@ module.exports = {
         "app-purple": "#3C1742",
         "app-dark-purple": "#230a28",
         "app-gray": "#555555",
+        "app-green": "#A0AEAF",
       },
     },
   },

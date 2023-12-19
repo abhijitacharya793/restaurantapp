@@ -1,7 +1,7 @@
 import { AppButton } from "@/components/AppButton";
 
 // TODO: Reservation
-export function Section9() {
+export function Reservation() {
   return (
     <>
       <div className="relative bg-gray-100 min-h-screen flex items-center justify-center">

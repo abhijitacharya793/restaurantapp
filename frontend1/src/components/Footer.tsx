@@ -48,7 +48,7 @@ export function Footer() {
           </div>
           <div className="w-1/3 flex items-center justify-center text-center">
             <div className="">
-              <form className="flex items-center border-2 border-white">
+              <form className="flex items-center border border-white">
                 <input
                   className="appearance-none bg-transparent w-full text-white mr-3 py-1 px-2 focus:outline-none"
                   type="email"
