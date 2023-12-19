@@ -14,15 +14,15 @@ export function Header({ active_page }: HeaderProps) {
           <AppButton color="border-app-yellow" fill="" fontcolor="text-white" text="Call - 987 654 321" />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-center">
-          <Image src="/logo.svg" width={400} height={400} alt="logo" />
+          <Image src="/logo.svg" width={300} height={300} alt="logo" />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-center">
           <AppButton color="border-app-yellow" fill="bg-app-yellow" fontcolor="text-black" text="Reservation" />
         </div>
       </div>
-      <hr />
+      <hr className="border-slate-400"/>
       {/* Header nav */}
-      <div className="flex w-full text-center">
+      <div className="flex w-full text-center py-2">
         {/* space */}
         <div className="w-1/6 h-10 py-2"></div>
         {/* 7 parts of 12 */}
@@ -36,11 +36,16 @@ export function Header({ active_page }: HeaderProps) {
         {/* space */}
         <div className="w-1/6 h-10 py-2"></div>
         {/* socials */}
-        <div className="w-1/6 h-10 py-2 bg-blue-300">1</div>
+        <div className="flex w-1/6 h-10 py-2">
+          <img src="/insta.svg" className="h-5 w-5 mx-2" />
+          <img src="/facebook.svg" className="h-5 w-5 mx-2" />
+          <img src="/twitter.svg" className="h-5 w-5 mx-2" />
+          <img src="/pintrest.svg" className="h-5 w-5 mx-2" />
+        </div>
         {/* space */}
         <div className="w-1/6 h-10 py-2"></div>
       </div>
-      <hr />
+      <hr className="border-slate-400"/>
     </>
   );
 }
