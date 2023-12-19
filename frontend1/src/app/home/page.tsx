@@ -226,7 +226,7 @@ export default function Home() {
         </div>
       </div>
       {/* TESTIMONIAL */}
-      <div className="bg-fuchsia-950">
+      <div className="bg-app-purple">
         <div className="flex items-center text-center h-40">
           <div className="w-1/2 bg-red-100">1</div>
           <div className="w-1/2 bg-green-100">1</div>
@@ -247,7 +247,7 @@ export default function Home() {
       {/* MENU */}
       <div className="bg-white h-32">2</div>
       {/* SERVICES */}
-      <div className="bg-fuchsia-950 h-32">
+      <div className="bg-app-purple h-32">
         <div className="flex items-center text-center">
           <div className="w-2/5">What we offer</div>
           <div className="w-3/5">
@@ -269,7 +269,7 @@ export default function Home() {
         </div>
       </div>
       {/* RESERVATION */}
-      <div className="bg-fuchsia-950 h-32">1</div>
+      <div className="bg-app-purple h-32">1</div>
       {/* FOOTER */}
       <Footer active_page={""} />
     </div>
