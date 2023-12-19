@@ -9,7 +9,7 @@ export function Header({ active_page }: HeaderProps) {
   return (
     <>
       {/* Header top */}
-      <div className="flex items-center lg:max-w-screen-lg sm:max-w-screen-sm mx-auto my-10">
+      <div className="flex items-center 2xl:max-w-screen-2xl lg:max-w-screen-lg sm:max-w-screen-sm mx-auto my-10">
         <div className="h-44 w-1/3 flex items-center justify-start">
           <AppButton
             color="border-app-yellow"
@@ -32,7 +32,7 @@ export function Header({ active_page }: HeaderProps) {
       </div>
       <hr className="border-slate-400" />
       {/* Header nav */}
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-left py-2">
+      <div className="2xl:max-w-screen-2xl lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-left py-2">
         {/* space */}
 
         {/* 7 parts of 12 */}

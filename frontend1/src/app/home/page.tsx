@@ -16,7 +16,7 @@ export default function Home() {
       {/* HEADER */}
       <Header active_page={"home"} />
       {/* SECTION 1 */}
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-center">
+      <div className="2xl:max-w-screen-2xl lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-center">
         <Section1 />
       </div>
       {/* SECTION 2 */}

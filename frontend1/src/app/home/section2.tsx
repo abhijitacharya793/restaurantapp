@@ -8,7 +8,7 @@ export function Section2() {
   return (
     <>
       {/* P1 */}
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex items-center pt-20">
+      <div className="2xl:max-w-screen-2xl lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex items-center pt-20">
         <div className="w-1/3 justify-start">
           <div className="flex text-left">
             <div className="w-1/6 h-16 flex items-center justify-start">
@@ -44,7 +44,7 @@ export function Section2() {
         </div>
       </div>
       {/* P2 */}
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex pt-10 pb-20">
+      <div className="2xl:max-w-screen-2xl lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex pt-10 pb-20">
         <div className="w-1/2 border-r border-gray-300">
           <div className="flex w-full items-center justify-left">
             <img src="/story.jpg" alt="home" className="w-auto h-80" />
