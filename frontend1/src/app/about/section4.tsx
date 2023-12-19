@@ -10,7 +10,7 @@ export function Section4() {
             What Our Clients Say
           </p>
           <div className="flex items-center w-full justify-center text-center text-white">
-            "Leverage agile frameworks to provide a robust synopsis for high
+          `&quot;Leverage agile frameworks to provide a robust synopsis for high
             level overviews. Iterative approaches to corporate strategy foster
             collaborative thinking further overall value proposition
             organicallfriendly.
