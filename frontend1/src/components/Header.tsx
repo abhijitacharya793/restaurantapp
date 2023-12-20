@@ -36,25 +36,25 @@ export function Header({ active_page }: HeaderProps) {
         {/* space */}
 
         {/* 7 parts of 12 */}
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
           <a href="/home">home</a>
         </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
           <a href="/about">about</a>
         </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
           <a href="/menu">menu</a>
         </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-12">
           <a href="/reservation">reservation</a>
         </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
           <a href="/gallery">gallery</a>
         </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
           <a href="/blog">blog</a>
         </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-4">
+        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
           <a href="/contact">contact</a>
         </div>
         {/* space */}

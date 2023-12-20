@@ -13,28 +13,28 @@ export function Section3() {
           </p>
           <div className="flex items-center w-full justify-center">
             <div className="w-1/4 mr-3 h-56">
-              <Image src="/chef1.svg" className="bg-app-green" width={300} height={300} alt=""/>
+              <Image src="/chef1.svg" className="bg-app-green" width={400} height={400} alt=""/>
               <p className="text-center app-header text-xl font-bold">Avroko</p>
               <p className="text-center text-sm text-app-gray">
                 Master Chef
               </p>
             </div>
             <div className="w-1/4 mr-3 h-56">
-              <Image src="/chef2.svg" className="bg-app-green" width={300} height={300} alt=""/>
+              <Image src="/chef2.svg" className="bg-app-green" width={400} height={400} alt=""/>
               <p className="text-center app-header text-xl font-bold">Avroko</p>
               <p className="text-center text-sm text-app-gray">
                 Master Chef
               </p>
             </div>
             <div className="w-1/4 mr-3 h-56">
-              <Image src="/chef3.svg" className="bg-app-green" width={300} height={300} alt=""/>
+              <Image src="/chef3.svg" className="bg-app-green" width={400} height={400} alt=""/>
               <p className="text-center app-header text-xl font-bold">Avroko</p>
               <p className="text-center text-sm text-app-gray">
                 Master Chef
               </p>
             </div>
             <div className="w-1/4 h-56">
-              <Image src="/chef4.svg" className="bg-app-green" width={300} height={300} alt=""/>
+              <Image src="/chef4.svg" className="bg-app-green" width={400} height={400} alt=""/>
               <p className="text-center app-header text-xl font-bold">Avroko</p>
               <p className="text-center text-sm text-app-gray">
                 Master Chef

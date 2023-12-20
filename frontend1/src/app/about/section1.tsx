@@ -26,6 +26,7 @@ export function Section1() {
               height="100"
               alt="home"
               className="pt-2"
+              priority
             />
             <div className="py-4">
               <AppButton
@@ -38,7 +39,7 @@ export function Section1() {
           </div>
         </div>
         <div className="w-1/2 py-20">
-          <Image alt="" src="/about1.svg" width="500" height="500" />
+          <Image alt="" src="/about1.svg" width="500" height="500" priority />
         </div>
       </div>
     </>
