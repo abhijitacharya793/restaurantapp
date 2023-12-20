@@ -61,10 +61,34 @@ export function Header({ active_page }: HeaderProps) {
         <div className="w-1/3 h-10 py-2"></div>
         {/* socials */}
         <div className="flex w-1/12 h-10 py-2 justify-end">
-          <Image width={100} height={100} src="/insta.svg" className="h-5 w-5 mx-2" />
-          <Image width={100} height={100} src="/facebook.svg" className="h-5 w-5 mx-2" />
-          <Image width={100} height={100} src="/twitter.svg" className="h-5 w-5 mx-2" />
-          <Image width={100} height={100} src="/pintrest.svg" className="h-5 w-5 mx-2" />
+          <Image
+            alt=""
+            width={100}
+            height={100}
+            src="/insta.svg"
+            className="h-5 w-5 mx-2"
+          />
+          <Image
+            alt=""
+            width={100}
+            height={100}
+            src="/facebook.svg"
+            className="h-5 w-5 mx-2"
+          />
+          <Image
+            alt=""
+            width={100}
+            height={100}
+            src="/twitter.svg"
+            className="h-5 w-5 mx-2"
+          />
+          <Image
+            alt=""
+            width={100}
+            height={100}
+            src="/pintrest.svg"
+            className="h-5 w-5 mx-2"
+          />
         </div>
         {/* space */}
       </div>

@@ -19,7 +19,7 @@ export function Section6() {
         </div>
         <div className="flex ">
           <div className="w-1/4 mr-4">
-            <Image width={500} height={500} src="/popular1.svg" />
+            <Image alt="" width={500} height={500} src="/popular1.svg" />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
               <p>$15</p>
@@ -29,7 +29,7 @@ export function Section6() {
             </p>
           </div>
           <div className="w-1/4 mr-4">
-            <Image width={500} height={500} src="/popular2.svg" />
+            <Image alt="" width={500} height={500} src="/popular2.svg" />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
               <p>$15</p>
@@ -39,7 +39,7 @@ export function Section6() {
             </p>
           </div>
           <div className="w-1/4 mr-4">
-            <Image width={500} height={500} src="/popular3.svg" />
+            <Image alt="" width={500} height={500} src="/popular3.svg" />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
               <p>$15</p>
@@ -49,7 +49,7 @@ export function Section6() {
             </p>
           </div>
           <div className="w-1/4">
-            <Image width={500} height={500} src="/popular4.svg" />
+            <Image alt="" width={500} height={500} src="/popular4.svg" />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
               <p>$15</p>

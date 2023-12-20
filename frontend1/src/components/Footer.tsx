@@ -17,24 +17,28 @@ export function Footer() {
           </div>
           <div className="h-44 w-1/3 flex items-center justify-end">
             <Image
+              alt=""
               width={100}
               height={100}
               src="/insta.svg"
               className="h-5 w-5 mx-2"
             />
             <Image
+              alt=""
               width={100}
               height={100}
               src="/facebook.svg"
               className="h-5 w-5 mx-2"
             />
             <Image
+              alt=""
               width={100}
               height={100}
               src="/twitter.svg"
               className="h-5 w-5 mx-2"
             />
             <Image
+              alt=""
               width={100}
               height={100}
               src="/pintrest.svg"

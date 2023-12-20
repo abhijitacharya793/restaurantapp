@@ -17,7 +17,9 @@ export function Section2() {
             </div>
             <div className="w-5/6 h-16 p-2">
               <p className="text-xl app-header font-bold">Locate Us</p>
-              <p className="text-xs text-app-gray">Riverside 25, San Francisco, California</p>
+              <p className="text-xs text-app-gray">
+                Riverside 25, San Francisco, California
+              </p>
             </div>
           </div>
         </div>
@@ -28,7 +30,9 @@ export function Section2() {
             </div>
             <div className="w-4/6 h-16 p-2">
               <p className="text-lg app-header font-bold">Open Hours</p>
-              <p className="text-xs text-app-gray">Mon To Fri 9:00 AM - 9:00 PM</p>
+              <p className="text-xs text-app-gray">
+                Mon To Fri 9:00 AM - 9:00 PM
+              </p>
             </div>
           </div>
         </div>
@@ -48,7 +52,13 @@ export function Section2() {
       <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex pt-10 pb-20">
         <div className="w-1/2 border-r border-gray-300 pr-4">
           <div className="flex w-full items-center justify-left">
-            <Image src="/story.jpg" alt="home" className="w-auto h-80" width={100} height={100}/>
+            <Image
+              src="/story.jpg"
+              alt="home"
+              className="w-auto h-80"
+              width={100}
+              height={100}
+            />
           </div>
         </div>
         <div className="w-1/2 ml-8">

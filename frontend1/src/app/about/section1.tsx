@@ -38,7 +38,7 @@ export function Section1() {
           </div>
         </div>
         <div className="w-1/2 py-20">
-          <Image src="/about1.svg" width="500" height="500" />
+          <Image alt="" src="/about1.svg" width="500" height="500" />
         </div>
       </div>
     </>

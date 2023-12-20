@@ -18,10 +18,10 @@ export function Section5() {
         </div>
         <div className="flex ">
           <div className="w-1/2 mr-4">
-            <Image width={500} height={500} src="/offer1.svg" />
+            <Image alt="" width={500} height={500} src="/offer1.svg" />
           </div>
           <div className="w-1/2">
-            <Image width={500} height={500} src="/offer2.svg" />
+            <Image alt="" width={500} height={500} src="/offer2.svg" />
           </div>
         </div>
       </div>
