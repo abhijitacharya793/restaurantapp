@@ -8,14 +8,14 @@ export function Section2() {
   return (
     <>
       {/* P1 */}
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex items-center pt-20">
+      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex items-center pt-32">
         <div className="w-1/3 justify-start">
           <div className="flex text-left">
             <div className="w-1/6 h-16 flex items-center justify-start">
               <MapPinIcon className="w-12 h-12 p-2 bg-black text-white rounded-full" />
             </div>
             <div className="w-5/6 h-16 p-2">
-              <p className="text-lg">Locate us</p>
+              <p className="text-xl app-header font-bold">Locate Us</p>
               <p className="text-xs text-app-gray">Riverside 25, San Francisco, California</p>
             </div>
           </div>
@@ -26,7 +26,7 @@ export function Section2() {
               <ClockIcon className="w-12 h-12 p-2 bg-black text-white rounded-full" />
             </div>
             <div className="w-4/6 h-16 p-2">
-              <p className="text-lg">Open Hours</p>
+              <p className="text-lg app-header font-bold">Open Hours</p>
               <p className="text-xs text-app-gray">Mon To Fri 9:00 AM - 9:00 PM</p>
             </div>
           </div>
@@ -37,7 +37,7 @@ export function Section2() {
               <PencilSquareIcon className="w-12 h-12 p-2 bg-black text-white rounded-full" />
             </div>
             <div className="w-3/6 h-16 p-2">
-              <p className="text-lg">Reservation</p>
+              <p className="text-lg app-header font-bold">Reservation</p>
               <p className="text-xs text-app-gray">hirestaurantate@gmail.com</p>
             </div>
           </div>
@@ -72,7 +72,7 @@ export function Section2() {
               </p>
             </div>
           </div>
-          <p className="pt-2">JOSEFINE</p>
+          <p className="pt-8">JOSEFINE</p>
           <img
             src="/sign.svg"
             width="100"
