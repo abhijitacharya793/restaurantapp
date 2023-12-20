@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { AppButton } from "./AppButton";
 
 export function Footer() {
@@ -12,13 +13,33 @@ export function Footer() {
             </a>
           </div>
           <div className="h-44 w-1/3 flex items-center justify-center">
-            <img src="/logo.svg" width={250} height={250} alt="logo" />
+            <Image src="/logo.svg" width={250} height={250} alt="logo" />
           </div>
           <div className="h-44 w-1/3 flex items-center justify-end">
-            <img src="/insta.svg" className="h-5 w-5 mx-2" />
-            <img src="/facebook.svg" className="h-5 w-5 mx-2" />
-            <img src="/twitter.svg" className="h-5 w-5 mx-2" />
-            <img src="/pintrest.svg" className="h-5 w-5 mx-2" />
+            <Image
+              width={100}
+              height={100}
+              src="/insta.svg"
+              className="h-5 w-5 mx-2"
+            />
+            <Image
+              width={100}
+              height={100}
+              src="/facebook.svg"
+              className="h-5 w-5 mx-2"
+            />
+            <Image
+              width={100}
+              height={100}
+              src="/twitter.svg"
+              className="h-5 w-5 mx-2"
+            />
+            <Image
+              width={100}
+              height={100}
+              src="/pintrest.svg"
+              className="h-5 w-5 mx-2"
+            />
           </div>
         </div>
         <div className="flex items-center justify-center text-white py-2">

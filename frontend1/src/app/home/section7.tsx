@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Section7() {
   return (
     <>
@@ -15,15 +17,33 @@ export function Section7() {
           </p>
         </div>
         <div className="w-1/5 text-white text-center flex flex-col justify-center items-center h-48 bg-app-dark-purple mr-4">
-          <img className="w-12" src="/wwoffer1.svg" alt="" />
+          <Image
+            width={100}
+            height={100}
+            className="w-12"
+            src="/wwoffer1.svg"
+            alt=""
+          />
           <div className="text-xl pt-4">Opened 24/7</div>
         </div>
         <div className="w-1/5 text-white text-center flex flex-col justify-center items-center h-48 bg-app-dark-purple mr-4">
-          <img className="w-12" src="/wwoffer2.svg" alt="" />
+          <Image
+            width={100}
+            height={100}
+            className="w-12"
+            src="/wwoffer2.svg"
+            alt=""
+          />
           <div className="text-xl pt-4">Special Menus</div>
         </div>
         <div className="w-1/5 text-white text-center flex flex-col justify-center items-center h-48 bg-app-dark-purple">
-          <img className="w-12" src="/wwoffer3.svg" alt="" />
+          <Image
+            width={100}
+            height={100}
+            className="w-12"
+            src="/wwoffer3.svg"
+            alt=""
+          />
           <div className="text-xl pt-4">Home Delivery</div>
         </div>
       </div>

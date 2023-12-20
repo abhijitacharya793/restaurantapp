@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Section4() {
   return (
     <>
@@ -19,7 +21,9 @@ export function Section4() {
             <div className="bg-app-dark-purple overflow-hidden p-3">
               <div className="p-4">
                 <div className="flex items-center">
-                  <img
+                  <Image
+                    width={100}
+                    height={100}
                     className="w-24 h-24 rounded-full mr-4"
                     src="/testimonial1.svg"
                     alt="Avatar"
@@ -34,9 +38,9 @@ export function Section4() {
                 <hr className="border border-slate-500 my-3" />
                 <div className="mt-4">
                   <p className="app-header text-white italic">
-                    &quot;It is professional, considers everyone&apos;s time, can think
-                    about the There are many variations of passages whole probls
-                    small niche, friendly.&quot;
+                    &quot;It is professional, considers everyone&apos;s time,
+                    can think about the There are many variations of passages
+                    whole probls small niche, friendly.&quot;
                   </p>
                 </div>
               </div>
@@ -46,7 +50,9 @@ export function Section4() {
             <div className="bg-app-dark-purple overflow-hidden p-3">
               <div className="p-4">
                 <div className="flex items-center">
-                  <img
+                  <Image
+                    width={100}
+                    height={100}
                     className="w-24 h-24 rounded-full mr-4"
                     src="/testimonial2.svg"
                     alt="Avatar"
@@ -61,10 +67,11 @@ export function Section4() {
                 <hr className="border border-slate-500 my-3" />
                 <div className="mt-4">
                   <p className="app-header text-white italic">
-                  &quot;It is professional, considers everyone&apos;s time, can think
-                    about the There are many variations of passages.&quot;
-                    <br/>
-                    <br/>
+                    &quot;It is professional, considers everyone&apos;s time,
+                    can think about the There are many variations of
+                    passages.&quot;
+                    <br />
+                    <br />
                   </p>
                 </div>
               </div>
@@ -74,7 +81,9 @@ export function Section4() {
             <div className="bg-app-dark-purple overflow-hidden p-3">
               <div className="p-4">
                 <div className="flex items-center">
-                  <img
+                  <Image
+                    width={100}
+                    height={100}
                     className="w-24 h-24 rounded-full mr-4"
                     src="/testimonial3.svg"
                     alt="Avatar"
@@ -89,10 +98,10 @@ export function Section4() {
                 <hr className="border border-slate-500 my-3" />
                 <div className="mt-4">
                   <p className="app-header text-white italic">
-                  &quot;It is professional, considers everyone&apos;s time, can think
-                    about the There are many passages whole probls small niche,
-                    friendly.&quot;
-                    <br/>
+                    &quot;It is professional, considers everyone&apos;s time,
+                    can think about the There are many passages whole probls
+                    small niche, friendly.&quot;
+                    <br />
                   </p>
                 </div>
               </div>

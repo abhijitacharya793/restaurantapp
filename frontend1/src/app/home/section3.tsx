@@ -1,4 +1,5 @@
 import { AppButton } from "@/components/AppButton";
+import Image from "next/image";
 export function Section3() {
   return (
     <>
@@ -18,7 +19,7 @@ export function Section3() {
               letters, as opposed to using &apos;Content here, content making it
               look like readable English.
             </p>
-            <img
+            <Image
               src="/menu1.png"
               width="300"
               height="500"
@@ -41,7 +42,7 @@ export function Section3() {
             {/* Menu items */}
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu2.jpg"
                   width="50"
                   height="50"
@@ -67,7 +68,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu3.svg"
                   width="50"
                   height="50"
@@ -91,7 +92,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu4.svg"
                   width="50"
                   height="50"
@@ -117,7 +118,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu5.svg"
                   width="50"
                   height="50"
@@ -147,7 +148,7 @@ export function Section3() {
             {/* Menu items */}
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu6.svg"
                   width="50"
                   height="50"
@@ -173,7 +174,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu7.svg"
                   width="50"
                   height="50"
@@ -199,7 +200,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu8.svg"
                   width="50"
                   height="50"
@@ -225,7 +226,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu9.svg"
                   width="50"
                   height="50"
@@ -255,7 +256,7 @@ export function Section3() {
             {/* Menu items */}
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu10.svg"
                   width="50"
                   height="50"
@@ -281,7 +282,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <img
+                <Image 
                   src="/menu11.svg"
                   width="50"
                   height="50"

@@ -1,4 +1,5 @@
 import { AppButton } from "@/components/AppButton";
+import Image from "next/image";
 
 export function Section6() {
   return (
@@ -18,36 +19,44 @@ export function Section6() {
         </div>
         <div className="flex ">
           <div className="w-1/4 mr-4">
-            <img src="/popular1.svg" />
+            <Image width={500} height={500} src="/popular1.svg" />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
-              <p >$15</p>
+              <p>$15</p>
             </div>
-            <p className="text-sm text-app-gray">Lorem Ipsum is that it has a more-or-less normal</p>
+            <p className="text-sm text-app-gray">
+              Lorem Ipsum is that it has a more-or-less normal
+            </p>
           </div>
           <div className="w-1/4 mr-4">
-            <img src="/popular2.svg" />
+            <Image width={500} height={500} src="/popular2.svg" />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
-              <p >$15</p>
+              <p>$15</p>
             </div>
-            <p className="text-sm text-app-gray">Lorem Ipsum is that it has a more-or-less normal</p>
+            <p className="text-sm text-app-gray">
+              Lorem Ipsum is that it has a more-or-less normal
+            </p>
           </div>
           <div className="w-1/4 mr-4">
-            <img src="/popular3.svg" />
+            <Image width={500} height={500} src="/popular3.svg" />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
-              <p >$15</p>
+              <p>$15</p>
             </div>
-            <p className="text-sm text-app-gray">Lorem Ipsum is that it has a more-or-less normal</p>
+            <p className="text-sm text-app-gray">
+              Lorem Ipsum is that it has a more-or-less normal
+            </p>
           </div>
           <div className="w-1/4">
-            <img src="/popular4.svg" />
+            <Image width={500} height={500} src="/popular4.svg" />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
-              <p >$15</p>
+              <p>$15</p>
             </div>
-            <p className="text-sm text-app-gray">Lorem Ipsum is that it has a more-or-less normal</p>
+            <p className="text-sm text-app-gray">
+              Lorem Ipsum is that it has a more-or-less normal
+            </p>
           </div>
         </div>
         <div className="flex items-center justify-center pt-10">

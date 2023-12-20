@@ -40,10 +40,12 @@ export default function Home() {
       {/* IMAGE */}
       <div className="bg-gray-200">
         <div className="w-full h-64 overflow-hidden">
-          <img
+          <Image
             className="w-full h-full object-cover"
             src="/testimonial.jpeg"
             alt="Your Image"
+            width={500}
+            height={500}
           />
         </div>
       </div>

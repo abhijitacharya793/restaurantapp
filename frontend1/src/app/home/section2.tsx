@@ -4,6 +4,7 @@ import {
   MapPinIcon,
   PencilSquareIcon,
 } from "@heroicons/react/24/outline";
+import Image from "next/image";
 export function Section2() {
   return (
     <>
@@ -47,7 +48,7 @@ export function Section2() {
       <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex pt-10 pb-20">
         <div className="w-1/2 border-r border-gray-300 pr-4">
           <div className="flex w-full items-center justify-left">
-            <img src="/story.jpg" alt="home" className="w-auto h-80" />
+            <Image src="/story.jpg" alt="home" className="w-auto h-80" width={100} height={100}/>
           </div>
         </div>
         <div className="w-1/2 ml-8">
@@ -73,7 +74,7 @@ export function Section2() {
             </div>
           </div>
           <p className="pt-8">JOSEFINE</p>
-          <img
+          <Image
             src="/sign.svg"
             width="100"
             height="100"

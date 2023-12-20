@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Section3() {
   return (
     <>
@@ -11,28 +13,28 @@ export function Section3() {
           </p>
           <div className="flex items-center w-full justify-center">
             <div className="w-1/4 mr-3 h-56">
-              <img src="/chef1.svg" className="bg-app-green" />
+              <Image src="/chef1.svg" className="bg-app-green" width={300} height={300} alt=""/>
               <p className="text-center app-header text-xl font-bold">Avroko</p>
               <p className="text-center text-sm text-app-gray">
                 Master Chef
               </p>
             </div>
             <div className="w-1/4 mr-3 h-56">
-              <img src="/chef2.svg" className="bg-app-green" />
+              <Image src="/chef2.svg" className="bg-app-green" width={300} height={300} alt=""/>
               <p className="text-center app-header text-xl font-bold">Avroko</p>
               <p className="text-center text-sm text-app-gray">
                 Master Chef
               </p>
             </div>
             <div className="w-1/4 mr-3 h-56">
-              <img src="/chef3.svg" className="bg-app-green" />
+              <Image src="/chef3.svg" className="bg-app-green" width={300} height={300} alt=""/>
               <p className="text-center app-header text-xl font-bold">Avroko</p>
               <p className="text-center text-sm text-app-gray">
                 Master Chef
               </p>
             </div>
             <div className="w-1/4 h-56">
-              <img src="/chef4.svg" className="bg-app-green" />
+              <Image src="/chef4.svg" className="bg-app-green" width={300} height={300} alt=""/>
               <p className="text-center app-header text-xl font-bold">Avroko</p>
               <p className="text-center text-sm text-app-gray">
                 Master Chef

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Section8() {
   return (
     <>
@@ -16,7 +18,7 @@ export function Section8() {
         </div>
         <div className="flex mt-8">
           <div className="w-1/2 mr-8 border border-black">
-            <img className="w-full" src="/blog1.svg" alt="Placeholder image" />
+            <Image width={100} height={100} className="w-full" src="/blog1.svg" alt="Placeholder image" />
             <div className="flex w-1/2">
               <div className="px-6 py-4">
                 <p className="w-26 py-1 border-t border-b border-yellow-600 text-sm font-light">
@@ -41,7 +43,7 @@ export function Section8() {
             </div>
           </div>
           <div className="w-1/2 border border-black">
-            <img className="w-full" src="/blog2.svg" alt="Placeholder image" />
+            <Image width={100} height={100} className="w-full" src="/blog2.svg" alt="Placeholder image" />
             <div className="flex w-1/2">
               <div className="px-6 py-4">
                 <p className="w-26 py-1 border-t border-b border-yellow-600 text-sm font-light">

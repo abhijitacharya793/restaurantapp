@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Section5() {
   return (
     <>
@@ -16,10 +18,10 @@ export function Section5() {
         </div>
         <div className="flex ">
           <div className="w-1/2 mr-4">
-            <img src="/offer1.svg" />
+            <Image width={500} height={500} src="/offer1.svg" />
           </div>
           <div className="w-1/2">
-            <img src="/offer2.svg" />
+            <Image width={500} height={500} src="/offer2.svg" />
           </div>
         </div>
       </div>

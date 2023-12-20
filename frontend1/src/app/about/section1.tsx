@@ -1,4 +1,5 @@
 import { AppButton } from "@/components/AppButton";
+import Image from "next/image";
 
 export function Section1() {
   return (
@@ -19,7 +20,7 @@ export function Section1() {
             </p>
 
             <p className="pt-2">JOSEFINE</p>
-            <img
+            <Image
               src="/sign.svg"
               width="100"
               height="100"
@@ -37,7 +38,7 @@ export function Section1() {
           </div>
         </div>
         <div className="w-1/2 py-20">
-          <img src="/about1.svg" />
+          <Image src="/about1.svg" width="500" height="500" />
         </div>
       </div>
     </>

@@ -1,11 +1,14 @@
 import { AppButton } from "@/components/AppButton";
+import Image from "next/image";
 
 // TODO: Reservation
 export function Reservation() {
   return (
     <>
       <div className="relative bg-gray-100 min-h-screen flex items-center justify-center">
-        <img
+        <Image
+          width={100}
+          height={100}
           className="absolute inset-0 object-cover w-full h-full opacity-90 bg-black"
           src="reservation.svg"
           alt="Overlay Image"
