@@ -19,7 +19,7 @@ export function Header({ active_page }: HeaderProps) {
           />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-center">
-          <Image width={100} height={100} src="/logo.svg" width={250} height={250} alt="logo" />
+          <Image src="/logo.svg" width={250} height={250} alt="logo" />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-end">
           <AppButton
