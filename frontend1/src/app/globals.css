@@ -16,6 +16,32 @@ div,
   right: -80px;
 }
 
+/* LOADING */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border-top-color: #3498db;
+  animation: spin 1s infinite linear;
+}
+
+/* Hide scrollbar while loading */
+body.loading {
+  overflow: hidden;
+}
+
+/* Show content after loading */
+body.loading #content {
+  display: block;
+}
+
+/* FADE */
 @keyframes fadeIn {
   from {
     opacity: 0;
