@@ -34,7 +34,7 @@ export function Footer() {
               alt=""
               width={100}
               height={100}
-              src="/twitter.svg"
+              src="https://assets-global.website-files.com/622856f73bdd0f82f7741cb2/655afe9f73021a4d4bc26a34_social-white-icon-3.svg"
               className="h-5 w-5 mx-2"
             />
             <Image
@@ -81,10 +81,10 @@ export function Footer() {
                   aria-label="YEmail"
                 />
                 <AppButton
-                  color={"border-white"}
-                  fill={"bg-white"}
+                  color={"white"}
+                  fill={"white"}
                   text={"Subscribe"}
-                  fontcolor={"text-app-purple"}
+                  fontcolor={"app-purple"}
                 />
               </form>
             </div>

@@ -1,20 +1,37 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import { AppButton } from "./AppButton";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
 
 type HeaderProps = {
   active_page: string;
 };
 
+const links = [
+  { href: "/home", text: "home", margin: "mr-8" },
+  { href: "/about", text: "about", margin: "mr-8" },
+  { href: "/menu", text: "menu", margin: "mr-8" },
+  { href: "/reservation", text: "reservation", margin: "mr-12" },
+  { href: "/gallery", text: "gallery", margin: "mr-8" },
+  { href: "/blog", text: "blog", margin: "mr-4" },
+  { href: "/contact", text: "contact", margin: "mr-8" },
+];
+
 export function Header({ active_page }: HeaderProps) {
+  const path = usePathname();
+  console.log("PATH:", path);
   return (
     <>
       {/* Header top */}
       <div className="flex items-center lg:max-w-screen-lg sm:max-w-screen-sm mx-auto my-5">
         <div className="h-44 w-1/3 flex items-center justify-start">
           <AppButton
-            color="border-app-yellow"
-            fill=""
-            fontcolor="text-white"
+            color="app-yellow"
+            fill="app-purple"
+            fontcolor="white"
             text="Call - 987 654 321"
           />
         </div>
@@ -23,9 +40,9 @@ export function Header({ active_page }: HeaderProps) {
         </div>
         <div className="h-44 w-1/3 flex items-center justify-end">
           <AppButton
-            color="border-app-yellow"
-            fill="bg-app-yellow"
-            fontcolor="text-black"
+            color="app-yellow"
+            fill="app-yellow"
+            fontcolor="app-purple"
             text="Reservation"
           />
         </div>
@@ -36,31 +53,27 @@ export function Header({ active_page }: HeaderProps) {
         {/* space */}
 
         {/* 7 parts of 12 */}
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
-          <a href="/home">home</a>
-        </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
-          <a href="/about">about</a>
-        </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
-          <a href="/menu">menu</a>
-        </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-12">
-          <a href="/reservation">reservation</a>
-        </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
-          <a href="/gallery">gallery</a>
-        </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
-          <a href="/blog">blog</a>
-        </div>
-        <div className="w-1/12 h-10 py-2 text-white capitalize mr-8">
-          <a href="/contact">contact</a>
-        </div>
+        {links.map((link) => (
+          <motion.div
+            key={link.text}
+            whileHover={{ scale: 1.1 }}
+            className={`w-1/12 h-10 py-2 text-white capitalize ${link.margin}`}
+          >
+            <a
+              href={link.href}
+              className={`${link.href === path ? "font-bold" : ""}`}
+            >
+              {link.text}
+            </a>
+          </motion.div>
+        ))}
         {/* space */}
         <div className="w-1/3 h-10 py-2"></div>
         {/* socials */}
-        <div className="flex w-1/12 h-10 py-2 justify-end">
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          className="flex w-1/12 h-10 py-2 justify-end"
+        >
           <Image
             alt=""
             width={100}
@@ -79,7 +92,7 @@ export function Header({ active_page }: HeaderProps) {
             alt=""
             width={100}
             height={100}
-            src="/twitter.svg"
+            src="https://assets-global.website-files.com/622856f73bdd0f82f7741cb2/655afe9f73021a4d4bc26a34_social-white-icon-3.svg"
             className="h-5 w-5 mx-2"
           />
           <Image
@@ -89,7 +102,7 @@ export function Header({ active_page }: HeaderProps) {
             src="/pintrest.svg"
             className="h-5 w-5 mx-2"
           />
-        </div>
+        </motion.div>
         {/* space */}
       </div>
       <hr className="border-slate-400" />

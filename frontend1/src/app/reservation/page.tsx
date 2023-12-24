@@ -10,7 +10,7 @@ export default function Reservation() {
         {/*  */}
         <Footer />
       </div>
-      <LoadingOverlay />
+      {/* <LoadingOverlay /> */}
     </>
   );
 }

@@ -67,10 +67,10 @@ export function Reservation() {
 
             <div className="flex w-full items-center justify-center">
               <AppButton
-                color={"border-white"}
-                fill={"bg-white"}
+                color={"white"}
+                fill={"white"}
                 text={"Book a Table"}
-                fontcolor={"text-app-purple"}
+                fontcolor={"app-purple"}
               />
             </div>
           </form>

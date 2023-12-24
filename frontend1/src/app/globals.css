@@ -16,6 +16,15 @@ div,
   right: -80px;
 }
 
+::-webkit-scrollbar {
+  width: 5px; /* Adjust as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d1d5db; /* Adjust the color */
+  border-radius: 2.5px; /* Half of the width for a rounded look */
+}
+
 /* LOADING */
 @keyframes spin {
   0% {
@@ -42,15 +51,24 @@ body.loading #content {
 }
 
 /* FADE */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+/* ROTATE */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  to {
-    opacity: 1;
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 1s ease-out forwards;
+.rotate {
+  animation: spin 7s linear infinite; /* Adjust the duration or timing function as needed */
 }

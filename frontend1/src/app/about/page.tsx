@@ -31,7 +31,7 @@ export default function About() {
         <Reservation />
         <Footer />
       </div>
-      <LoadingOverlay />
+      {/* <LoadingOverlay /> */}
     </>
   );
 }

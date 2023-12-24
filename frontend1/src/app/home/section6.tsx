@@ -61,9 +61,9 @@ export function Section6() {
         </div>
         <div className="flex items-center justify-center pt-10">
           <AppButton
-            color="border-app-yellow mb-16"
-            fill=""
-            fontcolor="text-app-yellow"
+            color="app-yellow mb-16"
+            fill="white"
+            fontcolor="app-yellow"
             text="See all dishes"
           />
         </div>

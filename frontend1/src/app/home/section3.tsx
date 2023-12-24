@@ -28,9 +28,9 @@ export function Section3() {
             />
             <div className="pt-8">
               <AppButton
-                color="border-app-yellow"
-                fill=""
-                fontcolor="text-yellow-600"
+                color="app-yellow"
+                fill="white"
+                fontcolor="yellow-600"
                 text="View Menu"
               />
             </div>

@@ -14,7 +14,7 @@ export default function Gallery() {
         </div>
         <Footer />
       </div>
-      <LoadingOverlay />
+      {/* <LoadingOverlay /> */}
     </>
   );
 }

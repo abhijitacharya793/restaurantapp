@@ -14,7 +14,7 @@ export default function Contact() {
         </div>
         <Footer />
       </div>
-      <LoadingOverlay />
+      {/* <LoadingOverlay /> */}
     </>
   );
 }

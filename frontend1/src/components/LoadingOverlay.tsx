@@ -7,9 +7,11 @@ const LoadingOverlay = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Simulating a delay - remove this in actual implementation
+    }, 1000); // Simulating a delay - remove this in actual implementation
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   return (

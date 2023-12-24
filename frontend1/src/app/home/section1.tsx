@@ -1,5 +1,9 @@
-import { AppButton } from "@/components/AppButton";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
+
+import { AppButton } from "@/components/AppButton";
+
 export function Section1() {
   return (
     <>
@@ -8,17 +12,20 @@ export function Section1() {
           <h1 className="text-6xl text-white app-header font-bold lg:pt-32 sm:pt-10">
             Welcome to Restaurantate
           </h1>
+
           <p className="text-sm text-white pt-8 lg:w-96">
             Simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry standard dummy .
           </p>
           <div className="py-8">
-            <AppButton
-              color="border-app-yellow lg:mb-16 sm:mb-5"
-              fill=""
-              fontcolor="text-white"
-              text="View Menu"
-            />
+            <a href="/menu">
+              <AppButton
+                color="app-yellow lg:mb-16 sm:mb-5"
+                fill="app-purple"
+                fontcolor="white"
+                text="View Menu"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -33,7 +40,7 @@ export function Section1() {
             priority
           />
         </div>
-        <div className="flex absolute top-5 right-0 z-0 app-pattern">
+        <div className="flex absolute top-5 right-0 z-0 app-pattern rotate">
           <Image
             src="/pattern.svg"
             alt="home"

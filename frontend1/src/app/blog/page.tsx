@@ -14,7 +14,7 @@ export default function Blog() {
         </div>
         <Footer />
       </div>
-      <LoadingOverlay />
+      {/* <LoadingOverlay /> */}
     </>
   );
 }
