@@ -81,10 +81,13 @@ export function Footer() {
                   aria-label="YEmail"
                 />
                 <AppButton
-                  color={"white"}
-                  fill={"white"}
+                  color={"border-white"}
+                  fill={"bg-white"}
                   text={"Subscribe"}
-                  fontcolor={"app-purple"}
+                  fontcolor={"text-app-purple"}
+                  hover_color={"hover:border-app-yellow"}
+                  hover_fill={"hover:bg-app-yellow"}
+                  hover_fontcolor={"hover:text-app-purple"}
                 />
               </form>
             </div>

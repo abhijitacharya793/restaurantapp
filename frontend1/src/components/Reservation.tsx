@@ -67,10 +67,13 @@ export function Reservation() {
 
             <div className="flex w-full items-center justify-center">
               <AppButton
-                color={"white"}
-                fill={"white"}
+                color={"border-white"}
+                fill={"bg-white"}
                 text={"Book a Table"}
-                fontcolor={"app-purple"}
+                fontcolor={"text-app-purple"}
+                hover_color={"hover:border-app-yellow"}
+                hover_fill={"hover:bg-app-yellow"}
+                hover_fontcolor={"hover:text-app-purple"}
               />
             </div>
           </form>

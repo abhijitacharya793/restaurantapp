@@ -61,10 +61,13 @@ export function Section6() {
         </div>
         <div className="flex items-center justify-center pt-10">
           <AppButton
-            color="app-yellow mb-16"
-            fill="white"
-            fontcolor="app-yellow"
+            color="border-app-yellow mb-16"
+            fill="bg-white"
+            fontcolor="text-app-yellow"
             text="See all dishes"
+            hover_color={"hover:border-app-yellow"}
+            hover_fill={"hover:bg-app-yellow"}
+            hover_fontcolor={"hover:text-app-purple"}
           />
         </div>
       </div>

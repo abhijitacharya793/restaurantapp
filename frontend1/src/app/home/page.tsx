@@ -18,49 +18,53 @@ export default function Home() {
   return (
     <>
       <PageWrapper>
-        <div id="content">
-          <Header active_page={"home"} />
-          <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-center">
-            <Section1 />
-          </div>
-          <div className="bg-orange-50">
-            <Section2 />
-          </div>
-          <div className="bg-white pb-20">
-            <Section3 />
-          </div>
-          <div className="bg-app-purple">
-            <Section4 />
-          </div>
-          <div className="bg-gray-200">
-            <div className="w-full h-64 overflow-hidden">
-              <Image
-                className="w-full h-full object-cover"
-                src="/testimonial.jpeg"
-                alt="Your Image"
-                width={500}
-                height={500}
-              />
+        <div className="relative">
+          <div
+            className="fixed mt-20 inset-0 bg-cover bg-center z-[-10]"
+            style={{ backgroundImage: "url('/home.svg')" }}
+          />
+          <div className="relative z-10">
+            <div id="content">
+              <div className="bg-app-purple">
+                <Header active_page={"home"} />
+              </div>
+              <div className="bg-app-purple">
+                <Section1 />
+              </div>
+              <div className="bg-orange-50">
+                <Section2 />
+              </div>
+              <div className="bg-white pb-20">
+                <Section3 />
+              </div>
+              <div className="bg-app-purple">
+                <Section4 />
+              </div>
+              <div className="w-full h-64 overflow-hidden">
+                <div className="w-12 h-12"></div>
+              </div>
+              <div className="bg-white">
+                <Section5 />
+              </div>
+              <div className="bg-white">
+                <Section6 />
+              </div>
+              <div className="bg-app-purple pb-20 pt-10">
+                <Section7 />
+              </div>
+              <div className="bg-white">
+                <Section8 />
+              </div>
+              <div className="">
+                <Reservation />
+              </div>
+              <div className="bg-app-purple">
+                <Footer />
+              </div>
             </div>
+            {/* <LoadingOverlay /> */}
           </div>
-          <div className="bg-white">
-            <Section5 />
-          </div>
-          <div className="bg-white">
-            <Section6 />
-          </div>
-          <div className="bg-app-purple pb-20 pt-10">
-            <Section7 />
-          </div>
-          <div className="bg-white">
-            <Section8 />
-          </div>
-          <div className="">
-            <Reservation />
-          </div>
-          <Footer />
         </div>
-        {/* <LoadingOverlay /> */}
       </PageWrapper>
     </>
   );

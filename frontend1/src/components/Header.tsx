@@ -26,13 +26,16 @@ export function Header({ active_page }: HeaderProps) {
   return (
     <>
       {/* Header top */}
-      <div className="flex items-center lg:max-w-screen-lg sm:max-w-screen-sm mx-auto my-5">
+      <div className="flex items-center lg:max-w-screen-lg sm:max-w-screen-sm mx-auto py-5 bg-app-purple">
         <div className="h-44 w-1/3 flex items-center justify-start">
           <AppButton
-            color="app-yellow"
-            fill="app-purple"
-            fontcolor="white"
+            color="border-app-yellow"
+            fill="bg-app-purple"
+            fontcolor="text-white"
             text="Call - 987 654 321"
+            hover_color={"hover:border-app-yellow"}
+            hover_fill={"hover:bg-app-yellow"}
+            hover_fontcolor={"hover:text-app-purple"}
           />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-center">
@@ -40,10 +43,13 @@ export function Header({ active_page }: HeaderProps) {
         </div>
         <div className="h-44 w-1/3 flex items-center justify-end">
           <AppButton
-            color="app-yellow"
-            fill="app-yellow"
-            fontcolor="app-purple"
+            color="border-app-yellow"
+            fill="bg-app-yellow"
+            fontcolor="text-app-purple"
             text="Reservation"
+            hover_color={"hover:border-app-yellow"}
+            hover_fill={"hover:bg-app-purple"}
+            hover_fontcolor={"hover:text-app-yellow"}
           />
         </div>
       </div>
@@ -61,7 +67,9 @@ export function Header({ active_page }: HeaderProps) {
           >
             <a
               href={link.href}
-              className={`${link.href === path ? "font-bold" : ""}`}
+              className={`${
+                link.href === path ? "font-bold" : ""
+              } hover:text-app-yellow`}
             >
               {link.text}
             </a>

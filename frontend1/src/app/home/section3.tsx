@@ -28,10 +28,13 @@ export function Section3() {
             />
             <div className="pt-8">
               <AppButton
-                color="app-yellow"
-                fill="white"
-                fontcolor="yellow-600"
+                color="border-app-yellow"
+                fill="bg-white"
+                fontcolor="text-yellow-600"
                 text="View Menu"
+                hover_color={"hover:border-app-yellow"}
+                hover_fill={"hover:bg-app-yellow"}
+                hover_fontcolor={"hover:text-app-purple"}
               />
             </div>
           </div>

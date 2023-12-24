@@ -30,10 +30,13 @@ export function Section1() {
             />
             <div className="py-4">
               <AppButton
-                color={"app-yellow"}
-                fill={"white"}
+                color={"border-app-yellow"}
+                fill={"bg-white"}
                 text={"See More"}
-                fontcolor={"app-yellow"}
+                fontcolor={"text-app-yellow"}
+                hover_color={"hover:border-app-yellow"}
+                hover_fill={"hover:bg-app-yellow"}
+                hover_fontcolor={"hover:text-app-purple"}
               />
             </div>
           </div>

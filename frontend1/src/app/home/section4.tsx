@@ -1,6 +1,24 @@
+"use client";
 import Image from "next/image";
 
+import { Variants, motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 export function Section4() {
+  const testimonialVariant: Variants = {
+    hide: {
+      opacity: 0,
+      x: 500,
+    },
+    show: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
     <>
       <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto py-20">
@@ -16,7 +34,13 @@ export function Section4() {
           We love to hear from customers, so please leave a comment or say hello
           in an email.
         </p>
-        <div className="flex items-center">
+        <motion.div
+          initial="hide"
+          whileInView="show"
+          exit="hide"
+          variants={testimonialVariant}
+          className="flex items-center"
+        >
           <div className="w-1/3 mr-4">
             <div className="bg-app-dark-purple overflow-hidden p-3">
               <div className="p-4">
@@ -107,7 +131,7 @@ export function Section4() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
