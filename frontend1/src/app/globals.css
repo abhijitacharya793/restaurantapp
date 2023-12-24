@@ -6,6 +6,10 @@
   font-family: "Cormorant Infant";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 p,
 div,
 .app-text {

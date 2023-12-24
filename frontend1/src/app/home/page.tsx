@@ -20,7 +20,7 @@ export default function Home() {
       <PageWrapper>
         <div className="relative">
           <div
-            className="fixed mt-20 inset-0 bg-cover bg-center z-[-10]"
+            className="fixed inset-0 bg-cover bg-center z-[-10]"
             style={{ backgroundImage: "url('/home.svg')" }}
           />
           <div className="relative z-10">

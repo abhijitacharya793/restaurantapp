@@ -22,7 +22,7 @@ const links = [
 
 export function Header({ active_page }: HeaderProps) {
   const path = usePathname();
-  console.log("PATH:", path);
+  
   return (
     <>
       {/* Header top */}
@@ -68,7 +68,7 @@ export function Header({ active_page }: HeaderProps) {
             <a
               href={link.href}
               className={`${
-                link.href === path ? "font-bold" : ""
+                link.href === path ? "font-bold text-app-yellow" : ""
               } hover:text-app-yellow`}
             >
               {link.text}
