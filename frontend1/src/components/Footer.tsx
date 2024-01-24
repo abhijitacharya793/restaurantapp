@@ -66,7 +66,10 @@ export function Footer() {
             <p className="text-sm font-light">
               5 Rue Dalou, 75015 Paris
               <br />
-              Call - +33 156 78 89 56
+              Call - <br />
+              +91 98102 52704
+              <br />
+              +91 98103 63405
               <br />
               benoit@mail.com
             </p>
@@ -94,23 +97,14 @@ export function Footer() {
           </div>
           <div className="w-1/3 flex items-center justify-end">
             <p className="text-sm font-light text-right">
-              Mon – Fri: 7.00am – 6.00pm
+              Mon to Fri: 12:00 pm to 1:00 am
               <br />
-              Sat: 7.00am – 6.00pm
-              <br />
-              Sun: 8.00am – 6.00pm
+              Sat - Sun: 12:00 pm to 1:00 am
             </p>
           </div>
         </div>
       </div>
       <hr />
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-white py-4 w-full">
-        <div className="">
-          © Copyright - Restaurantate | Designed by VictorFlow Templates -
-          Powered by Webflow
-        </div>
-        <div className="flex items-end">Styleguide / Licenses</div>
-      </div>
     </>
   );
 }

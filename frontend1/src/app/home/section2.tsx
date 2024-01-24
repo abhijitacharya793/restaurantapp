@@ -31,7 +31,13 @@ export function Section2() {
               <div className="w-5/6 h-16 p-2">
                 <p className="text-xl app-header font-bold">Locate Us</p>
                 <p className="text-xs text-app-gray">
-                  Riverside 25, San Francisco, California
+                  1st Floor <br />
+                  City Centre Mall
+                  <br />
+                  Sector 12, Dwarka
+                  <br />
+                  New Delhi -110078
+                  <br />
                 </p>
               </div>
             </div>
@@ -44,7 +50,8 @@ export function Section2() {
               <div className="w-4/6 h-16 p-2">
                 <p className="text-lg app-header font-bold">Open Hours</p>
                 <p className="text-xs text-app-gray">
-                  Mon To Fri 9:00 AM - 9:00 PM
+                  Mon to Fri= 12:00 pm to 1:00 am<br/>
+                  Sat – Sun= 12:00 pm to 1:00 am
                 </p>
               </div>
             </div>

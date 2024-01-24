@@ -17,7 +17,7 @@ export function Section1() {
             className="items-center text-left"
           >
             <h1 className="text-6xl text-white app-header font-bold lg:pt-32 sm:pt-10">
-              Welcome to Restaurantate
+              Welcome to <br/>Café After Hours
             </h1>
 
             <p className="text-sm text-white pt-8 lg:w-96">

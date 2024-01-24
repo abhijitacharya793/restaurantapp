@@ -32,7 +32,7 @@ export function Header({ active_page }: HeaderProps) {
             color="border-app-yellow"
             fill="bg-app-purple"
             fontcolor="text-white"
-            text="Call - 987 654 321"
+            text="Call - 98102 52704 / 98103 63405"
             hover_color={"hover:border-app-yellow"}
             hover_fill={"hover:bg-app-yellow"}
             hover_fontcolor={"hover:text-app-purple"}
