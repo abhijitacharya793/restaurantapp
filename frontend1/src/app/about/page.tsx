@@ -6,6 +6,7 @@ import { Section4 } from "./section4";
 import { Reservation } from "@/components/Reservation";
 import LoadingOverlay from "@/components/LoadingOverlay";
 import { PageWrapper } from "../page-wrapper";
+import { Section5 } from "./section5";
 
 export default function About() {
   return (
@@ -20,6 +21,9 @@ export default function About() {
           </div>
           <div className="bg-white">
             <Section1 />
+          </div>
+          <div className="bg-app-purple">
+            <Section5 />
           </div>
           {/* TODO: */}
           <div className="bg-white pb-20">
