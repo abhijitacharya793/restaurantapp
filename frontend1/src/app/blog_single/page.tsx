@@ -9,20 +9,15 @@ export default function Blog() {
   return (
     <>
       <PageWrapper>
-      <div>
+        <div>
           <Header active_page="about" />
-          <div className="bg-app-purple py-16 flex justify-center">
-            <p className="w-18 p-1 border-t border-b border-yellow-600 text-3xl text-white app-header font-bold">
-              Blog
-            </p>
-          </div>
-           <div className="bg-white">
+          <div className="bg-white">
             <Section1 />
           </div>
           {/* <div className="bg-app-purple">
             <Section5 />
           </div> */}
-          
+
           <Reservation />
           <Footer />
         </div>

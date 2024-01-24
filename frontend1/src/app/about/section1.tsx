@@ -19,15 +19,15 @@ export function Section1() {
               welcoming space where people can gather to enjoy delicious food
               and create lasting memories. He believes in the power of
               exceptional customer service and aim to provide a top-notch dining
-              experience for every guest. 
-              <br/>
-              The CEO is committed to using fresh,
-              locally sourced ingredients to create innovative and mouthwatering
-              dishes that cater to various dietary preferences. He is dedicated
-              to fostering a positive work culture, ensuring that our team is
-              motivated, well-trained, and shares the same passion for
-              delivering exceptional hospitality. Overall, our CEO`&quot;s vision for
-              the restaurant is to be a place where people can indulge in
+              experience for every guest.
+              <br />
+              The CEO is committed to using fresh, locally sourced ingredients
+              to create innovative and mouthwatering dishes that cater to
+              various dietary preferences. He is dedicated to fostering a
+              positive work culture, ensuring that our team is motivated,
+              well-trained, and shares the same passion for delivering
+              exceptional hospitality. Overall, our CEO`&quot;s vision for the
+              restaurant is to be a place where people can indulge in
               outstanding culinary experiences while feeling like they are part
               of a larger community.
             </p>
