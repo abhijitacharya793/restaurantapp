@@ -122,7 +122,7 @@ export function Section1() {
             </div>
           </div>
           {/*  */}
-          {/* <div className="w-1/2 border border-black">
+          <div className="w-1/2 border border-black">
             <Image
               width={100}
               height={100}
@@ -144,8 +144,10 @@ export function Section1() {
             </div>
             <div className="px-6 py-4">
               <div className="font-bold text-3xl mb-2 app-header">
-                Savor the Moment: Culinary Excellence and Crafted Cocktails
-                Await at Café After Hours
+                <a href="/blog_single">
+                  Savor the Moment: Culinary Excellence and Crafted Cocktails
+                  Await at Café After Hours
+                </a>
               </div>
               <p className="text-gray-700 text-sm pt-2">
                 Capitalize on low-hanging fruit to identify a ballpark value
@@ -153,7 +155,7 @@ export function Section1() {
                 override the food quality.
               </p>
             </div>
-          </div> */}
+          </div>
           {/*  */}
         </div>
       </div>
