@@ -31,12 +31,12 @@ export function Section2() {
               <div className="w-5/6 h-16 p-2">
                 <p className="text-xl app-header font-bold">Locate Us</p>
                 <p className="text-xs text-app-gray">
-                  1st Floor <br />
+                  1st Floor,
                   City Centre Mall
                   <br />
                   Sector 12, Dwarka
                   <br />
-                  New Delhi -110078
+                  New Delhi - 110078
                   <br />
                 </p>
               </div>
@@ -50,8 +50,8 @@ export function Section2() {
               <div className="w-4/6 h-16 p-2">
                 <p className="text-lg app-header font-bold">Open Hours</p>
                 <p className="text-xs text-app-gray">
-                  Mon to Fri= 12:00 pm to 1:00 am<br/>
-                  Sat – Sun= 12:00 pm to 1:00 am
+                  <span className=" font-bold">Mon to Fri: </span>12:00 pm to 1:00 am<br/>
+                  <span className=" font-bold">Sat – Sun: </span>12:00 pm to 1:00 am
                 </p>
               </div>
             </div>
@@ -75,11 +75,11 @@ export function Section2() {
           <div className="w-1/2 border-r border-gray-300 pr-4">
             <div className="flex w-full items-center justify-left">
               <Image
-                src="/story.jpg"
+                src="/story1.jpg"
                 alt="home"
                 className="w-auto h-80"
-                width={100}
-                height={100}
+                width={400}
+                height={300}
               />
             </div>
           </div>

@@ -21,7 +21,7 @@ export default function Home() {
         <div className="relative">
           <div
             className="fixed inset-0 bg-cover bg-center z-[-10]"
-            style={{ backgroundImage: "url('/home.svg')" }}
+            style={{ backgroundImage: "url('/home.jpg')" }}
           />
           <div className="relative z-10">
             <div id="content">

@@ -5,15 +5,18 @@ export function Footer() {
   return (
     <>
       {/* Footer top */}
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto">
+      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto pb-20">
         <div className="flex items-center justify-center py-4">
           <div className="h-44 w-1/3 flex items-center justify-start">
-            <a href="#" className="text-white underline">
-              Instagram Feed
+            <a
+              href="https://www.instagram.com/cafe_after_hours"
+              className="text-white underline"
+            >
+              #CafeAfterHours
             </a>
           </div>
           <div className="h-44 w-1/3 flex items-center justify-center">
-            <Image src="/logo.svg" width={250} height={250} alt="logo" />
+            <Image src="/logo1.svg" width={250} height={250} alt="logo" />
           </div>
           <div className="h-44 w-1/3 flex items-center justify-end">
             <Image
@@ -46,7 +49,7 @@ export function Footer() {
             />
           </div>
         </div>
-        <div className="flex items-center justify-center text-white py-2">
+        <div className="flex items-center justify-center text-white pb-2">
           <div className="w-1/3 flex items-center justify-start">
             <p className="w-18 py-1 border-t border-b border-yellow-600 text-sm font-light">
               CONTACT
@@ -61,15 +64,16 @@ export function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center text-white py-4">
+        <div className="flex items-center justify-center text-white">
           <div className="w-1/3 flex items-center justify-start">
-            <p className="text-sm font-light">
-              5 Rue Dalou, 75015 Paris
+            <p className="text-sm ">
+              1st Floor, City Centre Mall, Sector 12, Dwarka
               <br />
-              Call - <br />
-              +91 98102 52704
+              New Delhi - 110078
               <br />
-              +91 98103 63405
+              <span className="text-app-yellow">+91 98102 52704</span>
+              <br />
+              <span className="text-app-yellow">+91 98103 63405</span>
               <br />
               benoit@mail.com
             </p>
@@ -97,9 +101,11 @@ export function Footer() {
           </div>
           <div className="w-1/3 flex items-center justify-end">
             <p className="text-sm font-light text-right">
-              Mon to Fri: 12:00 pm to 1:00 am
+              <span className="text-app-yellow font-bold">Mon to Fri: </span>
+              12:00 pm to 1:00 am
               <br />
-              Sat - Sun: 12:00 pm to 1:00 am
+              <span className="text-app-yellow font-bold">Sat - Sun: </span>
+              12:00 pm to 1:00 am
             </p>
           </div>
         </div>

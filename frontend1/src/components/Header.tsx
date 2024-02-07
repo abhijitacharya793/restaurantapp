@@ -22,7 +22,7 @@ const links = [
 
 export function Header({ active_page }: HeaderProps) {
   const path = usePathname();
-  
+
   return (
     <>
       {/* Header top */}
@@ -32,14 +32,20 @@ export function Header({ active_page }: HeaderProps) {
             color="border-app-yellow"
             fill="bg-app-purple"
             fontcolor="text-white"
-            text="Call - 98102 52704 / 98103 63405"
+            text="Call - 98102 52704"
             hover_color={"hover:border-app-yellow"}
             hover_fill={"hover:bg-app-yellow"}
             hover_fontcolor={"hover:text-app-purple"}
           />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-center">
-          <Image src="/logo.svg" width={250} height={250} alt="logo" priority />
+          <Image
+            src="/logo1.svg"
+            width={250}
+            height={250}
+            alt="logo"
+            priority
+          />
         </div>
         <div className="h-44 w-1/3 flex items-center justify-end">
           <AppButton

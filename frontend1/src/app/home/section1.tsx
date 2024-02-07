@@ -17,7 +17,8 @@ export function Section1() {
             className="items-center text-left"
           >
             <h1 className="text-6xl text-white app-header font-bold lg:pt-32 sm:pt-10">
-              Welcome to <br/>Café After Hours
+              Welcome to <br />
+              Café After Hours
             </h1>
 
             <p className="text-sm text-white pt-8 lg:w-96">
@@ -42,7 +43,7 @@ export function Section1() {
         <div className="w-1/2 relative">
           <div className="absolute top-5 left-10 z-10">
             <Image
-              src="/home.png"
+              src="/home.jpg"
               alt="home"
               width={450}
               height={700}

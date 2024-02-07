@@ -20,7 +20,7 @@ export function Section3() {
               look like readable English.
             </p>
             <Image
-              src="/menu1.png"
+              src="/menu1.jpg"
               width="300"
               height="500"
               alt="home"
