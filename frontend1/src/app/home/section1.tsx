@@ -22,8 +22,8 @@ export function Section1() {
             </h1>
 
             <p className="text-sm text-white pt-8 lg:w-96 text-center px-10 lg:px-0 lg:text-left">
-              Simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry standard dummy .
+              The people, food and the prime locations make the perfect place
+              good friends & family to come together and have great time.
             </p>
             <div className="py-8 flex justify-center lg:justify-start">
               <a href="/menu">

@@ -70,34 +70,42 @@ export function Navbar() {
           whileHover={{ scale: 1.1 }}
           className="flex w-full sm:w-1/2 md:w-1/4 lg:w-1/12 h-10 py-2 justify-end"
         >
-          <Image
-            alt=""
-            width={100}
-            height={100}
-            src="/insta.svg"
-            className="h-5 w-5 mx-2"
-          />
-          <Image
-            alt=""
-            width={100}
-            height={100}
-            src="/facebook.svg"
-            className="h-5 w-5 mx-2"
-          />
-          <Image
-            alt=""
-            width={100}
-            height={100}
-            src="https://assets-global.website-files.com/622856f73bdd0f82f7741cb2/655afe9f73021a4d4bc26a34_social-white-icon-3.svg"
-            className="h-5 w-5 mx-2"
-          />
-          <Image
-            alt=""
-            width={100}
-            height={100}
-            src="/pintrest.svg"
-            className="h-5 w-5 mx-2"
-          />
+          <a href="https://www.instagram.com/cafe_after_hours/" target="_blank">
+            <Image
+              alt=""
+              width={100}
+              height={100}
+              src="/insta.svg"
+              className="h-5 w-5 mx-4"
+            />
+          </a>
+          <a href="https://www.instagram.com/cafe_after_hours/" target="_blank">
+            <Image
+              alt=""
+              width={100}
+              height={100}
+              src="/facebook.svg"
+              className="h-5 w-5 mx-4"
+            />
+          </a>
+          <a href="https://www.instagram.com/cafe_after_hours/" target="_blank">
+            <Image
+              alt=""
+              width={100}
+              height={100}
+              src="https://assets-global.website-files.com/622856f73bdd0f82f7741cb2/655afe9f73021a4d4bc26a34_social-white-icon-3.svg"
+              className="h-5 w-5 mx-4"
+            />
+          </a>
+          <a href="https://www.instagram.com/cafe_after_hours/" target="_blank">
+            <Image
+              alt=""
+              width={100}
+              height={100}
+              src="/pintrest.svg"
+              className="h-5 w-5 mx-4"
+            />
+          </a>
         </motion.div>
       </div>
     </>
