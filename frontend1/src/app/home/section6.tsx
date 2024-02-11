@@ -17,9 +17,15 @@ export function Section6() {
             letters, as opposed to using Content here, content making.
           </p>
         </div>
-        <div className="flex ">
-          <div className="w-1/4 mr-4">
-            <Image alt="" width={500} height={500} src="/popular1.svg" />
+        <div className="lg:flex px-4 lg:px-0">
+          <div className="lg:w-1/4">
+            <Image
+              alt=""
+              width={500}
+              height={500}
+              src="/popular1.svg"
+              className="flex justify-center"
+            />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
               <p>$15</p>
@@ -28,8 +34,14 @@ export function Section6() {
               Lorem Ipsum is that it has a more-or-less normal
             </p>
           </div>
-          <div className="w-1/4 mr-4">
-            <Image alt="" width={500} height={500} src="/popular2.svg" />
+          <div className="lg:w-1/4">
+            <Image
+              alt=""
+              width={500}
+              height={500}
+              src="/popular2.svg"
+              className="flex justify-center"
+            />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
               <p>$15</p>
@@ -38,8 +50,14 @@ export function Section6() {
               Lorem Ipsum is that it has a more-or-less normal
             </p>
           </div>
-          <div className="w-1/4 mr-4">
-            <Image alt="" width={500} height={500} src="/popular3.svg" />
+          <div className="lg:w-1/4">
+            <Image
+              alt=""
+              width={500}
+              height={500}
+              src="/popular3.svg"
+              className="flex justify-center"
+            />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
               <p>$15</p>
@@ -48,8 +66,14 @@ export function Section6() {
               Lorem Ipsum is that it has a more-or-less normal
             </p>
           </div>
-          <div className="w-1/4">
-            <Image alt="" width={500} height={500} src="/popular4.svg" />
+          <div className="lg:w-1/4">
+            <Image
+              alt=""
+              width={500}
+              height={500}
+              src="/popular4.svg"
+              className="flex justify-center"
+            />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
               <p>$15</p>
