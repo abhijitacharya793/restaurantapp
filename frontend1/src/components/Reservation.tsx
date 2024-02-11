@@ -14,8 +14,8 @@ export function Reservation() {
           alt="Overlay Image"
         />
 
-        <div className="relative z-10 bg-app-dark-purple p-8 opacity-90">
-          <form className="p-20">
+        <div className="relative z-10 bg-app-dark-purple lg:p-8 opacity-90 mx-4">
+          <form className="lg:p-20 p-8">
             <div className="mb-4 flex flex-col justify-center items-center">
               <p className="w-24 py-1 border-t border-b border-yellow-600 text-sm font-light text-white">
                 RESERVATION
@@ -24,7 +24,7 @@ export function Reservation() {
                 Book your table now
               </p>
 
-              <div className="flex w-full ">
+              <div className="lg:flex w-full justify-start lg:justify-center">
                 <input
                   type="email"
                   id="email"
@@ -40,7 +40,7 @@ export function Reservation() {
                   className="w-full px-3 py-2 m-4 border focus:outline-none bg-transparent mb-3"
                 />
               </div>
-              <div className="flex w-full">
+              <div className="lg:flex w-full">
                 <input
                   type="email"
                   id="email"
