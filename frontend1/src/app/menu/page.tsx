@@ -13,18 +13,19 @@ export default function Menu() {
             Our Menu
           </p>
         </div>
-        <div className="bg-white py-20">
-          <div className="lg:max-w-screen-lg mx-auto flex">
-            <div className="w-2/5">
+        <div className="bg-white py-20 px-4 lg:px-0">
+          <div className="lg:max-w-screen-lg mx-auto lg:flex">
+            <div className="lg:w-2/5">
               <Image
-                src="/menu12.svg"
+                src="/menu12.jpg"
                 width={300}
                 height={300}
                 alt=""
                 priority
+                className="w-full"
               />
             </div>
-            <div className="w-3/5">
+            <div className="lg:w-3/5 lg:pl-8 pt-4 lg:pt-0">
               <div>
                 <p className="app-header text-3xl font-bold pb-3">Starters</p>
                 {/* Menu items */}
