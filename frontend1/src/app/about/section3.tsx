@@ -15,22 +15,22 @@ export function Section3() {
   const slides: Slide[] = [
     {
       name: "Avroko",
-      image: "/testimonial1.svg",
+      image: "/chef1.svg",
       role: "Master Chef",
     },
     {
       name: "Avroko",
-      image: "/testimonial2.svg",
+      image: "/chef2.svg",
       role: "Master Chef",
     },
     {
       name: "Avroko",
-      image: "/testimonial3.svg",
+      image: "/chef3.svg",
       role: "Master Chef",
     },
     {
       name: "Avroko",
-      image: "/testimonial4.svg",
+      image: "/chef4.svg",
       role: "Master Chef",
     },
   ];
@@ -56,8 +56,8 @@ export function Section3() {
         {slides.map((slide, index) => (
           <div key={index} className=" px-10">
             <Image
-              src="/chef1.svg"
-              className="bg-app-green w-full"
+              src={slide.image}
+              className="bg-app-green w-full h-48"
               width={200}
               height={200}
               alt=""

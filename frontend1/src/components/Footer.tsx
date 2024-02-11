@@ -56,11 +56,10 @@ export function Footer() {
           </div>
         </div>
         <div className="lg:flex items-center justify-center text-white pb-2">
-          <div className="lg:w-1/3 lg:flex items-center lg:justify-start justify-center py-4 lg:py-0">
+          <div className="lg:w-1/3 flex lg:flex-row flex-col items-center lg:justify-start justify-center py-4 lg:py-0">
             <p className="w-18 py-1 border-t border-b border-yellow-600 text-sm font-light text-center">
               CONTACT
             </p>
-
             <p className="text-sm show_mobile text-center py-2">
               1st Floor, City Centre Mall, Sector 12, Dwarka
               <br />
@@ -93,7 +92,7 @@ export function Footer() {
               </form>
             </div>
           </div>
-          <div className="lg:w-1/3 lg:flex items-center lg:justify-end justify-center py-4 lg:py-0">
+          <div className="lg:w-1/3 flex lg:flex-row flex-col items-center lg:justify-end justify-center py-4 lg:py-0">
             <p className="w-30 py-1 border-t border-b border-yellow-600 text-sm font-light text-center">
               WORKING HOURS
             </p>
