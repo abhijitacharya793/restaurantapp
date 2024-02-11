@@ -17,8 +17,8 @@ export function Section1() {
             letters, as opposed to using Content here, content making.
           </p>
         </div>
-        <div className="flex mt-8">
-          <div className="w-1/2 mr-8 border border-black">
+        <div className="lg:flex mt-8">
+          <div className="lg:w-1/2 lg:mr-8 mx-4 border border-black">
             <Image
               width={100}
               height={100}
@@ -52,7 +52,7 @@ export function Section1() {
               </p>
             </div>
           </div>
-          <div className="w-1/2 border border-black">
+          <div className="lg:w-1/2 mx-4 mt-8 lg:m-0 border border-black">
             <Image
               width={100}
               height={100}
@@ -87,8 +87,8 @@ export function Section1() {
             </div>
           </div>
         </div>
-        <div className="flex mt-8">
-          <div className="w-1/2 mr-8 border border-black">
+        <div className="lg:flex mt-8">
+          <div className="lg:w-1/2 lg:mr-8 mx-4 border border-black">
             <Image
               width={100}
               height={100}
@@ -110,19 +110,18 @@ export function Section1() {
             </div>
             <div className="px-6 py-4">
               <div className="font-bold text-3xl mb-2 app-header">
-                An Evening of Elegance: Date Night at Café After Hours
+                <a href="/blog_single">
+                  An Evening of Elegance: Date Night at Café After Hours
+                </a>
               </div>
               <p className="text-gray-700 text-sm pt-2">
-                <a href="/blog_single">
-                  Capitalize on low-hanging fruit to identify a ballpark value
-                  added matrix economically and the creative activity to beta
-                  test override the food quality.
-                </a>
+                Capitalize on low-hanging fruit to identify a ballpark value
+                added matrix economically and the creative activity to beta test
+                override the food quality.
               </p>
             </div>
           </div>
-          {/*  */}
-          <div className="w-1/2 border border-black">
+          <div className="lg:w-1/2 mx-4 mt-8 lg:m-0 border border-black">
             <Image
               width={100}
               height={100}
@@ -145,8 +144,7 @@ export function Section1() {
             <div className="px-6 py-4">
               <div className="font-bold text-3xl mb-2 app-header">
                 <a href="/blog_single">
-                  Savor the Moment: Culinary Excellence and Crafted Cocktails
-                  Await at Café After Hours
+                  An Evening of Elegance: Date Night at Café After Hours
                 </a>
               </div>
               <p className="text-gray-700 text-sm pt-2">
@@ -156,7 +154,6 @@ export function Section1() {
               </p>
             </div>
           </div>
-          {/*  */}
         </div>
       </div>
     </>
