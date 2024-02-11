@@ -71,11 +71,7 @@ export function Footer() {
               <br />
               New Delhi - 110078
               <br />
-              <span className="text-app-yellow">+91 98102 52704</span>
-              <br />
-              <span className="text-app-yellow">+91 98103 63405</span>
-              <br />
-              benoit@mail.com
+              <span className="text-app-yellow">+91 98102 52704 / +91 98103 63405</span>
             </p>
           </div>
           <div className="w-1/3 flex items-center justify-center text-center">

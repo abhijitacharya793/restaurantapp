@@ -26,8 +26,8 @@ export function Header({ active_page }: HeaderProps) {
   return (
     <>
       {/* Header top */}
-      <div className="flex items-center lg:max-w-screen-lg sm:max-w-screen-sm mx-auto py-5 bg-app-purple">
-        <div className="h-44 w-1/3 flex items-center justify-start">
+      <div className="sm:flex items-center lg:max-w-screen-lg sm:max-w-screen-sm mx-auto py-5 bg-app-purple">
+        <div className="lg:h-44 xl:h-44 2xl:h-44 lg:w-1/3 flex items-center md:justify-start justify-center mx-auto">
           <AppButton
             color="border-app-yellow"
             fill="bg-app-purple"
@@ -38,7 +38,7 @@ export function Header({ active_page }: HeaderProps) {
             hover_fontcolor={"hover:text-app-purple"}
           />
         </div>
-        <div className="h-44 w-1/3 flex items-center justify-center">
+        <div className="lg:h-44 xl:h-44 2xl:h-44 lg:w-1/3 flex items-center justify-center mx-auto">
           <Image
             src="/logo1.svg"
             width={250}
@@ -47,7 +47,7 @@ export function Header({ active_page }: HeaderProps) {
             priority
           />
         </div>
-        <div className="h-44 w-1/3 flex items-center justify-end">
+        <div className="lg:h-44 xl:h-44 2xl:h-44 lg:w-1/3 flex items-center md:justify-end justify-center mx-auto">
           <AppButton
             color="border-app-yellow"
             fill="bg-app-yellow"
