@@ -3,9 +3,9 @@ import Image from "next/image";
 export function Section3() {
   return (
     <>
-      <div className="lg:max-w-screen-lg mx-auto flex text-left pt-20">
-        <div className="flex w-2/5 justify-start">
-          <div className="w-auto pr-16">
+      <div className="lg:max-w-screen-lg mx-auto lg:flex text-left pt-20 px-4 lg:px-0">
+        <div className="flex lg:w-2/5 justify-start">
+          <div className="w-auto lg:pr-16">
             <div>
               <p className="w-12 p-1 border-t border-b border-yellow-600 text-sm font-light">
                 MENU
