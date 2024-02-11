@@ -12,8 +12,8 @@ export function Section5() {
             Our special Offer dishes
           </p>
           <p className="pt-1 pb-4 text-sm text-app-gray w-96">
-            Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters, as opposed to using Content here, content making.
+            Our chefs create melt-in-your-mouth dishes that'll satiate even the
+            fussiest eaters now the dishes are in offers use it based on hunger.
           </p>
         </div>
         <div className="lg:flex">

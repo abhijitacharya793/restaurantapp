@@ -83,10 +83,10 @@ export function Section2() {
           <div className="lg:w-1/2 ml-8 mr-10 lg:mr-0">
             <h1 className="app-header text-3xl font-bold pb-2">The Story</h1>
             <p className="text-xs text-app-gray">
-              Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using &apos;Content here, content
-              gfshere&apos;, makinlook like readable English. Many desktop
-              publishing packages.
+              Welcome to Café After Hours (CAH), where we bring you the ultimate
+              restaurant and bar experience! We're thrilled to have you join us.
+              Step into our medieval-inspired ambiance and prepare yourself for
+              a culinary adventure like no other.
             </p>
             <div className="flex pt-4">
               <div className="w-1/2">

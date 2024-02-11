@@ -22,8 +22,8 @@ export function Section1() {
             </h1>
 
             <p className="text-sm text-white pt-8 lg:w-96 text-center px-10 lg:px-0 lg:text-left">
-              The people, food and the prime locations make the perfect place
-              good friends & family to come together and have great time.
+              One of the biggest party places in the heart of West Delhi with a
+              club and high energy bar vibe.
             </p>
             <div className="py-8 flex justify-center lg:justify-start">
               <a href="/menu">

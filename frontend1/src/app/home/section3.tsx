@@ -15,9 +15,11 @@ export function Section3() {
               Try Our Special Offers
             </p>
             <p className="pt-3 text-sm text-app-gray">
-              Lorem Ipsum is that it has a more-or-less normal distribution of
-              letters, as opposed to using &apos;Content here, content making it
-              look like readable English.
+              At CAH, we take pride in offering a diverse and tantalizing array
+              of multi-cuisine dishes that will ignite your taste buds. From
+              delectable appetizers that awaken your palate to decadent entrees
+              that leave you craving for more, our menu is designed to take you
+              on a journey of flavors.
             </p>
             <Image
               src="/menu1.jpg"
@@ -27,15 +29,17 @@ export function Section3() {
               className="pt-4"
             />
             <div className="pt-8">
-              <AppButton
-                color="border-app-yellow"
-                fill="bg-white"
-                fontcolor="text-yellow-600"
-                text="View Menu"
-                hover_color={"hover:border-app-yellow"}
-                hover_fill={"hover:bg-app-yellow"}
-                hover_fontcolor={"hover:text-app-purple"}
-              />
+              <a href="/menu">
+                <AppButton
+                  color="border-app-yellow"
+                  fill="bg-white"
+                  fontcolor="text-yellow-600"
+                  text="View Menu"
+                  hover_color={"hover:border-app-yellow"}
+                  hover_fill={"hover:bg-app-yellow"}
+                  hover_fontcolor={"hover:text-app-purple"}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -45,7 +49,7 @@ export function Section3() {
             {/* Menu items */}
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu2.jpg"
                   width="50"
                   height="50"
@@ -71,7 +75,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu3.svg"
                   width="50"
                   height="50"
@@ -95,7 +99,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu4.svg"
                   width="50"
                   height="50"
@@ -121,7 +125,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu5.svg"
                   width="50"
                   height="50"
@@ -151,7 +155,7 @@ export function Section3() {
             {/* Menu items */}
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu6.svg"
                   width="50"
                   height="50"
@@ -177,7 +181,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu7.svg"
                   width="50"
                   height="50"
@@ -203,7 +207,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu8.svg"
                   width="50"
                   height="50"
@@ -229,7 +233,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu9.svg"
                   width="50"
                   height="50"
@@ -259,7 +263,7 @@ export function Section3() {
             {/* Menu items */}
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu10.svg"
                   width="50"
                   height="50"
@@ -285,7 +289,7 @@ export function Section3() {
 
             <div className="flex py-4">
               <div className="pr-2">
-                <Image 
+                <Image
                   src="/menu11.svg"
                   width="50"
                   height="50"
