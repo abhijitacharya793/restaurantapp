@@ -20,7 +20,7 @@ export default function Home() {
       <PageWrapper>
         <div className="relative">
           <div
-            className="fixed inset-0 bg-cover bg-center z-[-10]"
+            className="fixed inset-0 bg-cover bg-center z-[-10] hide_img_mobile"
             style={{ backgroundImage: "url('/home.jpg')" }}
           />
           <div className="relative z-10">
@@ -40,7 +40,7 @@ export default function Home() {
               <div className="bg-app-purple">
                 <Section4 />
               </div>
-              <div className="w-full h-64 overflow-hidden">
+              <div className="w-full h-64 overflow-hidden hide_img_mobile">
                 <div className="w-12 h-12"></div>
               </div>
               <div className="bg-white">
