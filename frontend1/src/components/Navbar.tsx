@@ -23,16 +23,18 @@ export function Navbar() {
     { href: "/blog", text: "blog", margin: "mr-4" },
     { href: "/contact", text: "contact", margin: "mr-8" },
   ];
+
   const path = usePathname();
+
   return (
     <>
       <div className="lg:max-w-screen-lg mx-auto flex text-left py-2">
         {/* Hamburger Menu Icon */}
         <div
-          className="block lg:hidden cursor-pointer items-center "
+          className="block lg:hidden cursor-pointer items-center bg-white mx-2 h-10"
           onClick={toggleMenu}
         >
-          <Bars3Icon className="w-6 h-6 text-white mx-6 my-2" />
+          <Bars3Icon className="w-6 h-6 text-black mx-4 my-2" />
         </div>
 
         {/* Navigation Links */}

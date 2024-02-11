@@ -9,12 +9,12 @@ export function Section4() {
           <p className="app-header text-3xl font-bold pb-3 pt-4 text-white">
             What Our Clients Say
           </p>
-          <div className="flex items-center w-full justify-center text-center text-white">
-          `&quot;Leverage agile frameworks to provide a robust synopsis for high
-            level overviews. Iterative approaches to corporate strategy foster
-            collaborative thinking further overall value proposition
+          <p className="flex items-center w-full justify-center text-center text-white font-light px-4 lg:mx-0">
+            &quot;Leverage agile frameworks to provide a robust synopsis for
+            high level overviews. Iterative approaches to corporate strategy
+            foster collaborative thinking further overall value proposition
             organicallfriendly.
-          </div>
+          </p>
         </div>
       </div>
     </>
