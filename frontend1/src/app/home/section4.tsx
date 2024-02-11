@@ -98,7 +98,7 @@ export function Section4() {
           in an email.
         </p>
         <div className="">
-          <SimpleSlider slides={slides} />
+          <SimpleSlider />
         </div>
       </div>
     </>
