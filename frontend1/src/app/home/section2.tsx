@@ -104,13 +104,6 @@ export function Section2() {
               </div>
             </div>
             <p className="pt-8">Sunil Luthra</p>
-            <Image
-              src="/sign.svg"
-              width="100"
-              height="100"
-              alt="home"
-              className="pt-2 "
-            />
           </div>
         </div>
       </motion.div>

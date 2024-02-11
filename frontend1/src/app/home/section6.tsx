@@ -16,26 +16,26 @@ export function Section6() {
   };
   const slides: Slide[] = [
     {
-      name: "Chicken Manjoori",
-      image: "/popular1.svg",
+      name: "Fresh and fruity",
+      image: "/popular1.jpg",
       description: "Lorem Ipsum is that it has a more-or-less normal",
       price: "15",
     },
     {
-      name: "Chicken Manjoori",
-      image: "/popular2.svg",
+      name: "Veg spring roll",
+      image: "/popular2.jpg",
       description: "Lorem Ipsum is that it has a more-or-less normal",
       price: "15",
     },
     {
-      name: "Chicken Manjoori",
-      image: "/popular3.svg",
+      name: "Dark side of moon",
+      image: "/popular3.jpg",
       description: "Lorem Ipsum is that it has a more-or-less normal",
       price: "15",
     },
     {
-      name: "Chicken Manjoori",
-      image: "/popular4.svg",
+      name: "Soya chaap tikka",
+      image: "/popular4.jpg",
       description: "Lorem Ipsum is that it has a more-or-less normal",
       price: "15",
     },

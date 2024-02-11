@@ -34,14 +34,6 @@ export function Section1() {
               </p>
 
               <p className="pt-2">Sunil Luthra</p>
-              {/* <Image
-                src="/sign.svg"
-                width="100"
-                height="100"
-                alt="home"
-                className="pt-2"
-                priority
-              /> */}
               <div className="py-4">
                 <AppButton
                   color={"border-app-yellow"}
