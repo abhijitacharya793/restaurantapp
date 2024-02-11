@@ -16,11 +16,11 @@ export function Section5() {
             letters, as opposed to using Content here, content making.
           </p>
         </div>
-        <div className="flex ">
-          <div className="w-1/2 mr-4">
+        <div className="lg:flex">
+          <div className="lg:w-1/2 px-4 lg:px-0">
             <Image alt="" width={500} height={500} src="/offer1.svg" />
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2 px-4 lg:px-0">
             <Image alt="" width={500} height={500} src="/offer2.svg" />
           </div>
         </div>

@@ -6,7 +6,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export function Section4() {
-  const slides = [
+  type Slide = {
+    name: string;
+    image: string;
+    location: string;
+    testimonial: string;
+  };
+  const slides: Slide[] = [
     {
       name: "Daniyal Sppra",
       image: "/testimonial1.svg",
@@ -38,7 +44,7 @@ export function Section4() {
     slidesToScroll: 1,
   };
 
-  const SimpleSlider = ({ slides }) => {
+  const SimpleSlider = () => {
     return (
       <Slider {...settings}>
         {slides.map((slide, index) => (
