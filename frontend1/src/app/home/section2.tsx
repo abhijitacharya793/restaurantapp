@@ -69,7 +69,7 @@ export function Section2() {
         </div>
         {/* P2 */}
         <div className="lg:max-w-screen-lg mx-auto flex pt-10 pb-20">
-          <div className="w-1/2 border-r border-gray-300 pr-4 hide_img_mobile">
+          <div className="w-1/2 border-r border-gray-300 pr-4 hide_mobile">
             <div className="flex w-full items-center justify-left">
               <Image
                 src="/story1.jpg"

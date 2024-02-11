@@ -47,7 +47,7 @@ export function Section1() {
               alt="home"
               width={450}
               height={700}
-              className="rounded-t-full border-18 border-white border-opacity-20 hide_img_mobile"
+              className="rounded-t-full border-18 border-white border-opacity-20 hide_mobile"
               priority
             />
           </div>
@@ -57,7 +57,7 @@ export function Section1() {
               alt="home"
               width={256}
               height={256}
-              className="justify-end w-64 h-64 hide_img_mobile"
+              className="justify-end w-64 h-64 hide_mobile"
               priority
             />
           </div>
