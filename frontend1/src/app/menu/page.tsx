@@ -14,7 +14,7 @@ export default function Menu() {
           </p>
         </div>
         <div className="bg-white py-20">
-          <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex">
+          <div className="lg:max-w-screen-lg mx-auto flex">
             <div className="w-2/5">
               <Image
                 src="/menu12.svg"

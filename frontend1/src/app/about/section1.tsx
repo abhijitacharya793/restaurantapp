@@ -4,7 +4,7 @@ import Image from "next/image";
 export function Section1() {
   return (
     <>
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex items-center ">
+      <div className="lg:max-w-screen-lg mx-auto flex items-center ">
         <div className="w-1/2 py-10">
           <div>
             <p className="w-24 p-1 border-t border-b border-yellow-600 text-sm font-light">

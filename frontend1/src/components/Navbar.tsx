@@ -26,7 +26,7 @@ export function Navbar() {
   const path = usePathname();
   return (
     <>
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-left py-2">
+      <div className="lg:max-w-screen-lg mx-auto flex text-left py-2">
         {/* Hamburger Menu Icon */}
         <div
           className="block lg:hidden cursor-pointer items-center "

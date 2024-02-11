@@ -4,7 +4,7 @@ import Image from "next/image";
 export function Section6() {
   return (
     <>
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto pb-10">
+      <div className="lg:max-w-screen-lg mx-auto pb-10">
         <div className="flex flex-col items-center justify-center">
           <p className="w-12 p-1 border-t border-b border-yellow-600 text-sm font-light">
             MENU

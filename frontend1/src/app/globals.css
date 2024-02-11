@@ -76,3 +76,9 @@ body.loading #content {
 .rotate {
   animation: spin 7s linear infinite; /* Adjust the duration or timing function as needed */
 }
+
+@media (max-width: 767px) {
+  .hide_img_mobile {
+    display: none; /* Hide the image on mobile devices */
+  }
+}

@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <>
       {/* Footer top */}
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto pb-20">
+      <div className="lg:max-w-screen-lg mx-auto pb-20">
         <div className="flex items-center justify-center py-4">
           <div className="h-44 w-1/3 flex items-center justify-start">
             <a

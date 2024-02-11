@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Section3() {
   return (
     <>
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto flex text-left pt-20">
+      <div className="lg:max-w-screen-lg mx-auto flex text-left pt-20">
         <div className="flex w-2/5 justify-start">
           <div className="w-auto pr-16">
             <div>

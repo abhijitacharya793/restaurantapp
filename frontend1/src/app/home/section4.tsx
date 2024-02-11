@@ -21,7 +21,7 @@ export function Section4() {
 
   return (
     <>
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto py-20">
+      <div className="lg:max-w-screen-lg mx-auto py-20">
         <div>
           <p className="w-24 p-1 border-t border-b border-yellow-600 text-white text-sm font-light ">
             TESTIMONIAL

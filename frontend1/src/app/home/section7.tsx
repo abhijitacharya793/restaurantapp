@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Section7() {
   return (
     <>
-      <div className="lg:max-w-screen-lg sm:max-w-screen-sm mx-auto pb-10 flex items-center py-20">
+      <div className="lg:max-w-screen-lg mx-auto pb-10 flex items-center py-20">
         <div className="w-2/5 text-white">
           <p className="w-32 p-1 border-t border-b border-yellow-600 text-sm font-light">
             WHAT WE OFFER
