@@ -16,8 +16,8 @@ export function Section8() {
             letters, as opposed to using Content here, content making.
           </p>
         </div>
-        <div className="flex mt-8">
-          <div className="w-1/2 mr-8 border border-black">
+        <div className="lg:flex mt-8">
+          <div className="lg:w-1/2 lg:mr-8 border border-black m-4 lg:m-0">
             <Image width={100} height={100} className="w-full" src="/blog1.svg" alt="Placeholder image" />
             <div className="flex w-1/2">
               <div className="px-6 py-4">
@@ -42,7 +42,7 @@ export function Section8() {
               </p>
             </div>
           </div>
-          <div className="w-1/2 border border-black">
+          <div className="lg:w-1/2 border border-black m-4 lg:m-0">
             <Image width={100} height={100} className="w-full" src="/blog2.svg" alt="Placeholder image" />
             <div className="flex w-1/2">
               <div className="px-6 py-4">
