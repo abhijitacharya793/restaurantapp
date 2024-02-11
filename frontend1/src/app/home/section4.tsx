@@ -4,6 +4,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useState } from "react";
 
 export function Section4() {
   type Slide = {
@@ -36,14 +37,21 @@ export function Section4() {
     },
   ];
 
+  const [slidesCount, setSlidesCount] = useState(1);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: (window.innerWidth < 768 && 1) || 3,
+    slidesToShow: slidesCount,
     slidesToScroll: 1,
   };
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setSlidesCount((window.innerWidth < 767 && 1) || 3);
+    }
+  }, []);
   const SimpleSlider = () => {
     return (
       <Slider {...settings}>
