@@ -13,7 +13,7 @@ export function Section1() {
               alt="home"
               width={450}
               height={700}
-              className="h-96 w-auto"
+              className="lg:h-96 lg:w-auto w-full"
             />
           </div>
           <div className="lg:w-1/4 px-4 py-2 lg:px-2 lg:py-0">
@@ -22,7 +22,7 @@ export function Section1() {
               alt="home"
               width={450}
               height={700}
-              className="h-96 w-auto"
+              className="lg:h-96 lg:w-auto w-full"
             />
           </div>
           <div className="lg:w-1/2 px-4 py-2 lg:px-2 lg:py-0">
@@ -31,7 +31,7 @@ export function Section1() {
               alt="home"
               width={450}
               height={700}
-              className="h-96 w-auto"
+              className="lg:h-96 lg:w-auto w-full"
             />
           </div>
         </div>
@@ -43,7 +43,7 @@ export function Section1() {
               alt="home"
               width={450}
               height={700}
-              className="h-96 w-auto"
+              className="lg:h-96 lg:w-auto w-full"
             />
           </div>
           <div className="lg:w-1/4 px-4 py-2 lg:px-2 lg:py-0">
@@ -52,7 +52,7 @@ export function Section1() {
               alt="home"
               width={450}
               height={700}
-              className="h-96 w-auto"
+              className="lg:h-96 lg:w-auto w-full"
             />
           </div>
           <div className="lg:w-1/4 px-4 py-2 lg:px-2 lg:py-0">
@@ -61,7 +61,7 @@ export function Section1() {
               alt="home"
               width={450}
               height={700}
-              className="h-96 w-auto"
+              className="lg:h-96 lg:w-auto w-full"
             />
           </div>
         </div>
