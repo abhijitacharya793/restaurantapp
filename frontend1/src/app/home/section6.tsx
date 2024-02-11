@@ -18,13 +18,13 @@ export function Section6() {
           </p>
         </div>
         <div className="lg:flex px-4 lg:px-0">
-          <div className="lg:w-1/4">
+          <div className="lg:w-1/4 lg:mr-4 mb-8 lg:mb-0">
             <Image
               alt=""
-              width={500}
-              height={500}
+              width={300}
+              height={300}
               src="/popular1.svg"
-              className="flex justify-center"
+              className=""
             />
             <div className="flex my-2 app-header font-bold text-xl">
               <p className="w-full">Chicken Manjoori</p>
@@ -34,11 +34,12 @@ export function Section6() {
               Lorem Ipsum is that it has a more-or-less normal
             </p>
           </div>
-          <div className="lg:w-1/4">
+          <hr className="border border-slate-500  show_mobile" />
+          <div className="lg:w-1/4 lg:mr-4 my-8 lg:my-0">
             <Image
               alt=""
-              width={500}
-              height={500}
+              width={300}
+              height={300}
               src="/popular2.svg"
               className="flex justify-center"
             />
@@ -50,11 +51,12 @@ export function Section6() {
               Lorem Ipsum is that it has a more-or-less normal
             </p>
           </div>
-          <div className="lg:w-1/4">
+          <hr className="border border-slate-500  show_mobile" />
+          <div className="lg:w-1/4 lg:mr-4 my-8 lg:my-0">
             <Image
               alt=""
-              width={500}
-              height={500}
+              width={300}
+              height={300}
               src="/popular3.svg"
               className="flex justify-center"
             />
@@ -66,11 +68,12 @@ export function Section6() {
               Lorem Ipsum is that it has a more-or-less normal
             </p>
           </div>
-          <div className="lg:w-1/4">
+          <hr className="border border-slate-500  show_mobile" />
+          <div className="lg:w-1/4 mt-8 lg:mt-0">
             <Image
               alt=""
-              width={500}
-              height={500}
+              width={300}
+              height={300}
               src="/popular4.svg"
               className="flex justify-center"
             />
