@@ -40,7 +40,7 @@ export function Header({ active_page }: HeaderProps) {
         </div>
         <div className="lg:h-44 xl:h-44 2xl:h-44 lg:w-1/3 flex items-center justify-center">
           <Image
-            className="h-48"
+            className="h-36"
             src="/logo1.svg"
             width={250}
             height={80}
