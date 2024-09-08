@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-header {
+  font-family: "Cormorant Infant";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p,
+div,
+.app-text {
+  font-family: "Josefin Sans";
+}
+
+.app-pattern {
+  right: -80px;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Adjust as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d1d5db; /* Adjust the color */
+  border-radius: 2.5px; /* Half of the width for a rounded look */
+}
+
+/* LOADING */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border-top-color: #3498db;
+  animation: spin 1s infinite linear;
+}
+
+/* Hide scrollbar while loading */
+body.loading {
+  overflow: hidden;
+}
+
+/* Show content after loading */
+body.loading #content {
+  display: block;
+}
+
+/* FADE */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+/* ROTATE */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: spin 7s linear infinite; /* Adjust the duration or timing function as needed */
+}
+
+@media (max-width: 767px) {
+  .hide_mobile {
+    display: none; /* Hide the image on mobile devices */
+  }
+}
+
+@media (min-width: 767px) {
+  .show_mobile {
+    display: none; /* Hide the image on mobile devices */
+  }
+}
