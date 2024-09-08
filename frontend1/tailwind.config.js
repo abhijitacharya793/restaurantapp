@@ -23,7 +23,7 @@ module.exports = {
     extend: {
       colors: {
         "app-yellow": "#E1B168",
-        "app-purple": "#212529",
+        "app-purple": "#3C1742", //#212529
         "app-dark-purple": "#230a28",
         "app-gray": "#555555",
         "app-green": "#A0AEAF",
