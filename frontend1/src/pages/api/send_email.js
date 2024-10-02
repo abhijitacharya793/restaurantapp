@@ -16,7 +16,7 @@ export default async function handler(req, res) {
             await transporter.sendMail({
                 from: "abhijitacharya793@gmail.com", // Sender address
                 to: "abhijitacharya793@gmail.com", // Recipient address
-                subject: subject, // Subject line 
+                subject: subject, // Subject line
                 text: message, // Plain text body
             });
             res.status(200).json({ message: 'Email sent successfully' });
