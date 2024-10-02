@@ -1,8 +1,50 @@
+"use client";
+import { useState } from "react";
 import { AppButton } from "@/components/AppButton";
 import Image from "next/image";
 
 // TODO: Reservation
 export function Reservation() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState(0);
+  const [persons, setPersons] = useState(0);
+  const [timing, setTiming] = useState("");
+  const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // VALIDATE INPUTS
+    if (phoneNumber < 1000000000 || phoneNumber > 9999999999) {
+      setStatus("Invalid Phone number.");
+      return;
+    }
+    if (persons <= 0 || persons > 10) {
+      setStatus("Please set persons between 1 and 10.");
+      return;
+    }
+    console.log("############# Calling api #############");
+
+    const response = await fetch("/api/send_email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        subject: `Reservation from ${name}`,
+        message: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nPersons: ${persons}\nTiming: ${timing}\nDate: ${date}`,
+      }),
+    });
+
+    if (response.ok) {
+      setStatus("Reservation created!");
+    } else {
+      setStatus("Failed to send reservation request.");
+    }
+  };
+
   return (
     <>
       <div className="relative bg-gray-100 min-h-screen flex items-center justify-center">
@@ -15,7 +57,7 @@ export function Reservation() {
         />
 
         <div className="relative z-10 bg-app-dark-purple lg:p-8 opacity-90 mx-4">
-          <form className="lg:p-20 p-8">
+          <form className="lg:p-20 p-8" onSubmit={handleSubmit}>
             <div className="mb-4 flex flex-col justify-center items-center">
               <p className="w-24 py-1 border-t border-b border-yellow-600 text-sm font-light text-white">
                 RESERVATION
@@ -26,41 +68,67 @@ export function Reservation() {
 
               <div className="lg:flex w-full justify-start lg:justify-center">
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
+                  type="text"
+                  id="name"
+                  name="name"
                   placeholder="Name"
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-transparent mr-3 mb-3"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mb-3"
                 />
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="Email"
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-transparent mb-3"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mb-3"
                 />
               </div>
               <div className="lg:flex w-full">
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Person"
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-transparent mr-3"
+                  type="number"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  placeholder="Phone Number (Eg. 77163 282492)"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  required
+                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
+                />
+              </div>
+              <div className="lg:flex w-full">
+                <input
+                  type="number"
+                  id="persons"
+                  name="persons"
+                  placeholder="Persons"
+                  value={persons}
+                  onChange={(e) => setPersons(e.target.value)}
+                  required
+                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
                 />
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Timing"
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-transparent mr-3"
+                  type="text"
+                  id="timing"
+                  name="timing"
+                  placeholder="Timing (Eg. 12 pm)"
+                  value={timing}
+                  onChange={(e) => setTiming(e.target.value)}
+                  required
+                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
                 />
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Date"
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-transparent"
+                  type="date"
+                  id="date"
+                  name="date"
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
+                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black"
+                  required
                 />
               </div>
             </div>
@@ -76,6 +144,7 @@ export function Reservation() {
                 hover_fontcolor={"hover:text-app-purple"}
               />
             </div>
+            {status && <p className="text-center text-white mt-4">{status}</p>}
           </form>
         </div>
       </div>
