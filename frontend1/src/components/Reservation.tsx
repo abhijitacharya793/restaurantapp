@@ -7,21 +7,24 @@ import Image from "next/image";
 export function Reservation() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState(0);
-  const [persons, setPersons] = useState(0);
+  const [phoneNumber, setPhoneNumber] = useState("0");
+  const [persons, setPersons] = useState("0");
   const [timing, setTiming] = useState("");
   const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
   const [status, setStatus] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // VALIDATE INPUTS
-    if (phoneNumber < 1000000000 || phoneNumber > 9999999999) {
+    if (
+      parseInt(phoneNumber) < 1000000000 ||
+      parseInt(phoneNumber) > 9999999999
+    ) {
       setStatus("Invalid Phone number.");
       return;
     }
-    if (persons <= 0 || persons > 10) {
+    if (parseInt(persons) <= 0 || parseInt(persons) > 10) {
       setStatus("Please set persons between 1 and 10.");
       return;
     }
