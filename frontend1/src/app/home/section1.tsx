@@ -1,13 +1,66 @@
 "use client";
 import Image from "next/image";
+import { useState } from "react";
 
 import { AppButton } from "@/components/AppButton";
 
 import { motion } from "framer-motion";
 
 export function Section1() {
+  const slides = [
+    { id: 1, src: "/home1.jpg" },
+    { id: 2, src: "/home2.jpg" },
+    { id: 3, src: "/home3.jpg" },
+    { id: 4, src: "/home4.jpg" },
+  ];
+  const [index, setIndex] = useState(0);
+
+  const nextSlide = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+  };
   return (
     <>
+      <div className="relative w-full overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${index * 100}%)` }}
+        >
+          {slides.map((slide) => (
+            <div key={slide.id} className="min-w-full">
+              <Image
+                className="w-full h-auto"
+                src={slide.src}
+                width={2500}
+                height={1000}
+                alt="logo"
+                priority
+              />
+              {/* <img
+                src={slide.src}
+                alt={`Slide ${slide.id}`}
+                className="w-full h-auto"
+              /> */}
+            </div>
+          ))}
+        </div>
+        <button
+          onClick={prevSlide}
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-lg p-2"
+        >
+          ❮
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-lg p-2"
+        >
+          ❯
+        </button>
+      </div>
+      {/* #################################### */}
       <div className="lg:max-w-screen-lg mx-auto lg:flex text-center">
         <div className="lg:w-1/2 flex items-center">
           <motion.div
