@@ -9,9 +9,9 @@ export function Section5() {
           <p className="app-header text-3xl font-bold pb-3 pt-4 text-white">
             Welcome to Cafe After Hours
           </p>
-          <p className="flex items-center w-full justify-center text-white font-thin px-4">
+          <p className="text-white font-thin px-4 text-justify">
             Welcome to Café After Hours (CAH), where we bring you the ultimate
-            restaurant and bar experience! We&quot;re thrilled to have you join us.
+            restaurant and bar experience! We&apos;re thrilled to have you join us.
             Step into our medieval-inspired ambiance and prepare yourself for a
             culinary adventure like no other.
             <br /> At CAH, we take pride in offering a diverse and tantalizing
@@ -19,9 +19,9 @@ export function Section5() {
             delectable appetizers that awaken your palate to decadent entrees
             that leave you craving for more, our menu is designed to take you on
             a journey of flavors. <br />
-            But it&quot;s not just about the food. We believe that ambiance plays a
-            crucial role in creating a memorable dining experience. That&quot;s why
-            we&quot;ve created an enchanting atmosphere that will transport you to
+            But it&apos;s not just about the food. We believe that ambiance plays a
+            crucial role in creating a memorable dining experience. That&apos;s why
+            we&apos;ve created an enchanting atmosphere that will transport you to
             another time and place. Prepare to be spellbound as you soak in the
             medieval-inspired decor and lose yourself in the captivating
             surroundings.

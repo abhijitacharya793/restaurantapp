@@ -15,25 +15,25 @@ export function Section4() {
   };
   const slides: Slide[] = [
     {
-      name: "Daniyal Sppra",
+      name: "Dipesh Jha",
       image: "/testimonial1.svg",
-      location: "",
+      location: "Food: 5/5 | Service: 5/5 | Atmosphere: 5/5",
       testimonial:
-        "&quot;It is professional, considers everyone&apos;s time, can think about the There are many variations of passages whole probls small niche, friendly.&quot;",
+        "'It was a wonderful experience dining there.. I went there with our friends. We tried north indian cuisine. The taste of food was awesome.. The service is between moderate to good...and the ambience is also awesome.. Rate is genuine .. The outdoor place for dining is quite wonderful and it looks more awesome at night The metro facing view makes it more good....'",
     },
     {
-      name: "Natasha D",
-      image: "/testimonial2.svg",
-      location: "",
-      testimonial:
-        "&quot;It is professional, considers everyone&apos;s time, can think about the There are many variations of passages whole probls small niche, friendly.&quot;",
-    },
-    {
-      name: "Jack Sparrow",
+      name: "Jitya Saji",
       image: "/testimonial3.svg",
-      location: "",
+      location: "Food: 5/5 | Service: 5/5 | Atmosphere: 5/5",
       testimonial:
-        "&quot;It is professional, considers everyone&apos;s time, can think about the There are many variations of passages whole probls small niche, friendly.&quot;",
+        "'The FOOD is Amazing!I Loved the ambiance since it has both outdoor and indoor sitting and is very aesthetic. The service is great. They are always available if you need help with anything. This place is our new meet up and party spot.'",
+    },
+    {
+      name: "Vaishali Sethi",
+      image: "/testimonial2.svg",
+      location: "Food: 5/5 | Service: 5/5 | Atmosphere: 5/5",
+      testimonial:
+        "'It was a beautiful evening, Pretty happening place with both indoor and outdoor seating. Great flavour and texture - definitely recommend. Service was prompt and efficient. It is also really friendly staff Like UMA, SANA, KAVITA I Tried cold coffee Mocktail, Pizza, Brownies'",
     },
   ];
 
@@ -71,15 +71,13 @@ export function Section4() {
                     <h2 className="font-semibold text-lg text-white">
                       {slide.name}
                     </h2>
-                    <p className="text-app-yellow">Newyork</p>
+                    <p className="text-app-yellow">{slide.location}</p>
                   </div>
                 </div>
                 <hr className="border border-slate-500 my-3" />
                 <div className="mt-4">
                   <p className="app-header text-white italic">
-                    &quot;It is professional, considers everyone&apos;s time,
-                    can think about the There are many variations of passages
-                    whole probls small niche, friendly.&quot;
+                    {slide.testimonial}
                   </p>
                 </div>
               </div>

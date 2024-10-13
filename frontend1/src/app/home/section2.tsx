@@ -84,7 +84,7 @@ export function Section2() {
             <h1 className="app-header text-3xl font-bold pb-2">The Story</h1>
             <p className="text-xs text-app-gray">
               Welcome to Café After Hours (CAH), where we bring you the ultimate
-              restaurant and bar experience! We&quot;re thrilled to have you
+              restaurant and bar experience! We&apos;re thrilled to have you
               join us. Step into our medieval-inspired ambiance and prepare
               yourself for a culinary adventure like no other.
             </p>

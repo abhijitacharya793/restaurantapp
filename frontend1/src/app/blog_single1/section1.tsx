@@ -54,7 +54,7 @@ export function Section1() {
                 creativity with premium spirits. <br />
                 <br />
                 Nestled in an inviting ambience, Café After Hours is not just a
-                destination; it&quot;s an epicurean escape. Immerse yourself in the
+                destination; it&apos;s an epicurean escape. Immerse yourself in the
                 perfect blend of savory delights and handcrafted libations,
                 creating a sensory experience that lingers long after the last
                 sip. Join us at the intersection of culinary artistry and

@@ -14,7 +14,7 @@ export function Section1() {
               <p className="app-header text-3xl font-bold pt-3">
                 Quality and Experience
               </p>
-              <p className="pt-3 text-sm text-app-gray font-light mr-10">
+              <p className="pt-3 text-sm text-app-gray1 font-light mr-10 text-justify">
                 Our CEO, Mr. Sunil Luthra is incredibly passionate about our
                 restaurants and the F&B Industry. He envisions it as a vibrant
                 and welcoming space where people can gather to enjoy delicious
@@ -27,7 +27,7 @@ export function Section1() {
                 various dietary preferences. He is dedicated to fostering a
                 positive work culture, ensuring that our team is motivated,
                 well-trained, and shares the same passion for delivering
-                exceptional hospitality. Overall, our CEO&quot;s vision for the
+                exceptional hospitality. Overall, our CEO&apos;s vision for the
                 restaurant is to be a place where people can indulge in
                 outstanding culinary experiences while feeling like they are
                 part of a larger community.

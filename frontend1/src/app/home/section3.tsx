@@ -14,12 +14,18 @@ export function Section3() {
             <p className="app-header text-3xl font-bold pt-3">
               Try Our Special Offers
             </p>
-            <p className="pt-3 text-sm text-app-gray">
-              At CAH, we take pride in offering a diverse and tantalizing array
-              of multi-cuisine dishes that will ignite your taste buds. From
-              delectable appetizers that awaken your palate to decadent entrees
-              that leave you craving for more, our menu is designed to take you
-              on a journey of flavors.
+            <p className="pt-3 text-sm text-app-gray text-justify">
+              At Cafe After Hours, our menu is a culinary journey that blends
+              flavors from around the world. From comforting classics to
+              innovative fusion dishes, every plate is thoughtfully crafted to
+              offer something unique.
+            </p>
+            <p className="pt-3 text-sm text-app-gray text-justify">
+              Whether you&apos;re in the mood for light bites or a hearty meal, our
+              multi-cuisine menu features an array of international flavors,
+              complemented by handcrafted beverages and signature cocktails.
+              Each dish is designed to delight, making every visit a new
+              experience to savor.
             </p>
             <Image
               src="/menu1.jpg"

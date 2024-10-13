@@ -88,3 +88,18 @@ body.loading #content {
     display: none; /* Hide the image on mobile devices */
   }
 }
+
+
+.slider-container {
+  height: 400px; /* Adjust as needed */
+  display: flex;
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distributes space evenly */
+  height: 100%; /* Ensures content fills the container */
+}

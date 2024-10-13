@@ -16,7 +16,8 @@ export function Section7() {
             content making it look like readable English.{" "}
           </p>
         </div>
-        <div className="lg:w-1/5 text-white text-center flex flex-col justify-center items-center h-48 bg-app-dark-purple lg:mr-4 my-4 lg:my-0">
+        {/* TODO: */}
+        {/* <div className="lg:w-1/5 text-white text-center flex flex-col justify-center items-center h-48 bg-app-dark-purple lg:mr-4 my-4 lg:my-0">
           <Image
             width={100}
             height={100}
@@ -35,7 +36,7 @@ export function Section7() {
             alt=""
           />
           <div className="text-xl pt-4">Special Menus</div>
-        </div>
+        </div> */}
         <div className="lg:w-1/5 text-white text-center flex flex-col justify-center items-center h-48 bg-app-dark-purple my-4 lg:my-0">
           <Image
             width={100}
