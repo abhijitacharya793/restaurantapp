@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { AppButton } from "./AppButton";
 
@@ -9,7 +12,8 @@ export function Footer() {
         <div className="lg:flex items-center justify-center py-4">
           <div className="lg:h-44 lg:w-1/3 flex items-center lg:justify-start justify-center">
             <a
-              href="https://www.instagram.com/cafe_after_hours"
+              target="_blank"
+              href="https://www.instagram.com/cafeafterhours?igsh=eHd4bDdoazRneXh4&utm_source=qr"
               className="text-white underline"
             >
               #CafeAfterHours
@@ -24,36 +28,65 @@ export function Footer() {
               alt="logo"
             />
           </div>
-          <div className="lg:h-44 lg:w-1/3 flex items-center lg:justify-end justify-center">
-            <Image
-              alt=""
-              width={100}
-              height={100}
-              src="/insta.svg"
-              className="h-5 w-5 mx-2"
-            />
-            <Image
-              alt=""
-              width={100}
-              height={100}
-              src="/facebook.svg"
-              className="h-5 w-5 mx-2"
-            />
-            <Image
-              alt=""
-              width={100}
-              height={100}
-              src="https://assets-global.website-files.com/622856f73bdd0f82f7741cb2/655afe9f73021a4d4bc26a34_social-white-icon-3.svg"
-              className="h-5 w-5 mx-2"
-            />
-            <Image
-              alt=""
-              width={100}
-              height={100}
-              src="/pintrest.svg"
-              className="h-5 w-5 mx-2"
-            />
-          </div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="lg:h-44 lg:w-1/3 flex items-center lg:justify-end justify-center"
+          >
+            <a
+              href="https://www.instagram.com/cafeafterhours?igsh=eHd4bDdoazRneXh4&utm_source=qr"
+              target="_blank"
+            >
+              <Image
+                alt=""
+                width={100}
+                height={100}
+                src="/insta.svg"
+                className="h-5 w-5 mx-4"
+              />
+            </a>
+            <a href="https://www.facebook.com/CafeAfterHours" target="_blank">
+              <Image
+                alt=""
+                width={100}
+                height={100}
+                src="/facebook.svg"
+                className="h-5 w-5 mx-4"
+              />
+            </a>
+            <a href="mailto:Cafeafterhours@gmail.com" target="_blank">
+              <Image
+                alt=""
+                width={100}
+                height={100}
+                src="/email.svg"
+                className="h-5 w-5 mx-4"
+              />
+            </a>
+            {/* <a
+              href="https://www.instagram.com/cafe_after_hours/"
+              target="_blank"
+            >
+              <Image
+                alt=""
+                width={100}
+                height={100}
+                src="https://assets-global.website-files.com/622856f73bdd0f82f7741cb2/655afe9f73021a4d4bc26a34_social-white-icon-3.svg"
+                className="h-5 w-5 mx-4"
+              />
+            </a> */}
+            {/* <a
+              href="https://www.instagram.com/cafe_after_hours/"
+              target="_blank"
+            >
+              <Image
+                alt=""
+                width={100}
+                height={100}
+                src="/pintrest.svg"
+                className="h-5 w-5 mx-4"
+              />
+            </a> */}
+          </motion.div>
         </div>
         <div className="lg:flex items-center justify-center text-white pb-2">
           <div className="lg:w-1/3 flex lg:flex-row flex-col items-center lg:justify-start justify-center py-4 lg:py-0">
@@ -110,11 +143,12 @@ export function Footer() {
             <p className="text-sm ">
               1st Floor, City Centre Mall, Sector 12, Dwarka
               <br />
-              New Delhi - 110078
+              New Delhi - 110075
               <br />
               <span className="text-app-yellow">
                 +91 98102 52704 / +91 98103 63405
               </span>
+              <span className="text-app-yellow">Cafeafterhours@gmail.com</span>
             </p>
           </div>
           <div className="w-1/3 flex items-center justify-center text-center">

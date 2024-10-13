@@ -61,7 +61,7 @@ export function Section1() {
         </button>
       </div>
       {/* #################################### */}
-      <div className="lg:max-w-screen-lg mx-auto lg:flex text-center">
+      {/* <div className="lg:max-w-screen-lg mx-auto lg:flex text-center">
         <div className="lg:w-1/2 flex items-center">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -115,7 +115,7 @@ export function Section1() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

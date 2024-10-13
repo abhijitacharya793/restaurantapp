@@ -83,7 +83,7 @@ export function Section1() {
                   <div className="w-3/6 pl-2 mx-4">
                     <p className="text-lg app-header font-bold">Reservation</p>
                     <p className="text-xs text-app-gray">
-                      hirestaurantate@gmail.com
+                      cafeafterhours@gmail.com
                     </p>
                   </div>
                 </div>

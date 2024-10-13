@@ -70,7 +70,10 @@ export function Navbar() {
           whileHover={{ scale: 1.1 }}
           className="flex w-full sm:w-1/2 md:w-1/4 lg:w-1/12 h-10 py-2 justify-end"
         >
-          <a href="https://www.instagram.com/cafe_after_hours/" target="_blank">
+          <a
+            href="https://www.instagram.com/cafeafterhours?igsh=eHd4bDdoazRneXh4&utm_source=qr"
+            target="_blank"
+          >
             <Image
               alt=""
               width={100}
@@ -79,7 +82,7 @@ export function Navbar() {
               className="h-5 w-5 mx-4"
             />
           </a>
-          <a href="https://www.instagram.com/cafe_after_hours/" target="_blank">
+          <a href="https://www.facebook.com/CafeAfterHours" target="_blank">
             <Image
               alt=""
               width={100}
@@ -88,7 +91,16 @@ export function Navbar() {
               className="h-5 w-5 mx-4"
             />
           </a>
-          <a href="https://www.instagram.com/cafe_after_hours/" target="_blank">
+          <a href="mailto:Cafeafterhours@gmail.com" target="_blank">
+            <Image
+              alt=""
+              width={100}
+              height={100}
+              src="/email.svg"
+              className="h-5 w-5 mx-4"
+            />
+          </a>
+          {/* <a href="https://www.instagram.com/cafe_after_hours/" target="_blank">
             <Image
               alt=""
               width={100}
@@ -105,7 +117,7 @@ export function Navbar() {
               src="/pintrest.svg"
               className="h-5 w-5 mx-4"
             />
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </>
