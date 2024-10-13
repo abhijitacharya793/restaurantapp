@@ -34,8 +34,8 @@ export function Section1() {
               <Image
                 className="w-full h-auto"
                 src={slide.src}
-                width={2500}
-                height={1000}
+                width={3500}
+                height={2000}
                 alt="logo"
                 priority
               />
