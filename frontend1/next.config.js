@@ -4,4 +4,3 @@ module.exports = {
     formats: ["image/avif", "image/webp"],
   },
 };
-/** COMMENT **/
