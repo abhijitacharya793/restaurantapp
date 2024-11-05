@@ -78,7 +78,7 @@ export default function Menu() {
   const [activeMenu, setActiveMenu] = useState("food");
 
   // Helper function to get the active menu's header based on the category
-  const getMenuHeader = (menu) => {
+  const getMenuHeader = (menu: string) => {
     if (menu === "food") {
       return foodItems.map((item) => item.category).join(", ");
     } else if (menu === "drinks") {
