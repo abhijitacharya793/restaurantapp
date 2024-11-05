@@ -12,7 +12,7 @@ export function Section3() {
               </p>
             </div>
             <p className="app-header text-3xl font-bold pt-3">
-              Try Our Special Offers
+              Try Our Special Menu
             </p>
             <p className="pt-3 text-sm text-app-gray text-justify">
               At Cafe After Hours, our menu is a culinary journey that blends
@@ -21,8 +21,8 @@ export function Section3() {
               offer something unique.
             </p>
             <p className="pt-3 text-sm text-app-gray text-justify">
-              Whether you&apos;re in the mood for light bites or a hearty meal, our
-              multi-cuisine menu features an array of international flavors,
+              Whether you&apos;re in the mood for light bites or a hearty meal,
+              our multi-cuisine menu features an array of international flavors,
               complemented by handcrafted beverages and signature cocktails.
               Each dish is designed to delight, making every visit a new
               experience to savor.

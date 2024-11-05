@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 
 export function Section1() {
   const slides = [
-    { id: 1, src: "/home1.jpg" },
-    { id: 2, src: "/home2.jpg" },
+    { id: 1, src: "/home2.jpg" },
+    { id: 2, src: "/home1.jpg" },
     { id: 3, src: "/home3.jpg" },
     { id: 4, src: "/home4.jpg" },
   ];
@@ -39,23 +39,23 @@ export function Section1() {
                 alt="logo"
                 priority
               />
-              {/* <img
-                src={slide.src}
-                alt={`Slide ${slide.id}`}
-                className="w-full h-auto"
-              /> */}
+              <div className="absolute bottom-0 left-0 w-full flex items-center justify-center bg-black bg-opacity-25 p-4 text-white text-3xl">
+                Café <br />
+                <span className="text-app-yellow">After Hours</span>
+                <br />
+              </div>
             </div>
           ))}
         </div>
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-lg p-2"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-80 rounded-full shadow-lg p-4 hover:bg-opacity-90 focus:outline-none text-white"
         >
           ❮
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow-lg p-2"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-80 rounded-full shadow-lg p-4 hover:bg-opacity-90 focus:outline-none text-white"
         >
           ❯
         </button>
@@ -71,12 +71,16 @@ export function Section1() {
           >
             <h1 className="text-3xl lg:text-6xl text-white app-header font-bold lg:pt-32 pt-10 text-center px-10 lg:text-left lg:px-0">
               Welcome to <br />
-              Café <span className="text-app-yellow">After Hours</span>
+              Café <br />
+              <span className="text-app-yellow">After Hours</span>
             </h1>
 
-            <p className="text-sm text-white pt-8 lg:w-96 text-center px-10 lg:px-0 lg:text-left">
-              One of the biggest party places in the heart of West Delhi with a
-              club and high energy bar vibe.
+            <p className="text-sm text-white pt-8 lg:w-96 px-10 lg:px-0 lg:text-left text-justify">
+              One of the finest destinations for food, drinks, and unforgettable
+              moments. 
+              <br />
+              Experience the best, where every sip and bite leaves a
+              lasting impression.
             </p>
             <div className="py-8 flex justify-center lg:justify-start">
               <a href="/menu">

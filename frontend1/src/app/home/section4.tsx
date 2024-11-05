@@ -16,21 +16,24 @@ export function Section4() {
   const slides: Slide[] = [
     {
       name: "Dipesh Jha",
-      image: "/testimonial1.svg",
+      // image: "/testimonial1.svg",
+      image: "/undraw_male_avatar_g98d.svg",
       location: "Food: 5/5 | Service: 5/5 | Atmosphere: 5/5",
       testimonial:
         "'It was a wonderful experience dining there.. I went there with our friends. We tried north indian cuisine. The taste of food was awesome.. The service is between moderate to good...and the ambience is also awesome.. Rate is genuine .. The outdoor place for dining is quite wonderful and it looks more awesome at night The metro facing view makes it more good....'",
     },
     {
       name: "Jitya Saji",
-      image: "/testimonial3.svg",
+      // image: "/testimonial3.svg",
+      image: "/undraw_male_avatar_g98d.svg",
       location: "Food: 5/5 | Service: 5/5 | Atmosphere: 5/5",
       testimonial:
         "'The FOOD is Amazing!I Loved the ambiance since it has both outdoor and indoor sitting and is very aesthetic. The service is great. They are always available if you need help with anything. This place is our new meet up and party spot.'",
     },
     {
       name: "Vaishali Sethi",
-      image: "/testimonial2.svg",
+      // image: "/testimonial2.svg",
+      image: "/undraw_female_avatar_efig.svg",
       location: "Food: 5/5 | Service: 5/5 | Atmosphere: 5/5",
       testimonial:
         "'It was a beautiful evening, Pretty happening place with both indoor and outdoor seating. Great flavour and texture - definitely recommend. Service was prompt and efficient. It is also really friendly staff Like UMA, SANA, KAVITA I Tried cold coffee Mocktail, Pizza, Brownies'",

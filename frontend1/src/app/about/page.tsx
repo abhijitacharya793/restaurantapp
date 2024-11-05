@@ -27,7 +27,7 @@ export default function About() {
           </div>
           {/* TODO: */}
           <div className="bg-white pb-20">
-            <Section3 />
+            {/* <Section3 /> */}
           </div>
           {/* TODO: */}
           <div className="bg-app-purple">

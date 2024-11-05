@@ -33,9 +33,9 @@ export function Section1() {
             <h1 className="app-header text-3xl font-bold pb-2">
               Contact Information
             </h1>
-            <p className="text-xs text-app-gray">
+            <p className="text-sm text-app-gray text-justify">
               We love hearing from customers, visitors and people from the
-              Restaurantate. We really appreciate you taking the time to get in
+              CAH. We really appreciate you taking the time to get in
               touch. Please fill in the form below.
             </p>
             {/*  */}
