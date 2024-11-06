@@ -40,8 +40,9 @@ export function Section1() {
                 priority
               />
               <div className="absolute bottom-0 left-0 w-full flex items-center justify-center bg-black bg-opacity-25 p-4 text-white text-3xl">
-                Café <br />
-                <span className="text-app-yellow">After Hours</span>
+                <p className="app-header">
+                  Café <span className="text-app-yellow">After Hours</span>
+                </p>
                 <br />
               </div>
             </div>
@@ -77,10 +78,10 @@ export function Section1() {
 
             <p className="text-sm text-white pt-8 lg:w-96 px-10 lg:px-0 lg:text-left text-justify">
               One of the finest destinations for food, drinks, and unforgettable
-              moments. 
+              moments.
               <br />
-              Experience the best, where every sip and bite leaves a
-              lasting impression.
+              Experience the best, where every sip and bite leaves a lasting
+              impression.
             </p>
             <div className="py-8 flex justify-center lg:justify-start">
               <a href="/menu">

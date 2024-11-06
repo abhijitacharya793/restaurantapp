@@ -546,7 +546,7 @@ export function Section3() {
             <div key={categoryIndex} className="py-8 w-full lg:w-full ">
               {/* Category text */}
               <div className="pr-4">
-                <p className="text-2xl font-bold text-app-gray py-2 capitalize">
+                <p className="text-2xl font-bold text-black py-2 capitalize app-header">
                   {category.category.toLowerCase()}
                 </p>
                 {category.items.map((item, index) => (

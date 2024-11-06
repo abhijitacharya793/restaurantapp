@@ -23,6 +23,7 @@ export function AppButton({
   return (
     <>
       <motion.button
+        id={text.toLowerCase().replace(/[^A-Z0-9]/gi, "_")}
         whileHover={{ scale: 1.1 }}
         className={`py-2 px-4 border-2 ${color} ${fill} ${fontcolor} w-48 ${hover_color} ${hover_fill} ${hover_fontcolor}`}
       >

@@ -422,7 +422,7 @@ export default function Menu() {
 
                     {/* Category text */}
                     <div className="lg:w-3/5 pr-4">
-                      <p className="text-3xl font-bold text-app-gray capitalize app-header">
+                      <p className="text-2xl font-bold text-black capitalize app-header">
                         {category.category.toLowerCase()}
                       </p>
                       {category.items.map((item, index) => (

@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { HeaderHome } from "@/components/HeaderHome";
 import { Section1 } from "./section1";
 import { Section2 } from "./section2";
 import { Section3 } from "./section3";

@@ -1,5 +1,9 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+
+import { redirect } from "next/navigation";
+
 import { AppButton } from "@/components/AppButton";
 import Image from "next/image";
 
@@ -38,6 +42,8 @@ const generateTimeSlots = () => {
 
 // TODO: Reservation
 export function Reservation() {
+  const router = useRouter();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -51,6 +57,8 @@ export function Reservation() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const button = document.getElementById("book_a_table") as HTMLButtonElement;
+    button.disabled = true;
 
     // VALIDATE INPUTS
     if (
@@ -80,6 +88,7 @@ export function Reservation() {
 
     if (response.ok) {
       setStatus("Reservation created!");
+      router.push("/home");
     } else {
       setStatus("Failed to send reservation request.");
     }
@@ -103,7 +112,7 @@ export function Reservation() {
                 RESERVATION
               </p>
               <p className="app-header text-3xl pb-3 pt-4 text-white">
-                Book your table now
+                Reserve your table
               </p>
 
               <div className="lg:flex w-full justify-start lg:justify-center">

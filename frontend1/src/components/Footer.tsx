@@ -99,12 +99,13 @@ export function Footer() {
               New Delhi - 110075
               <br />
               <span className="text-app-yellow">
-                +91 98102 52704 / +91 98103 63405
+                <a href="tel:+919810252704">+91 98102 52704</a> /{" "}
+                <a href="tel:+919810363405">+91 98103 63405</a>
               </span>
             </p>
           </div>
           <div className="lg:w-1/3 lg:flex items-center justify-center text-center mx-10 lg:mx-0 py-4 lg:py-0">
-            Join our mailing list for updates, Get news & offers events.
+            {/* Join our mailing list for updates, Get news & offers events.
             <div className="show_mobile">
               <form className="flex items-center border border-white">
                 <input
@@ -123,7 +124,7 @@ export function Footer() {
                   hover_fontcolor={"hover:text-app-purple"}
                 />
               </form>
-            </div>
+            </div> */}
           </div>
           <div className="lg:w-1/3 flex lg:flex-row flex-col items-center lg:justify-end justify-center py-4 lg:py-0">
             <p className="w-30 py-1 border-t border-b border-yellow-600 text-sm font-light text-center">
@@ -146,14 +147,19 @@ export function Footer() {
               New Delhi - 110075
               <br />
               <span className="text-app-yellow">
-                +91 98102 52704 / +91 98103 63405
+                <a href="tel:+919810252704">+91 98102 52704</a> /{" "}
+                <a href="tel:+919810363405">+91 98103 63405</a>
               </span>
               <br />
-              <span className="text-app-yellow"><a href="mailto:cafeafterhours@gmail.com">cafeafterhours@gmail.com</a></span>
+              <span className="text-app-yellow">
+                <a href="mailto:cafeafterhours@gmail.com">
+                  cafeafterhours@gmail.com
+                </a>
+              </span>
             </p>
           </div>
           <div className="w-1/3 flex items-center justify-center text-center">
-            <div className="">
+            {/* <div className="">
               <form className="flex items-center border border-white">
                 <input
                   className="appearance-none bg-transparent w-full text-white mr-3 py-1 px-2 focus:outline-none"
@@ -171,7 +177,7 @@ export function Footer() {
                   hover_fontcolor={"hover:text-app-purple"}
                 />
               </form>
-            </div>
+            </div> */}
           </div>
           <div className="w-1/3 flex items-center justify-end">
             <p className="text-sm font-light text-right">
@@ -184,6 +190,58 @@ export function Footer() {
         </div>
       </div>
       <hr />
+      <div className="lg:max-w-screen-lg mx-auto copyright-block">
+        <div className="container mx-auto">
+          <div className="flex items-center justify-between py-4">
+            <div className="opacity-100 transform-none">
+              <p className="text-sm text-white">
+                © Copyright - TastEat | Designed by
+                <a
+                  href="https://www.victorflow.com/"
+                  target="_blank"
+                  className="text-blue-600 hover:underline"
+                >
+                  VictorFlow
+                </a>{" "}
+                - Powered by
+                <a
+                  href="https://webflow.com/"
+                  target="_blank"
+                  className="text-blue-600 hover:underline"
+                >
+                  Webflow
+                </a>
+              </p>
+            </div>
+            <div className="flex space-x-4">
+              {/* <a
+                href="/style-guide"
+                className="text-sm text-gray-600 hover:text-gray-800"
+              >
+                Styleguide
+              </a>
+              <a
+                href="/licenses"
+                className="text-sm text-gray-600 hover:text-gray-800"
+              >
+                Licenses
+              </a>
+              <a
+                href="https://tasteat-template.webflow.io/401"
+                className="text-sm text-gray-600 hover:text-gray-800"
+              >
+                Protected
+              </a>
+              <a
+                href="https://tasteat-template.webflow.io/404"
+                className="text-sm text-gray-600 hover:text-gray-800"
+              >
+                Not Found
+              </a> */}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
