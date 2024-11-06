@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import LoadingOverlay from "@/components/LoadingOverlay";
 import Image from "next/image";
+import { AppButton } from "@/components/AppButton";
 
 export default function Menu() {
   // Define the food and drinks menu items with categories
@@ -320,7 +321,7 @@ export default function Menu() {
         <Header active_page={"home"} />
         <div className="bg-app-purple py-16 flex justify-center">
           <div className="flex space-x-6">
-            <button
+            {/* <button
               onClick={() => setActiveMenu("food")}
               className={`px-6 py-3 text-2xl font-semibold transition-all duration-300 rounded-md ${
                 activeMenu === "food"
@@ -329,17 +330,65 @@ export default function Menu() {
               }`}
             >
               Food Menu
-            </button>
-            <button
-              onClick={() => setActiveMenu("drinks")}
-              className={`px-6 py-3 text-2xl font-semibold transition-all duration-300 rounded-md ${
-                activeMenu === "drinks"
-                  ? "bg-yellow-600 text-white shadow-lg transform scale-105"
-                  : "text-gray-300 hover:bg-gray-800 hover:text-white"
-              }`}
-            >
-              Drinks Menu
-            </button>
+            </button> */}
+            <a onClick={() => setActiveMenu("food")}>
+              <AppButton
+                color={
+                  activeMenu === "food"
+                    ? "border-app-purple"
+                    : "border-app-yellow"
+                }
+                fill={activeMenu === "food" ? "bg-app-yellow" : "bg-app-purple"}
+                text={"Food Menu"}
+                fontcolor={
+                  activeMenu === "food" ? "text-app-purple" : "text-app-yellow"
+                }
+                hover_color={
+                  activeMenu === "food"
+                    ? "hover:border-app-purple"
+                    : "hover:border-app-yellow"
+                }
+                hover_fill={
+                  activeMenu === "food"
+                    ? "hover:bg-app-yellow"
+                    : "hover:bg-app-purple"
+                }
+                hover_fontcolor={
+                  activeMenu === "food"
+                    ? "hover:text-app-purple"
+                    : "hover:text-app-yellow"
+                }
+              />
+            </a>
+            <a onClick={() => setActiveMenu("drinks")}>
+              <AppButton
+                color={
+                  activeMenu === "drinks"
+                    ? "border-app-purple"
+                    : "border-app-yellow"
+                }
+                fill={activeMenu === "drinks" ? "bg-app-yellow" : "bg-app-purple"}
+                text={"Drinks Menu"}
+                fontcolor={
+                  activeMenu === "drinks" ? "text-app-purple" : "text-app-yellow"
+                }
+                hover_color={
+                  activeMenu === "drinks"
+                    ? "hover:border-app-purple"
+                    : "hover:border-app-yellow"
+                }
+                hover_fill={
+                  activeMenu === "drinks"
+                    ? "hover:bg-app-yellow"
+                    : "hover:bg-app-purple"
+                }
+                hover_fontcolor={
+                  activeMenu === "drinks"
+                    ? "hover:text-app-purple"
+                    : "hover:text-app-yellow"
+                }
+              />
+            </a>
           </div>
         </div>
 
