@@ -120,7 +120,7 @@ export default function Menu() {
     },
     {
       category: "GOURMET HEALTHY SALADS",
-      image: "",
+      image: "/menu10.svg",
       items: [
         {
           name: "FIGS AND APRICOT",

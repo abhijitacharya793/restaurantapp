@@ -1,6 +1,225 @@
 import { AppButton } from "@/components/AppButton";
 import Image from "next/image";
 export function Section3() {
+  const foodItems = [
+    {
+      category: "Bar Titbits",
+      image: "/menu6.svg",
+      items: [
+        {
+          name: "French Fries",
+          description: "Plain/Peri Peri/Cheesey",
+          price: "295/345",
+          veg: "green",
+        },
+        {
+          name: "Garlic Bread",
+          description: "Plain/Cheese",
+          price: "295/345",
+          veg: "green",
+        },
+        {
+          name: "Potato Wedges",
+          description: "Plain/Peri Peri",
+          price: "295/345",
+          veg: "green",
+        },
+        {
+          name: "Chicken 65",
+          description: "",
+          price: "445",
+          veg: "red",
+        },
+        {
+          name: "Grilled fish skewers",
+          description: "",
+          price: "495",
+          veg: "red",
+        },
+      ],
+    },
+    {
+      category: "GOURMET HEALTHY SALADS",
+      image: "/menu10.svg",
+      items: [
+        {
+          name: "FIGS AND APRICOT",
+          description:
+            "FIGS AND APRICOT MIXED WITH ORGANIC GREENS & BALSAMIC VINAIGRETTE MAPLE DRESSING",
+          price: "395",
+          veg: "green",
+        },
+        {
+          name: "FATTOUSH",
+          description:
+            "MEDITERRANEAN GREENS TOSSED WITH POMEGRANATE AND SUMMER GARDEN DRESSING",
+          price: "395",
+          veg: "green",
+        },
+        {
+          name: "WATERMELON FETA CHEESE",
+          description:
+            "SALAD TOSSED WITH WATERMELON, POMEGRANATE AND VINAIGRETTE TOPPED WITH CRUMBLED FETA",
+          price: "395",
+          veg: "green",
+        },
+        {
+          name: "CLASSIC CAESAR VEG/CHICKEN",
+          description: "FRESH GREENS TOSSED WITH CAESAR DRESSING & CROUTONS",
+          price: "395/445",
+          veg: "black",
+        },
+      ],
+    },
+  ];
+
+  const drinksItems = [
+    {
+      category: "Signature Cocktails",
+      image: "/menu12.jpg",
+      items: [
+        {
+          name: "AFTER HOURS SPECIAL",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "ORANGE MINT TO BE",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "DRUNK IN LOVE",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "PENICILLIN",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "PINK YOUR MOMENT",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "VALLEY OF SEX",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "THE SOUTHERN SOMRAS",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "HEART AND SOUL",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "BERRY HAPPY TOGETHER MARGARITA",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "RED BULL ENERGY DRINK VODKA",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+        {
+          name: "RED BULL YELLOW EDITION GIN",
+          description: "",
+          price: "645",
+          veg: "",
+        },
+      ],
+    },
+    {
+      category: "Forever Classic",
+      image: "/gallery2.jpg",
+      items: [
+        {
+          name: "COSMOPOLITAN",
+          description: "",
+          price: "545",
+          veg: "",
+        },
+        {
+          name: "PINACOLADA",
+          description: "",
+          price: "545",
+          veg: "",
+        },
+        {
+          name: "DAIQUIRI - CLASSIC, W/MELON, STRAWBERRY",
+          description: "",
+          price: "545",
+          veg: "",
+        },
+        {
+          name: "BLOODY MARY",
+          description: "",
+          price: "545",
+          veg: "",
+        },
+        {
+          name: "OLD FASHION",
+          description: "",
+          price: "545",
+          veg: "",
+        },
+        {
+          name: "MARTINI - CLASSIC, GIMLET, GIBSON, G/APPLE",
+          description: "",
+          price: "545",
+          veg: "",
+        },
+        {
+          name: "LIIT - CLASSIC, BEACH, SKY",
+          description: "",
+          price: "675/ 2490/ 950",
+          veg: "",
+        },
+        {
+          name: "LIIT - ELECTRIC",
+          description: "",
+          price: "745/ 2690/ 1045",
+          veg: "",
+        },
+        // {
+        //   name: "",
+        //   description: "",
+        //   price: "",
+        //   veg: "",
+        // },
+        // {
+        //   name: "",
+        //   description: "",
+        //   price: "",
+        //   veg: "",
+        // },
+        // {
+        //   name: "",
+        //   description: "",
+        //   price: "",
+        //   veg: "",
+        // },
+      ],
+    },
+  ];
+
   return (
     <>
       <div className="lg:max-w-screen-lg mx-auto lg:flex text-left pt-20 px-4 lg:px-0">
@@ -49,10 +268,10 @@ export function Section3() {
             </div>
           </div>
         </div>
-        <div className="w-3/5 py-10">
+        {/* <div className="w-3/5 py-10">
           <div>
             <p className="app-header text-3xl font-bold pb-3">Starters</p>
-            {/* Menu items */}
+
             <div className="flex py-4">
               <div className="pr-2">
                 <Image
@@ -154,11 +373,11 @@ export function Section3() {
                 </div>
               </div>
             </div>
-            {/* End */}
-          </div>
+
+</div>
           <div>
             <p className="app-header text-3xl font-bold pb-3">Main Dish</p>
-            {/* Menu items */}
+
             <div className="flex py-4">
               <div className="pr-2">
                 <Image
@@ -262,12 +481,12 @@ export function Section3() {
                 </div>
               </div>
             </div>
-            {/* End */}
-          </div>
+
+</div>
           <div>
             <p className="app-header text-3xl font-bold pb-3">Dessert</p>
-            {/* Menu items */}
-            <div className="flex py-4">
+
+<div className="flex py-4">
               <div className="pr-2">
                 <Image
                   src="/menu10.svg"
@@ -319,8 +538,43 @@ export function Section3() {
               </div>
             </div>
 
-            {/* End */}
-          </div>
+
+</div>
+        </div> */}
+        <div>
+          {foodItems.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="py-8 w-full lg:w-full ">
+              {/* Category text */}
+              <div className="pr-4">
+                <p className="text-2xl font-bold text-app-gray py-2 capitalize">
+                  {category.category.toLowerCase()}
+                </p>
+                {category.items.map((item, index) => (
+                  <div key={index} className="flex py-4">
+                    <div className="pr-2">
+                      <div className={`${item.veg}-dot-container`}>
+                        <div className={`${item.veg}-dot`}></div>
+                      </div>
+                    </div>
+                    <div className="w-full flex items-end mb-2">
+                      <div>
+                        <p className="text-xl app-header font-bold capitalize">
+                          {item.name.toLowerCase()}
+                        </p>
+                        <p className="text-sm text-app-gray capitalize">
+                          {item.description.toLowerCase()}
+                        </p>
+                      </div>
+                      <div className="flex-1 border-b border-dotted border-gray-400"></div>
+                      <div className="w-1/6 flex items-end font-bold app-header text-xl">
+                        {item.price}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>
