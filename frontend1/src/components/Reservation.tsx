@@ -33,7 +33,6 @@ const generateTimeSlots = () => {
     "12:30 AM",
     "01:00 AM",
   ];
-  console.log(slots);
   return slots;
 };
 
@@ -46,14 +45,9 @@ export function Reservation() {
   const [timing, setTiming] = useState("");
   const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
   const [status, setStatus] = useState("");
-  // const [searchQuery, setSearchQuery] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const timeSlots = generateTimeSlots();
-
-  // const filteredTimeSlots = timeSlots.filter((slot) =>
-  //   slot.toLowerCase().includes(searchQuery.toLowerCase())
-  // );
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -79,6 +73,7 @@ export function Reservation() {
       },
       body: JSON.stringify({
         subject: `Reservation from ${name}`,
+        email: email,
         message: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nPersons: ${persons}\nTiming: ${timing}\nDate: ${date}`,
       }),
     });

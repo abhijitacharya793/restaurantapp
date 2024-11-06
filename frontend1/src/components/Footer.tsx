@@ -130,11 +130,11 @@ export function Footer() {
               WORKING HOURS
             </p>
             <p className="text-sm font-light text-center show_mobile py-2">
-              <span className="text-app-yellow font-bold">Mon to Fri: </span>
+              <span className="text-app-yellow font-bold">All Days: </span>
               12:00 pm to 1:00 am
-              <br />
+              {/* <br />
               <span className="text-app-yellow font-bold">Sat - Sun: </span>
-              12:00 pm to 1:00 am
+              12:00 pm to 1:00 am */}
             </p>
           </div>
         </div>
@@ -149,7 +149,7 @@ export function Footer() {
                 +91 98102 52704 / +91 98103 63405
               </span>
               <br />
-              <span className="text-app-yellow">Cafeafterhours@gmail.com</span>
+              <span className="text-app-yellow"><a href="mailto:cafeafterhours@gmail.com">cafeafterhours@gmail.com</a></span>
             </p>
           </div>
           <div className="w-1/3 flex items-center justify-center text-center">
@@ -175,11 +175,10 @@ export function Footer() {
           </div>
           <div className="w-1/3 flex items-center justify-end">
             <p className="text-sm font-light text-right">
-              <span className="text-app-yellow font-bold">Mon to Fri: </span>
+              <span className="text-app-yellow font-bold">All Days: </span>
               12:00 pm to 1:00 am
-              <br />
-              <span className="text-app-yellow font-bold">Sat - Sun: </span>
-              12:00 pm to 1:00 am
+              {/* <span className="text-app-yellow font-bold">Sat - Sun: </span>
+              12:00 pm to 1:00 am */}
             </p>
           </div>
         </div>

@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
     if (req.method === "POST") {
-        const { subject, message } = req.body;
+        const { subject, email, message } = req.body;
         const transporter = nodemailer.createTransport({
             host: "smtp.gmail.com",
             port: 587,
@@ -14,8 +14,9 @@ export default async function handler(req, res) {
         try {
             // Send email
             await transporter.sendMail({
-                from: "abhijitacharya793@gmail.com", // Sender address
-                to: "abhijitacharya793@gmail.com", // Recipient address
+                from: email, // Sender address
+                to: "abhijitacharya793@gmail.com",
+                // to: "cafeafterhours@gmail.com", // Recipient address
                 subject: subject, // Subject line
                 text: message, // Plain text body
             });

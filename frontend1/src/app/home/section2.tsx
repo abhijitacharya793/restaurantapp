@@ -30,7 +30,7 @@ export function Section2() {
                   <br />
                   Sector 12, Dwarka
                   <br />
-                  New Delhi - 110078
+                  New Delhi - 110075
                   <br />
                 </p>
               </div>
@@ -44,11 +44,11 @@ export function Section2() {
               <div className="w-4/6 lg:h-16 pl-2 mx-10 lg:mx-4">
                 <p className="text-lg app-header font-bold">Open Hours</p>
                 <p className="text-xs text-app-gray">
-                  <span className=" font-bold">Mon to Fri: </span>12:00 pm to
+                  <span className=" font-bold">All Days: </span>12:00 pm to
                   1:00 am
-                  <br />
-                  <span className=" font-bold">Sat – Sun: </span>12:00 pm to
-                  1:00 am
+                  {/* <br /> */}
+                  {/* <span className=" font-bold">Sat – Sun: </span>12:00 pm to
+                  1:00 am */}
                 </p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export function Section2() {
               <div className="w-3/6 lg:h-16 pl-2 mx-10 lg:mx-4">
                 <p className="text-lg app-header font-bold">Reservation</p>
                 <p className="text-xs text-app-gray">
-                  cafeafterhours@gmail.com
+                <a href="mailto:cafeafterhours@gmail.com">cafeafterhours@gmail.com</a>
                 </p>
               </div>
             </div>
