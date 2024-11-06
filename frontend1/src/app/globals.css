@@ -89,7 +89,6 @@ body.loading #content {
   }
 }
 
-
 .slider-container {
   height: 400px; /* Adjust as needed */
   display: flex;
@@ -105,23 +104,30 @@ body.loading #content {
 }
 
 .green-dot {
-  width: 20px; /* size of the dot */
-  height: 20px; /* size of the dot */
+  width: 10px; /* size of the dot */
+  height: 10px; /* size of the dot */
   background-color: green; /* green color */
   border-radius: 50%; /* makes the div circular */
 }
 
-
 .red-dot {
-  width: 20px; /* size of the dot */
-  height: 20px; /* size of the dot */
+  width: 10px; /* size of the dot */
+  height: 10px; /* size of the dot */
   background-color: red; /* green color */
+  border-radius: 50%; /* makes the div circular */
+}
+
+.black-dot {
+  width: 10px; /* size of the dot */
+  height: 10px; /* size of the dot */
+  background-color: black; /* green color */
   border-radius: 50%; /* makes the div circular */
 }
 
 .green-dot-container {
   display: inline-block; /* So it stays inline with other content */
   padding: 5px; /* Adds some space around the green dot to create the "box" effect */
+  margin-top: 10px;
   border: 2px solid #006400; /* Dark green border for the box */
   border-radius: 8px; /* Optional: Adds rounded corners to the box */
 }
@@ -129,6 +135,15 @@ body.loading #content {
 .red-dot-container {
   display: inline-block; /* So it stays inline with other content */
   padding: 5px; /* Adds some space around the green dot to create the "box" effect */
+  margin-top: 10px;
   border: 2px solid #641700; /* Dark green border for the box */
+  border-radius: 8px; /* Optional: Adds rounded corners to the box */
+}
+
+.black-dot-container {
+  display: inline-block; /* So it stays inline with other content */
+  padding: 5px; /* Adds some space around the green dot to create the "box" effect */
+  margin-top: 10px;
+  border: 2px solid #000000; /* Dark green border for the box */
   border-radius: 8px; /* Optional: Adds rounded corners to the box */
 }
