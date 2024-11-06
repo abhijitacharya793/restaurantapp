@@ -170,7 +170,7 @@ export function Reservation() {
                   <button
                     type="button"
                     onClick={() => setDropdownOpen((prev) => !prev)} // Toggle dropdown visibility
-                    className="w-full px-3 py-2 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
+                    className="w-full px-8 py-3 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
                   >
                     {timing || "Select Time"}
                   </button>
