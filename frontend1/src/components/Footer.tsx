@@ -195,22 +195,22 @@ export function Footer() {
           <div className="flex items-center justify-between py-4">
             <div className="opacity-100 transform-none">
               <p className="text-sm text-white">
-                © Copyright - TastEat | Designed by
-                <a
+                © Copyright - Cafe After Hours | Designed by
+                {" "}<a
                   href="https://www.victorflow.com/"
                   target="_blank"
-                  className="text-blue-600 hover:underline"
+                  className="underline"
                 >
-                  VictorFlow
-                </a>{" "}
-                - Powered by
+                  TechnoMettle
+                </a>
+                {/* - Powered by
                 <a
                   href="https://webflow.com/"
                   target="_blank"
                   className="text-blue-600 hover:underline"
                 >
                   Webflow
-                </a>
+                </a> */}
               </p>
             </div>
             <div className="flex space-x-4">
