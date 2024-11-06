@@ -52,7 +52,7 @@ export function Section1() {
                       <br />
                       Sector 12, Dwarka
                       <br />
-                      New Delhi - 110078
+                      New Delhi - 110075
                       <br />
                     </p>
                   </div>

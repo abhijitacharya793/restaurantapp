@@ -367,10 +367,14 @@ export default function Menu() {
                     ? "border-app-purple"
                     : "border-app-yellow"
                 }
-                fill={activeMenu === "drinks" ? "bg-app-yellow" : "bg-app-purple"}
+                fill={
+                  activeMenu === "drinks" ? "bg-app-yellow" : "bg-app-purple"
+                }
                 text={"Drinks Menu"}
                 fontcolor={
-                  activeMenu === "drinks" ? "text-app-purple" : "text-app-yellow"
+                  activeMenu === "drinks"
+                    ? "text-app-purple"
+                    : "text-app-yellow"
                 }
                 hover_color={
                   activeMenu === "drinks"
@@ -403,7 +407,7 @@ export default function Menu() {
                   >
                     {/* Conditionally render image before or after the category text */}
                     {category.image && categoryIndex % 2 === 0 && (
-                      <div className="lg:w-2/5 mb-4 lg:mb-0 mr-4 relative">
+                      <div className="lg:w-2/5 mb-4 lg:mb-0 mr-8 relative">
                         <Image
                           src={category.image}
                           width={300}
@@ -418,7 +422,7 @@ export default function Menu() {
 
                     {/* Category text */}
                     <div className="lg:w-3/5 pr-4">
-                      <p className="text-2xl font-bold text-app-gray py-2 capitalize">
+                      <p className="text-3xl font-bold text-app-gray capitalize app-header">
                         {category.category.toLowerCase()}
                       </p>
                       {category.items.map((item, index) => (
@@ -433,7 +437,7 @@ export default function Menu() {
                               <p className="text-xl app-header font-bold capitalize">
                                 {item.name.toLowerCase()}
                               </p>
-                              <p className="text-sm text-app-gray capitalize">
+                              <p className="text-sm text-app-gray capitalize w-3/4">
                                 {item.description.toLowerCase()}
                               </p>
                             </div>

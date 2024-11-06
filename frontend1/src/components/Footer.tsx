@@ -96,7 +96,7 @@ export function Footer() {
             <p className="text-sm show_mobile text-center py-2">
               1st Floor, City Centre Mall, Sector 12, Dwarka
               <br />
-              New Delhi - 110078
+              New Delhi - 110075
               <br />
               <span className="text-app-yellow">
                 +91 98102 52704 / +91 98103 63405
@@ -148,6 +148,7 @@ export function Footer() {
               <span className="text-app-yellow">
                 +91 98102 52704 / +91 98103 63405
               </span>
+              <br />
               <span className="text-app-yellow">Cafeafterhours@gmail.com</span>
             </p>
           </div>
