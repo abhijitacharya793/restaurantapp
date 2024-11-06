@@ -3,6 +3,40 @@ import { useState } from "react";
 import { AppButton } from "@/components/AppButton";
 import Image from "next/image";
 
+const generateTimeSlots = () => {
+  const slots = [
+    "12:00 PM",
+    "12:30 PM",
+    "01:00 PM",
+    "01:30 PM",
+    "02:00 PM",
+    "02:30 PM",
+    "03:00 PM",
+    "03:30 PM",
+    "04:00 PM",
+    "04:30 PM",
+    "05:00 PM",
+    "05:30 PM",
+    "06:00 PM",
+    "06:30 PM",
+    "07:00 PM",
+    "07:30 PM",
+    "08:00 PM",
+    "08:30 PM",
+    "09:00 PM",
+    "09:30 PM",
+    "10:00 PM",
+    "10:30 PM",
+    "11:00 PM",
+    "11:30 PM",
+    "12:00 AM",
+    "12:30 AM",
+    "01:00 AM",
+  ];
+  console.log(slots);
+  return slots;
+};
+
 // TODO: Reservation
 export function Reservation() {
   const [name, setName] = useState("");
@@ -12,6 +46,14 @@ export function Reservation() {
   const [timing, setTiming] = useState("");
   const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
   const [status, setStatus] = useState("");
+  // const [searchQuery, setSearchQuery] = useState("");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const timeSlots = generateTimeSlots();
+
+  // const filteredTimeSlots = timeSlots.filter((slot) =>
+  //   slot.toLowerCase().includes(searchQuery.toLowerCase())
+  // );
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -114,7 +156,7 @@ export function Reservation() {
                   required
                   className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
                 />
-                <input
+                {/* <input
                   type="text"
                   id="timing"
                   name="timing"
@@ -123,7 +165,35 @@ export function Reservation() {
                   onChange={(e) => setTiming(e.target.value)}
                   required
                   className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
-                />
+                /> */}
+                <div className="relative w-full m-4">
+                  <button
+                    type="button"
+                    onClick={() => setDropdownOpen((prev) => !prev)} // Toggle dropdown visibility
+                    className="w-full px-3 py-2 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
+                  >
+                    {timing || "Select Time"}
+                  </button>
+
+                  {dropdownOpen && (
+                    <div className="absolute w-full max-h-60 overflow-auto bg-white border border-gray-300 rounded-md shadow-lg mt-1 z-10">
+                      <ul className="py-2">
+                        {timeSlots.map((slot) => (
+                          <li
+                            key={slot}
+                            onClick={() => {
+                              setTiming(slot);
+                              setDropdownOpen(false); // Close dropdown after selection
+                            }}
+                            className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                          >
+                            {slot}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
                 <input
                   type="date"
                   id="date"
