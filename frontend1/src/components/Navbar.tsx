@@ -18,7 +18,7 @@ export function Navbar() {
     { href: "/home", text: "home", margin: "mr-8" },
     { href: "/about", text: "about", margin: "mr-8" },
     { href: "/menu", text: "menu", margin: "mr-8" },
-    { href: "/reservation", text: "reservation", margin: "mr-12" },
+    { href: "/reservation", text: "reservation", margin: "lg:mr-20" },
     { href: "/gallery", text: "gallery", margin: "mr-8" },
     { href: "/blog", text: "blog", margin: "mr-4" },
     { href: "/contact", text: "contact", margin: "mr-8" },

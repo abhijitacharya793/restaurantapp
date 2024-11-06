@@ -7,8 +7,8 @@ import Image from "next/image";
 export function Reservation() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("0");
-  const [persons, setPersons] = useState("0");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [persons, setPersons] = useState("");
   const [timing, setTiming] = useState("");
   const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
   const [status, setStatus] = useState("");
