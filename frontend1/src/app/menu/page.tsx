@@ -320,17 +320,7 @@ export default function Menu() {
       <div id="content">
         <Header active_page={"home"} />
         <div className="bg-app-purple py-16 flex justify-center">
-          <div className="flex space-x-6">
-            {/* <button
-              onClick={() => setActiveMenu("food")}
-              className={`px-6 py-3 text-2xl font-semibold transition-all duration-300 rounded-md ${
-                activeMenu === "food"
-                  ? "bg-yellow-600 text-white shadow-lg transform scale-105"
-                  : "text-gray-300 hover:bg-gray-800 hover:text-white"
-              }`}
-            >
-              Food Menu
-            </button> */}
+          <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
             <a onClick={() => setActiveMenu("food")}>
               <AppButton
                 color={
@@ -407,7 +397,7 @@ export default function Menu() {
                   >
                     {/* Conditionally render image before or after the category text */}
                     {category.image && categoryIndex % 2 === 0 && (
-                      <div className="lg:w-2/5 mb-4 lg:mb-0 mr-8 relative">
+                      <div className="lg:w-2/5 mb-4 lg:mb-0 mr-8 relative min-w-full lg:min-w-fit">
                         <Image
                           src={category.image}
                           width={300}
@@ -437,12 +427,12 @@ export default function Menu() {
                               <p className="text-xl app-header font-bold capitalize">
                                 {item.name.toLowerCase()}
                               </p>
-                              <p className="text-sm text-app-gray capitalize w-3/4">
+                              <p className="text-sm text-app-gray capitalize">
                                 {item.description.toLowerCase()}
                               </p>
                             </div>
-                            <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                            <div className="w-1/6 flex items-end font-bold app-header text-xl">
+                            <div className="flex-1 border-b border-dashed border-gray-400"></div>
+                            <div className="w-1/6 flex items-end justify-end font-bold app-header text-xl">
                               {item.price}
                             </div>
                           </div>
@@ -452,7 +442,7 @@ export default function Menu() {
 
                     {/* Image after text for odd-indexed categories */}
                     {category.image && categoryIndex % 2 !== 0 && (
-                      <div className="lg:w-2/5 mt-4 lg:mt-0 relative">
+                      <div className="lg:w-2/5 mt-4 lg:mt-0 relative min-w-full lg:min-w-fit">
                         <Image
                           src={category.image}
                           width={300}

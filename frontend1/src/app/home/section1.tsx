@@ -30,7 +30,7 @@ export function Section1() {
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {slides.map((slide) => (
-            <div key={slide.id} className="min-w-full">
+            <div key={slide.id} className="lg:min-w-full min-w-full">
               <Image
                 className="w-full h-auto"
                 src={slide.src}
@@ -39,7 +39,7 @@ export function Section1() {
                 alt="logo"
                 priority
               />
-              <div className="absolute bottom-0 left-0 w-full flex items-center justify-center bg-black bg-opacity-25 p-4 text-white text-3xl">
+              <div className="hidden absolute bottom-0 left-0 w-full lg:flex items-center justify-center bg-black bg-opacity-25 p-4 text-white text-3xl">
                 <p className="app-header">
                   Café <span className="text-app-yellow">After Hours</span>
                 </p>
@@ -50,13 +50,13 @@ export function Section1() {
         </div>
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-80 rounded-full shadow-lg p-4 hover:bg-opacity-90 focus:outline-none text-white"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 rounded-lg shadow-lg p-8 hover:bg-opacity-50 focus:outline-none text-white"
         >
           ❮
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-80 rounded-full shadow-lg p-4 hover:bg-opacity-90 focus:outline-none text-white"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 rounded-lg shadow-lg p-8 hover:bg-opacity-50 focus:outline-none text-white"
         >
           ❯
         </button>

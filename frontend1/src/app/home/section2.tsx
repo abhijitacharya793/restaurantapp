@@ -44,8 +44,8 @@ export function Section2() {
               <div className="w-4/6 lg:h-16 pl-2 mx-10 lg:mx-4">
                 <p className="text-lg app-header font-bold">Open Hours</p>
                 <p className="text-xs text-app-gray">
-                  <span className=" font-bold">All Days: </span>12:00 pm to
-                  1:00 am
+                  <span className=" font-bold">All Days: </span>12:00 pm to 1:00
+                  am
                   {/* <br /> */}
                   {/* <span className=" font-bold">Sat – Sun: </span>12:00 pm to
                   1:00 am */}
@@ -61,7 +61,9 @@ export function Section2() {
               <div className="w-3/6 lg:h-16 pl-2 mx-10 lg:mx-4">
                 <p className="text-lg app-header font-bold">Reservation</p>
                 <p className="text-xs text-app-gray">
-                <a href="mailto:cafeafterhours@gmail.com">cafeafterhours@gmail.com</a>
+                  <a href="mailto:cafeafterhours@gmail.com">
+                    cafeafterhours@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
@@ -81,64 +83,51 @@ export function Section2() {
             </div>
           </div>
           <div className="lg:w-1/2 ml-8 mr-10 lg:mr-0">
-            <h1 className="app-header text-3xl font-bold pb-2">The Story</h1>
-            <p className="text-xs text-app-gray text-justify">
+            <h1 className="app-header text-3xl font-bold pb-4 text-center">
+              Welcome to Cafe After Hours
+            </h1>
+
+            {/* First paragraph */}
+            <p className="text-sm text-app-gray text-justify mb-6 leading-relaxed">
               Welcome to Cafe After Hours, where the aroma of freshly brewed
-              coffee meets the allure of craft cocktails. We&apos;re more than
-              just a café or a bar—we&apos;re the spot that transforms with your
-              mood, whether you&apos;re craving a quiet morning pick-me-up or a
-              lively evening out with friends.
+              coffee meets the allure of craft cocktails. Whether you&apos;re
+              looking for a quiet morning pick-me-up or a lively evening out,
+              we&apos;ve got you covered.
             </p>
-            <p className="text-xs text-app-gray text-justify">
+
+            {/* Second paragraph */}
+            <p className="text-sm text-app-gray text-justify mb-6 leading-relaxed">
               Our story began with the idea of creating a space that offers the
               best of both worlds: the laid-back vibe of a cozy café by day and
-              the electric energy of a vibrant bar after dark. At Cafe After
-              Hours, the day starts with expertly brewed espresso, freshly baked
-              pastries, and the soft hum of conversation. As the sun sets, we
-              dim the lights, shake up signature cocktails, and the atmosphere
-              shifts—perfect for unwinding with a drink or gathering with
-              friends.
-            </p>
-            <p className="text-xs text-app-gray text-justify">
-              Every detail of our space reflects our commitment to comfort and
-              creativity, from the rustic charm of our décor to the curated art
-              on the walls. Whether you&apos;re sipping on a latte during the
-              afternoon or enjoying a craft cocktail under dim lights,
-              we&apos;ve designed an experience that feels as comfortable as
-              home and as exciting as your favorite night out.
+              the electric energy of a vibrant bar after dark. From expertly
+              brewed espresso and freshly baked pastries in the morning to
+              signature cocktails as the sun sets, every moment here is designed
+              for your enjoyment.
             </p>
 
-            <p className="text-xs text-app-gray text-justify">
-              Our menu is a reflection of this dual identity, offering a range
-              of thoughtfully crafted drinks and simple, delicious bites.
-              Whether you&apos;re in the mood for a cozy cappuccino, a
-              refreshing beer, or an inventive cocktail, we&apos;ve got
-              something to fit every moment.
+            {/* Third paragraph */}
+            <p className="text-sm text-app-gray text-justify mb-6 leading-relaxed">
+              Whether you&apos;re sipping a latte or unwinding with friends,
+              every detail of our space reflects our commitment to comfort and
+              creativity. The rustic charm of our décor, the curated art on the
+              walls, and the cozy atmosphere are all part of the experience.
             </p>
-            <br />
-            <p className="text-xs text-app-gray">
+
+            {/* Fourth paragraph */}
+            <p className="text-sm text-app-gray text-justify mb-6 leading-relaxed">
+              Our menu mirrors this unique vibe, offering a range of
+              thoughtfully crafted drinks and delicious bites. From cozy
+              cappuccinos to inventive cocktails, we have something to satisfy
+              every craving.
+            </p>
+
+            {/* Call to action */}
+            <p className="text-sm text-app-gray text-center leading-relaxed">
               At Cafe After Hours, we believe that good drinks and great company
-              are the perfect pairing. So whether you&apos;re stopping in for a
-              morning coffee or staying late into the night for a round of
-              cocktails, you&apos;re always welcome to be part of our story.
+              are the perfect pairing. So whether you&apos;re here for a morning
+              coffee or a late-night cocktail, we invite you to make yourself at
+              home.
             </p>
-
-            {/* <div className="flex pt-4">
-              <div className="w-1/2">
-                <p className="app-header text-3xl font-bold pb-2">1996</p>
-                <p className="text-xs text-app-gray">
-                  Lorem Ipsum is that it has a more-or-less normal distribution
-                </p>
-              </div>
-              <div className="w-1/2">
-                <p className="app-header text-3xl font-bold pb-2">2021</p>
-                <p className="text-xs text-app-gray">
-                  Lorem Ipsum is that it has a more-or-less normal Content
-                  content
-                </p>
-              </div>
-            </div> */}
-            {/* <p className="pt-8">Sunil Luthra</p> */}
           </div>
         </div>
       </motion.div>

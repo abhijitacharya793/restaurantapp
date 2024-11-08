@@ -74,7 +74,7 @@ body.loading #content {
 }
 
 .rotate {
-  animation: spin 7s linear infinite; /* Adjust the duration or timing function as needed */
+  animation: spin 20s linear infinite; /* Adjust the duration or timing function as needed */
 }
 
 @media (max-width: 767px) {
