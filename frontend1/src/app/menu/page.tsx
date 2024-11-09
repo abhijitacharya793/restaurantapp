@@ -603,226 +603,876 @@ export default function Menu() {
         },
         {
           name: "SCHEZWAN STYLE SALT N PEPPER",
-          description: "CRISPY VEGETABLES TOSSED WITH FRIED GARLIC & CHINESE WINE, SCHEZWAN PEPPER",
-          price: "",
+          description:
+            "CRISPY VEGETABLES TOSSED WITH FRIED GARLIC & CHINESE WINE, SCHEZWAN PEPPER",
+          price: "495",
           veg: "green",
         },
         {
           name: "CRISPY FRIED CORN KERNELS",
-          description: "A SIMPLE CORN KERNEL DISH WITH BASIC SALT N PEPPER, YET IT TASTES DELICIOUS",
-          price: "",
+          description:
+            "A SIMPLE CORN KERNEL DISH WITH BASIC SALT N PEPPER, YET IT TASTES DELICIOUS",
+          price: "495",
           veg: "green",
         },
         {
           name: "GOLDEN FRIED MAGIC PRAWNS",
-          description: "GORGEOUS GOLDEN FRIED PRAWNS ARE OUT-AN-OUT WINNER FOR A ROCKING PARTY WITH COCKTAIL SAUCE",
-          price: "",
+          description:
+            "GORGEOUS GOLDEN FRIED PRAWNS ARE OUT-AN-OUT WINNER FOR A ROCKING PARTY WITH COCKTAIL SAUCE",
+          price: "795",
           veg: "red",
         },
         {
           name: "SICHUAN STYLE BURNT GARLIC CHICKEN",
           description: "SPICY SCHEZWAN PEPPER AND FIERY CHILLIES",
-          price: "",
+          price: "595",
           veg: "red",
         },
         {
           name: "CRISPY FRIED FISH CHILLY GARLIC/SCHEZWAN",
           description: "ASK YOUR SERVER TO MAKE IT YOUR WAY",
-          price: "",
+          price: "695",
           veg: "red",
         },
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "TERIYAKI CHICKEN SKEWERS",
+          description:
+            "CHICKEN CUBES MARINATED IN TERIYAKI SAUCE ARE INCREDIBLY FLAVORFUL AND BURSTING WITH UMAMI AND SWEET-SALTY PERFECTION",
+          price: "595",
           veg: "red",
         },
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "THAI BASIL CHICKEN",
+          description:
+            "STIR FRIED CHICKEN WITH A MOUTHWATERING BALANCE OF SAVORY & SWEET AROMAS OF CARAMELIZED GARLIC & BASIL",
+          price: "595",
           veg: "red",
         },
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "ORIGINAL CHICKEN LOLLIPOP",
+          description: "TOSSED IN TRADITIONAL SCHEZWAN SAUCE",
+          price: "595",
           veg: "red",
         },
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "CRISPY FRIED CHILLY CHICKEN",
+          description: "CHICKEN MORSELS DEEP FRIED & TOSSED IN CHILI SAUCE",
+          price: "595",
           veg: "red",
         },
       ],
     },
     {
-      category: "",
-      description: "",
+      category: "DUMPLINGS",
+      description: "(STEAMED/PAN TOSSED/SIZZIERS)",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
+          name: "FUSION DUMPLINGS VEG/CHICKEN",
           description: "",
-          price: "",
+          price: "495/595",
+          veg: "black",
+        },
+        {
+          name: "THAI GREEN VEG DUMPLING",
+          description: "",
+          price: "495",
           veg: "green",
+        },
+        {
+          name: "SPICY CORN & ASPARAGUS DUMPLING",
+          description: "",
+          price: "525",
+          veg: "green",
+        },
+        {
+          name: "WATERCHEST NUT AND CHEESE DUMPLING",
+          description: "",
+          price: "495",
+          veg: "green",
+        },
+        {
+          name: "CHICKEN THAI BASIL DUMPLING",
+          description: "",
+          price: "625",
+          veg: "red",
+        },
+        {
+          name: "SRIRACHA CHICKEN DUMPLING",
+          description: "",
+          price: "625",
+          veg: "red",
+        },
+        {
+          name: "PRAWN HAR GOW DUMPLING",
+          description: "",
+          price: "795",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
+      category: "SUSHIS",
       description: "",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
+          name: "VEG CALIFORNIA ROLL",
           description: "",
-          price: "",
+          price: "575",
           veg: "green",
+        },
+        {
+          name: "AVOCADO & PHILADELPHIA CHEESE ROLL",
+          description: "",
+          price: "595",
+          veg: "green",
+        },
+        {
+          name: "ZUCCHINI ROLL WITH HERBS & CHEESE",
+          description: "",
+          price: "575",
+          veg: "green",
+        },
+        {
+          name: "AVOCADO CARROT CUCUMBER MAKI ROLL",
+          description: "",
+          price: "595",
+          veg: "green",
+        },
+        {
+          name: "ASPARAGUS TEMPURA PICKLED CARROTS",
+          description: "",
+          price: "595",
+          veg: "green",
+        },
+        {
+          name: "TEMPURA SHRIMP ROLL",
+          description: "",
+          price: "895",
+          veg: "red",
+        },
+        {
+          name: "SMOKE SALMON & PHILADELPHIA CHEESE ROLL",
+          description: "",
+          price: "895",
+          veg: "red",
+        },
+        {
+          name: "SPICY CHICKEN ROLL",
+          description: "",
+          price: "645",
+          veg: "red",
+        },
+        {
+          name: "TERIYAKI CHICKEN ROLL",
+          description: "",
+          price: "645",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
+      category: "CONTINENTAL MAINS",
       description: "",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "GRILLED COTTAGE CHEESE STEAK CHIPOTLE/PERI PERI/BBQ",
+          description: "SERVED WITH A MÉLANGE OF VEGGIES & MEXICAN RICE",
+          price: "595",
           veg: "green",
+        },
+        {
+          name: "MODERN GRILLED CHICKEN BLACK PEPPER/BBQ/PERI PERI",
+          description:
+            "SERVED ON A BED OF MEXICAN RICE, WITH CHOICE OF SAUCE AND SAUTÉED VEGGIES",
+          price: "695",
+          veg: "red",
+        },
+        {
+          name: "HERB CRUSTED LAMB STEAK",
+          description:
+            "LAMB STEAK CRUSTED WITH HERBS TOPPED WITH BARBECUE SAUCE WITH ROASTED VEGETABLES & POTATO MASH",
+          price: "895",
+          veg: "red",
+        },
+        {
+          name: "CAJUN ANGEL SHRIMPS",
+          description:
+            "SHRIMPS WRAPPED IN BACON STRIPS SEARED IN BUTTER WITH LOADS OF CAJUN SPICE SERVED WITH CAJUN CREAM SAUCE, HERB RICE AND CORN COB",
+          price: "895",
+          veg: "red",
+        },
+        {
+          name: "MEDITERRANEAN GRILLED RED SNAPPER",
+          description:
+            "WHOLE RED SNAPPER RUBBED WITH MEDITERRANEAN SPICES SERVED WITH GRILLED VEGGGIES & MASH POTATOES",
+          price: "795",
+          veg: "red",
+        },
+        {
+          name: "PERUVIAN GRILLED FISH",
+          description:
+            "GRILLED SOLE FISH SERVED WITH GRILLED ASPARAGUS, QUINOA PILAF TOPPED WITH FRIED EGG & LEMON BUTTER SAUCE",
+          price: "745",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
+      category: "SIZZIERS",
       description: "",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "GRILLED COTTAGE CHEESE SIZZLER CHIPOTLE/PERI PERI/BBQ",
+          description:
+            "SERVED WITH A MÉLANGE OF VEGGIES WITH MEXICAN RICE & CORN COB",
+          price: "645",
           veg: "green",
+        },
+        {
+          name: "ROASTED MEXICAN VEGETABLE SIZZLER",
+          description:
+            "MEDLEY OF VEGGIES TOSSED IN CHIPOTLE SAUCE WITH MEXICAN RICE AND POTATO WEDGES",
+          price: "645",
+          veg: "green",
+        },
+        {
+          name: "GRILLLED CHICKEN SIZZLER BLACK PEPPER / BBQ / PERI PERI",
+          description:
+            "GRILLED CHICKEN WITH CHOICE OF SAUCE, TOSSED VEGGIES, MEXICAN RICE AND CORN COB",
+          price: "695",
+          veg: "red",
+        },
+        {
+          name: "TEX-MEX LAMB SIZZLER",
+          description:
+            "LAMB STEAK GRILLED AND SERVED WITH VEGGIES AND MEXICAN RICE, CORN COB & TOPPED WITH RED WINE DEMI GLAZE",
+          price: "795",
+          veg: "red",
+        },
+        {
+          name: "GRILLED FISH SIZZLER",
+          description:
+            "GRILLED FISH WITH TOPPED WITH LEMON BUTTER SAUCE, SAUTEED VEGGIES AND FRENCH FRIES",
+          price: "795",
+          veg: "red",
+        },
+        {
+          name: "BUTTER GARLIC PRAWN SIZZLER",
+          description:
+            "TIGER PRAWNS GRILLED WITH SECRET MARINATION ON A BED OF VEGGIES AND MEXICAN RICE",
+          price: "895",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
-      description: "",
+      category: "CRAFTED SANDWICHES/BURGERS",
+      description: "SERVED WITH FRENCH FRIES AND HOUSE SALAD",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "CLUB SANDWICH VEG/NON-VEG",
+          description: "An all time favorite",
+          price: "395/495",
+          veg: "black",
+        },
+        {
+          name: "TUSCAN VEGETABLE MELT FOCACCIA",
+          description:
+            "Roasted veggies tossed in balsamic glaze with lettuce and cheese",
+          price: "445",
           veg: "green",
+        },
+        {
+          name: "GARDEN VEGGIE BURGER",
+          description:
+            "Homemade veg patty, chipotle mayo and gherkins, tomato, caramelized onion",
+          price: "445",
+          veg: "green",
+        },
+        {
+          name: "PERI PERI COTTAGE CHEESE BURGER",
+          description:
+            "Peri peri grilled chicken with lettuce, tomato, caramelized onion, gherkins",
+          price: "445",
+          veg: "green",
+        },
+        {
+          name: "TEXAS PERI PERI CHICKEN FOCACCIA",
+          description:
+            "Peri peri grilled chicken with lettuce, tomato, caramelized onion, gherkins",
+          price: "595",
+          veg: "red",
+        },
+        {
+          name: "NEWYORK STYLE SMOKE CHICKEN BURGER",
+          description:
+            "Grilled chicken patty, lettuce, gherkins, tomato, corn chips",
+          price: "595",
+          veg: "red",
+        },
+        {
+          name: "CALIFORNIA LAMB BURGER",
+          description:
+            "Grilled lamb with a perfect blend of spices and grilled to create a deliciously juicy and flavorful burger",
+          price: "695",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
+      category: "ARTISANS PIZZAS",
       description: "",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "ROCKET MARGHERITA CAPRESE",
+          description:
+            "Margherita with a zing of cherry tomato and rocket leaf",
+          price: "495",
           veg: "green",
+        },
+        {
+          name: "ROASTED VEGGIES",
+          description:
+            "Medley of roasted asparagus, broccoli, bell peppers, zucchini, and caramelized onions",
+          price: "595",
+          veg: "green",
+        },
+        {
+          name: "VEGETABLE CARNIVAL",
+          description:
+            "A must try pizza with bell peppers, mushroom, onion, sweet corn, jalapeno, black olive, cherry tomato & rocket leaf",
+          price: "595",
+          veg: "green",
+        },
+        {
+          name: "QUATTRO FORMAGGIO",
+          description:
+            "Mozzarella, cheddar, parmesan, feta with sundried tomato, black olive & jalapeno",
+          price: "645",
+          veg: "green",
+        },
+        {
+          name: "CLASSIC PEPPERONI",
+          description: "Chef's favorite with German pork pepperoni, mozzarella",
+          price: "695",
+          veg: "red",
+        },
+        {
+          name: "ALL THE MEATS",
+          description:
+            "Smoked diced chicken, chicken sausage, chicken salami, bacon diced, caramelized onion",
+          price: "695",
+          veg: "red",
+        },
+        {
+          name: "SPICY CHICKEN TIKKA",
+          description: "Tandoori diced chicken with onion & green chilly",
+          price: "695",
+          veg: "red",
+        },
+        {
+          name: "TEX-MEX PERI PERI CHICKEN",
+          description:
+            "Grilled diced chicken tossed in peri peri sauce with fresh mozzarella, onion & bell peppers",
+          price: "695",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
-      description: "",
+      category: "FLAVORSOME PASTA",
+      description: "SERVED WITH TOASTED FOCACCIA",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "CHEESE SAUCE",
+          description:
+            "A heavenly convergence of cream, butter, red wine & cheese create a delicious pasta",
+          price: "495/595",
+          veg: "black",
+        },
+        {
+          name: "ARABIATTA",
+          description: "Tangy tomato pasta with veggies or chicken",
+          price: "495/595",
+          veg: "black",
+        },
+        {
+          name: "ALFREDO",
+          description: "Creamy pasta with veggies or chicken",
+          price: "495",
           veg: "green",
+        },
+        {
+          name: "SPAGHETTI AGLIO E OLIO",
+          description: "",
+          price: "495/595",
+          veg: "green",
+        },
+        {
+          name: "VEG LASAGNA",
+          description: "",
+          price: "495",
+          veg: "green",
+        },
+        {
+          name: "SPAGHETTI WITH MEATBALLS",
+          description: "",
+          price: "695",
+          veg: "red",
+        },
+        {
+          name: "CHICKEN LASAGNA",
+          description: "",
+          price: "625",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
+      category: "meal bowl",
       description: "",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
+          name: "KHOW SUEY VEG/CHICKEN",
           description: "",
           price: "",
+          veg: "black",
+        },
+        {
+          name: "THAI RED/GREEN CURRY BOWL VEG/CHICKEN/PRAWN",
+          description: "Choice of curry with steamed rice and kimchi salad",
+          price: "495/595/695",
+          veg: "black",
+        },
+        {
+          name: "MANCHURIAN BOWL VEG/CHICKEN",
+          description: "Hot garlic sauce with fried rice/noodles",
+          price: "495/595",
+          veg: "black",
+        },
+        {
+          name: "STIR FRIED MIX VEG BOWL CHILLY GARLIC/BLACK BEAN/SCHEZWAN",
+          description:
+            "Mixed Asian greens tossed with choice of sauce & rice/noodles",
+          price: "495",
           veg: "green",
+        },
+        {
+          name: "CHILLY PANEER BOWL",
+          description: "Chilly paneer gravy with fried rice/noodles",
+          price: "495",
+          veg: "green",
+        },
+        {
+          name: "CHICKEN MONGOLIAN",
+          description:
+            "Crispy chicken smothered in a sweet ginger hoisin sauce along with rice/noodles",
+          price: "595",
+          veg: "red",
+        },
+        {
+          name: "FISH IN BLACK BEAN/XO SAUCE",
+          description: "Crispy sea bass in choice of sauce & rice/noodles",
+          price: "695",
+          veg: "red",
+        },
+        {
+          name: "PRAWN IN BLACK BEAN/XO SAUCE",
+          description: "Prawns glazed in choice of sauce & rice/noodles",
+          price: "795",
+          veg: "red",
+        },
+        {
+          name: "CHILLY CHICKEN BOWL",
+          description: "Chilly chicken gravy with fried rice/noodles",
+          price: "595",
+          veg: "red",
+        },
+        {
+          name: "Add ons",
+          description: "",
+          price: "",
+          veg: "",
+        },
+        {
+          name: "GRILLED VEGETABLES",
+          description: "",
+          price: "145",
+          veg: "green",
+        },
+        {
+          name: "MASH POTATO",
+          description: "",
+          price: "145",
+          veg: "green",
+        },
+        {
+          name: "RAITA BOONDI / MIX VEG / PINEAPPLE",
+          description: "",
+          price: "195/245",
+          veg: "green",
+        },
+        {
+          name: "BACON SLICE",
+          description: "",
+          price: "195",
+          veg: "red",
+        },
+        {
+          name: "GRILLED CHICKEN",
+          description: "",
+          price: "195",
+          veg: "red",
+        },
+        {
+          name: "CHICKEN SAUSAGE",
+          description: "",
+          price: "195",
+          veg: "red",
+        },
+        {
+          name: "CHICKEN HAM",
+          description: "",
+          price: "195",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
+      category: "MEAL BOWL",
       description: "",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
+          name: "STEAMED RICE",
           description: "",
-          price: "",
+          price: "295",
           veg: "green",
+        },
+        {
+          name: "PULAO JEERA/PEAS",
+          description: "",
+          price: "295/395",
+          veg: "green",
+        },
+        {
+          name: "FRIED RICE VEG/CHICKEN",
+          description: "",
+          price: "295/395",
+          veg: "black",
+        },
+        {
+          name: "BURNT GARLIC RICE VEG/CHICKEN",
+          description: "",
+          price: "375/475",
+          veg: "black",
+        },
+        {
+          name: "THAI FRIED RICE VEG/CHICKEN",
+          description: "",
+          price: "375/475",
+          veg: "black",
+        },
+        {
+          name: "HAKKA NOODLES VEG/CHICKEN",
+          description: "",
+          price: "375/475",
+          veg: "black",
+        },
+        {
+          name: "ASIAN NOODLES VEG/CHICKEN",
+          description: "",
+          price: "375/475",
+          veg: "black",
+        },
+        {
+          name: "PAN FRIED NOODLES VEG/CHICKEN",
+          description: "",
+          price: "375/475",
+          veg: "black",
         },
       ],
     },
     {
-      category: "",
+      category: "SOULFUL INDIAN DELIGHTS",
       description: "",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
-          description: "",
-          price: "",
+          name: "Subz handi biryani",
+          description:
+            "DUM PUKHT VEG BIRYANI WITH A FLAVOR OF WHOLE SPICES, SAFFRON & KEWRA WITH RAITA & KACHUMBER SALAD",
+          price: "595",
           veg: "green",
+        },
+        {
+          name: "Double dal tadka",
+          description: "YELLOW LENTIL TEMPERED WITH WHOLE SPICES",
+          price: "495",
+          veg: "green",
+        },
+        {
+          name: "DAL MAKHNI",
+          description:
+            "North Indian delicacy made with black lentils and kidney beans, cooked in a rich creamy gravy",
+          price: "595",
+          veg: "green",
+        },
+        {
+          name: "KHUMB MAKAI MASALA",
+          description:
+            "Delicious combination of corn and mushrooms in a masala gravy",
+          price: "545",
+          veg: "green",
+        },
+        {
+          name: "SUBZ HANDI BIRYANI",
+          description:
+            "Dum pukht veg biryani with a flavor of whole spices, saffron & kewra, served with raita & kachumber salad",
+          price: "495",
+          veg: "green",
+        },
+        {
+          name: "DOUBLE DAL TADKA",
+          description: "Yellow lentil tempered with whole spices",
+          price: "495",
+          veg: "green",
+        },
+        {
+          name: "AMRITSARI CHOLE",
+          description:
+            "Delhi's favorite local recipe with freshly grounded chole masala",
+          price: "495",
+          veg: "green",
+        },
+        {
+          name: "DUM ALOO KASHMIRI",
+          description:
+            "Scoop of potato stuffed with cottage cheese and dry fruits, cooked with rich tomato-onion gravy",
+          price: "545",
+          veg: "green",
+        },
+        {
+          name: "PANEER BUTTER MASALA/LABABDAR/KADHAI",
+          description:
+            "Cubes of paneer in choice of butter masala, lababdar, or kadai gravy",
+          price: "545",
+          veg: "green",
+        },
+        {
+          name: "MAKHMALI PANEER KE KOFTE",
+          description: "Indulge in Nawabi savory delights with paneer kofte",
+          price: "545",
+          veg: "green",
+        },
+        {
+          name: "SUBZ KHADA MASALA",
+          description:
+            "Assorted seasonal vegetables with whole Indian spices, finished with tomato-onion gravy",
+          price: "545",
+          veg: "green",
+        },
+        {
+          name: "MURGH HANDI BIRYANI",
+          description:
+            "Dum pukht chicken biryani with a flavor of whole spices, saffron & kewra, served with raita & kachumber salad",
+          price: "695",
+          veg: "red",
+        },
+        {
+          name: "GOSHT BIRYANI",
+          description:
+            "Dum pukht mutton biryani with a flavor of whole spices, saffron & kewra, served with raita & kachumber salad",
+          price: "795",
+          veg: "red",
+        },
+        {
+          name: "CHICKEN DAHIWALA",
+          description:
+            "Tangy, peppery, and full of flavors with chicken in yogurt-based gravy",
+          price: "595",
+          veg: "red",
+        },
+        {
+          name: "DAFTER HOURS SPL CHICKEN CHANGEZI",
+          description:
+            "Highly popular dish from the streets of Old Delhi, dating back to the era of Changez Khan",
+          price: "595",
+          veg: "red",
+        },
+        {
+          name: "MURGH MAKHNI WITH BONE/BONELESS",
+          description:
+            "Tandoori chicken done in rich creamy tomato gravy, available with or without bone",
+          price: "595",
+          veg: "red",
+        },
+        {
+          name: "KADHAI CHICKEN",
+          description:
+            "Tandoori chicken prepared in onion, bell pepper, and tomato masala",
+          price: "595",
+          veg: "red",
+        },
+        {
+          name: "MURGH TIKKA MASALA",
+          description: "Chicken tikka prepared in rich onion-tomato gravy",
+          price: "595",
+          veg: "red",
+        },
+        {
+          name: "KADHAI JHEENGA MASALA",
+          description: "Shrimps cooked in rich onion-tomato masala",
+          price: "795",
+          veg: "red",
+        },
+        {
+          name: "JOSH-E-ROGAN",
+          description:
+            "Kashmiri delicacy made with tender lamb cooked in aromatic spices",
+          price: "695",
+          veg: "red",
+        },
+        {
+          name: "RAHRA GOSHT",
+          description:
+            "Minced lamb cooked with whole pieces of lamb in Indian spices gravy",
+          price: "695",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
+      category: "breads",
       description: "",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
-          description: "",
-          price: "",
-          veg: "green",
+          name: "PLAIN NAAN / BUTTER NAAN / GARLIC NAAN",
+          description:
+            "Soft tandoori breads, available in plain, butter, or garlic variations",
+          price: "95/115/125",
+          veg: "black",
+        },
+        {
+          name: "PUDINA PARATHA/LACHHA PARATHA",
+          description:
+            "Flatbreads, available in mint-flavored Pudina Paratha or layered Lachha Paratha",
+          price: "95",
+          veg: "black",
+        },
+        {
+          name: "MISSI ROTI",
+          description: "Indian flatbread made with chickpea flour",
+          price: "95",
+          veg: "black",
+        },
+        {
+          name: "TANDOORI ROTI PLAIN/BUTTER",
+          description:
+            "Classic tandoori baked flatbread, available in plain or buttered versions",
+          price: "45/75",
+          veg: "black",
+        },
+        {
+          name: "AMRITSARI KULCHA ALOO/ONION/PANEER",
+          description:
+            "Stuffed bread, available with spiced potatoes, onions, or paneer",
+          price: "145/195",
+          veg: "black",
+        },
+        {
+          name: "CHEESE JALAPENO NAAN",
+          description: "Naan stuffed with cheese and jalapenos",
+          price: "125",
+          veg: "black",
+        },
+        {
+          name: "CHUR-CHUR NAAN/PARATHA",
+          description: "Crispy, flaky naan or paratha with a crunchy texture",
+          price: "125",
+          veg: "black",
+        },
+        {
+          name: "KEEMA PARATHA",
+          description: "Stuffed paratha with spiced minced meat",
+          price: "145",
+          veg: "red",
         },
       ],
     },
     {
-      category: "",
+      category: "DESSERT",
       description: "",
       image: "/menu10.svg",
       items: [
         {
-          name: "",
-          description: "",
-          price: "",
-          veg: "green",
+          name: "ANDAZ E BAYAAN",
+          description: "A LIP-SMACKING DESSERT IN LUCKNOWEE ANDAZ",
+          price: "195",
+          veg: "black",
         },
-      ],
-    },
-    {
-      category: "",
-      description: "",
-      image: "/menu10.svg",
-      items: [
         {
-          name: "",
+          name: "BLUEBERRY CHEESECAKE",
           description: "",
-          price: "",
-          veg: "green",
+          price: "295",
+          veg: "black",
+        },
+        {
+          name: "RED VELVET BROWNIE WITH ICE CREAM",
+          description: "",
+          price: "395",
+          veg: "black",
+        },
+        {
+          name: "MEXICAN CHURROS",
+          description: "",
+          price: "395",
+          veg: "black",
+        },
+        {
+          name: "FRUITY NUTTY SUNDAE",
+          description: "",
+          price: "345",
+          veg: "black",
+        },
+        {
+          name: "APPLE PIE WITH ICE CREAM",
+          description: "",
+          price: "395",
+          veg: "black",
+        },
+        {
+          name: "TIRAMISU JAR",
+          description: "",
+          price: "345",
+          veg: "black",
+        },
+        {
+          name: "MOCHA MUD CAKE",
+          description: "",
+          price: "345",
+          veg: "black",
+        },
+        {
+          name: "CHOCOLATE FUDGE CAKE",
+          description: "",
+          price: "495",
+          veg: "black",
+        },
+        {
+          name: "CARAMEL TOFFEE PUDDING",
+          description: "",
+          price: "495",
+          veg: "black",
         },
       ],
     },
