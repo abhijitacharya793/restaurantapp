@@ -21,7 +21,9 @@ export function Section1() {
                 food and create lasting memories. He believes in the power of
                 exceptional customer service and aim to provide a top-notch
                 dining experience for every guest.
-                <br />
+              </p>
+              <br />
+              <p className="pt-3 text-sm text-app-gray1 font-light mr-10 text-justify">
                 The CEO is committed to using fresh, locally sourced ingredients
                 to create innovative and mouthwatering dishes that cater to
                 various dietary preferences. He is dedicated to fostering a
@@ -32,10 +34,10 @@ export function Section1() {
                 outstanding culinary experiences while feeling like they are
                 part of a larger community.
               </p>
-
-              <p className="pt-2">Sunil Luthra</p>
+              <br />
+              {/* <p className="pt-2">Sunil Luthra</p> */}
               <div className="py-4">
-                <AppButton
+                {/* <AppButton
                   color={"border-app-yellow"}
                   fill={"bg-white"}
                   text={"See More"}
@@ -43,7 +45,7 @@ export function Section1() {
                   hover_color={"hover:border-app-yellow"}
                   hover_fill={"hover:bg-app-yellow"}
                   hover_fontcolor={"hover:text-app-purple"}
-                />
+                /> */}
               </div>
             </div>
           </div>

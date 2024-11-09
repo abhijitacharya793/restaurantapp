@@ -83,12 +83,12 @@ export function Section2() {
             </div>
           </div>
           <div className="lg:w-1/2 ml-8 mr-10 lg:mr-0">
-            <h1 className="app-header text-3xl font-bold pb-4 text-center">
+            <h1 className="app-header text-3xl font-bold pb-4 text-center lg:text-left">
               Welcome to Cafe After Hours
             </h1>
 
             {/* First paragraph */}
-            <p className="text-sm text-app-gray text-justify mb-6 leading-relaxed">
+            <p className="text-sm text-app-gray text-justify mb-6">
               Welcome to Cafe After Hours, where the aroma of freshly brewed
               coffee meets the allure of craft cocktails. Whether you&apos;re
               looking for a quiet morning pick-me-up or a lively evening out,
@@ -96,7 +96,7 @@ export function Section2() {
             </p>
 
             {/* Second paragraph */}
-            <p className="text-sm text-app-gray text-justify mb-6 leading-relaxed">
+            <p className="text-sm text-app-gray text-justify mb-6">
               Our story began with the idea of creating a space that offers the
               best of both worlds: the laid-back vibe of a cozy café by day and
               the electric energy of a vibrant bar after dark. From expertly
@@ -106,7 +106,7 @@ export function Section2() {
             </p>
 
             {/* Third paragraph */}
-            <p className="text-sm text-app-gray text-justify mb-6 leading-relaxed">
+            <p className="text-sm text-app-gray text-justify mb-6">
               Whether you&apos;re sipping a latte or unwinding with friends,
               every detail of our space reflects our commitment to comfort and
               creativity. The rustic charm of our décor, the curated art on the
@@ -114,7 +114,7 @@ export function Section2() {
             </p>
 
             {/* Fourth paragraph */}
-            <p className="text-sm text-app-gray text-justify mb-6 leading-relaxed">
+            <p className="text-sm text-app-gray text-justify mb-6">
               Our menu mirrors this unique vibe, offering a range of
               thoughtfully crafted drinks and delicious bites. From cozy
               cappuccinos to inventive cocktails, we have something to satisfy
@@ -122,7 +122,7 @@ export function Section2() {
             </p>
 
             {/* Call to action */}
-            <p className="text-sm text-app-gray text-center leading-relaxed">
+            <p className="text-sm text-app-gray text-center lg:text-left">
               At Cafe After Hours, we believe that good drinks and great company
               are the perfect pairing. So whether you&apos;re here for a morning
               coffee or a late-night cocktail, we invite you to make yourself at

@@ -16,63 +16,93 @@ export function Section6() {
   };
   const slides: Slide[] = [
     {
-      name: "Fresh and fruity",
-      image: "/popular1.jpg",
-      description: "Lorem Ipsum is that it has a more-or-less normal",
-      price: "15",
+      name: "burrah kebab",
+      image: "/popular6.jpg",
+      description:
+        "WHOLE POMFRET MARINATED IN SPICY TANDOORI YOGURT & COOKED TO PERFECTION IN TANDOOR",
+      price: "",
     },
     {
-      name: "Veg spring roll",
-      image: "/popular2.jpg",
-      description: "Lorem Ipsum is that it has a more-or-less normal",
-      price: "15",
+      name: "Chicken Sharabi Tikka",
+      image: "/popular7.jpg",
+      description: "",
+      price: "",
     },
     {
-      name: "Dark side of moon",
-      image: "/popular3.jpg",
-      description: "Lorem Ipsum is that it has a more-or-less normal",
-      price: "15",
+      name: "Dumplings",
+      image: "/popular8.jpeg",
+      description: "",
+      price: "",
     },
     {
-      name: "Soya chaap tikka",
-      image: "/popular4.jpg",
-      description: "Lorem Ipsum is that it has a more-or-less normal",
-      price: "15",
+      name: "Lucknowee Mutton Galouti Kebab",
+      image: "/popular9.jpg",
+      description: "",
+      price: "",
+    },
+    {
+      name: "Mocha mud cake",
+      image: "/popular10.jpg",
+      description: "",
+      price: "",
+    },
+    {
+      name: "Pink your moment",
+      image: "/popular11.jpeg",
+      description: "",
+      price: "",
+    },
+    {
+      name: "Smoked chicken Quesadillas",
+      image: "/popular12.jpeg",
+      description: "",
+      price: "",
+    },
+    {
+      name: "Tandoori pomfret",
+      image: "/popular13.jpeg",
+      description:
+        "WHOLE POMFRET MARINATED IN SPICY TANDOORI YOGURT & COOKED TO PERFECTION IN TANDOOR",
+      price: "1095",
     },
   ];
 
   const [slidesCount, setSlidesCount] = useState(1);
+  const [slidesToScrollCount, setSlidesToScrollCount] = useState(1);
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: slidesCount,
-    slidesToScroll: 1,
+    slidesToScroll: slidesToScrollCount,
   };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       setSlidesCount((window.innerWidth < 767 && 1) || 4);
+      setSlidesToScrollCount((window.innerWidth < 767 && 1) || 2);
     }
   }, []);
   const SimpleSlider = () => {
     return (
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="px-2">
+          <div key={index} className="px-2 relative overflow-hidden group">
             <Image
               alt=""
               width={300}
               height={300}
               src={slide.image}
-              className="flex justify-center"
+              className="flex justify-center object-cover h-48"
             />
             <div className="flex my-2 app-header font-bold text-xl">
-              <p className="w-full">{slide.name}</p>
-              <p>${slide.price}</p>
+              <p className="w-full capitalize">{slide.name.toLowerCase()}</p>
+              <p>{slide.price}</p>
             </div>
-            <p className="text-sm text-app-gray">{slide.description}</p>
+            <p className="text-sm text-app-gray capitalize">
+              {slide.description.toLowerCase()}
+            </p>
           </div>
         ))}
       </Slider>
@@ -89,9 +119,9 @@ export function Section6() {
           <p className="app-header text-3xl font-bold pb-3 pt-4">
             Popular Dishes
           </p>
-          <p className="pt-1 pb-4 text-sm text-app-gray w-96">
-            Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters, as opposed to using Content here, content making.
+          <p className="pt-1 pb-4 text-sm text-app-gray lg:w-96">
+            Explore our most popular drinks and snacks, perfect for a night out
+            with friends.
           </p>
         </div>
         <div className="px-4 lg:px-0">
