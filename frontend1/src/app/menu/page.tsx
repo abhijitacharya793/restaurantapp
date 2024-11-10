@@ -1558,7 +1558,7 @@ export default function Menu() {
     {
       category: "Forever Classic",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "COSMOPOLITAN",
@@ -1686,7 +1686,7 @@ export default function Menu() {
     {
       category: "shooters",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "FLAMING LAMBORGHINI",
@@ -1723,7 +1723,7 @@ export default function Menu() {
     {
       category: "indian single malt",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "GIAN CHAND",
@@ -1839,7 +1839,7 @@ export default function Menu() {
     {
       category: "premium whiskey blends",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "J/W BLUE LABEL",
@@ -1930,7 +1930,7 @@ export default function Menu() {
     {
       category: "american whiskey",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "JACK DANIELS",
@@ -1991,7 +1991,7 @@ export default function Menu() {
     {
       category: "whiskey blended",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "WILLIAM LAWSONS",
@@ -2071,7 +2071,7 @@ export default function Menu() {
     {
       category: "vodka",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "ABSOLUT VODKA",
@@ -2145,7 +2145,7 @@ export default function Menu() {
     {
       category: "gin",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "HENDRICK'S JODHPUR",
@@ -2207,7 +2207,7 @@ export default function Menu() {
     {
       category: "domestic beer",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "BACARDI BREEZER",
@@ -2280,7 +2280,7 @@ export default function Menu() {
     {
       category: "imported beer pint 330 ML",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "AMSTEL LIGHT",
@@ -2312,7 +2312,7 @@ export default function Menu() {
     {
       category: "draught beer",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "BIRA 91 WHEAT",
@@ -2343,7 +2343,7 @@ export default function Menu() {
     {
       category: "aperitifs",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "DRY MARTINI",
@@ -2374,7 +2374,7 @@ export default function Menu() {
     {
       category: "liqueurs",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "JAGERMEISTER",
@@ -2423,7 +2423,7 @@ export default function Menu() {
     {
       category: "rum",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "OLD MONK",
@@ -2454,7 +2454,7 @@ export default function Menu() {
     {
       category: "cognac",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "REMY MARTIN V.S.O.P.",
@@ -2479,7 +2479,7 @@ export default function Menu() {
     {
       category: "tequila",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "PATRON SILVER",
@@ -2510,7 +2510,7 @@ export default function Menu() {
     {
       category: "wine",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "DOMESTIC WINE",
@@ -2547,7 +2547,7 @@ export default function Menu() {
     {
       category: "mocktails",
       description: "",
-      image: "/gallery2.jpg",
+      image: "/menu_item_Minty pineapple.jpg",
       items: [
         {
           name: "BERRY SUNRISE",
@@ -2632,7 +2632,7 @@ export default function Menu() {
     {
       category: "quenchers",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "TONIC WATER CAN",
@@ -2735,7 +2735,7 @@ export default function Menu() {
     {
       category: "iced tea, slushes & shakes",
       description: "",
-      image: "/gallery2.jpg",
+      image: "/menu_item_Oreo shake.jpg",
       items: [
         {
           name: "MASALA LEMONADE",
