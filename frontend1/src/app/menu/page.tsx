@@ -208,7 +208,7 @@ export default function Menu() {
     {
       category: "SOURDOUGH TOASTS/BRUSCHETTAS",
       description: "",
-      image: "/menu_item_Sandwich.jpg",
+      image: "",
       items: [
         {
           name: "SCHEZWAN MUSHROOM SOURDOUGH TOAST",
@@ -1661,7 +1661,7 @@ export default function Menu() {
     {
       category: "Sangria",
       description: "",
-      image: "/gallery2.jpg",
+      image: "",
       items: [
         {
           name: "ROJA SANGRIA",
@@ -2886,13 +2886,13 @@ export default function Menu() {
                   <div key={categoryIndex}>
                     <div className="py-8 w-full lg:w-full lg:flex">
                       {/* Conditionally render image before or after the category text */}
-                      {category.image && categoryIndex % 2 === 0 && (
+                      {(category.image && categoryIndex % 2 === 0 && (
                         <motion.div
                           initial="initial"
                           whileInView="animate"
                           variants={itemVariant}
                           viewport={{ once: true, amount: 0.2 }}
-                          className="lg:w-2/6 mb-4 lg:mb-0 mr-8 relative min-w-full lg:min-w-fit max-h-screen"
+                          className="lg:w-2/6 mb-4 lg:mb-0 mr-8 relative min-w-full lg:min-w-fit max-h-screen hidden lg:block"
                         >
                           <Image
                             src={category.image}
@@ -2904,7 +2904,10 @@ export default function Menu() {
                             style={{ objectPosition: "center center" }} // Ensure the image is centered
                           />
                         </motion.div>
-                      )}
+                      )) ||
+                        (!category.image && categoryIndex % 2 === 0 && (
+                          <div className="lg:w-2/6"></div>
+                        ))}
 
                       {/* Category text */}
                       <motion.div
@@ -2946,13 +2949,13 @@ export default function Menu() {
                       </motion.div>
 
                       {/* Image after text for odd-indexed categories */}
-                      {category.image && categoryIndex % 2 !== 0 && (
+                      {(category.image && categoryIndex % 2 !== 0 && (
                         <motion.div
                           initial="initial"
                           whileInView="animate"
                           variants={itemVariant}
                           viewport={{ once: true, amount: 0.2 }}
-                          className="lg:w-2/6 mt-4 lg:mt-0 relative min-w-full lg:min-w-fit max-h-screen ml-8"
+                          className="lg:w-2/6 mt-4 lg:mt-0 relative min-w-full lg:min-w-fit max-h-screen ml-8 hidden lg:block"
                         >
                           <Image
                             src={category.image}
@@ -2964,7 +2967,10 @@ export default function Menu() {
                             style={{ objectPosition: "center center" }} // Ensure the image is centered
                           />
                         </motion.div>
-                      )}
+                      )) ||
+                        (!category.image && categoryIndex % 2 !== 0 && (
+                          <div className="lg:w-2/6"></div>
+                        ))}
                     </div>
                     <Image
                       src="/divider.png"
