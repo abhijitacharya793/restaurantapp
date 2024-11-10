@@ -9,12 +9,17 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export function Section2() {
+  const itemVariant = {
+    initial: { opacity: 0, x: -20 },
+    animate: { opacity: 1, x: 0, transition: { duration: 0.4 } },
+  };
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
+        initial="initial"
+        whileInView="animate"
+        variants={itemVariant}
+        viewport={{ once: true, amount: 0.2 }}
       >
         {/* P1 */}
         <div className="lg:max-w-screen-lg mx-auto lg:flex items-center pt-4 lg:pt-32 pl-10 lg:pl-0">
@@ -84,12 +89,12 @@ export function Section2() {
           </div>
           <div className="lg:w-1/2 ml-8 mr-10 lg:mr-0">
             <h1 className="app-header text-3xl font-bold pb-4 text-center lg:text-left">
-              Welcome to Cafe After Hours
+              Welcome to Café After Hours
             </h1>
 
             {/* First paragraph */}
             <p className="text-sm text-app-gray text-justify mb-6">
-              Welcome to Cafe After Hours, where the aroma of freshly brewed
+              Welcome to Café After Hours, where the aroma of freshly brewed
               coffee meets the allure of craft cocktails. Whether you&apos;re
               looking for a quiet morning pick-me-up or a lively evening out,
               we&apos;ve got you covered.
@@ -123,7 +128,7 @@ export function Section2() {
 
             {/* Call to action */}
             <p className="text-sm text-app-gray text-center lg:text-left">
-              At Cafe After Hours, we believe that good drinks and great company
+              At Café After Hours, we believe that good drinks and great company
               are the perfect pairing. So whether you&apos;re here for a morning
               coffee or a late-night cocktail, we invite you to make yourself at
               home.

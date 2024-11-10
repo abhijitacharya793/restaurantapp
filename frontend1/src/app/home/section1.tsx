@@ -76,11 +76,9 @@ export function Section1() {
               <span className="text-app-yellow">After Hours</span>
             </h1>
 
-            <p className="text-sm text-white pt-8 lg:w-96 px-10 lg:px-0 lg:text-left text-justify">
+            <p className="text-sm text-white pt-8 px-10 lg:px-0 lg:text-left text-justify">
               One of the finest destinations for food, drinks, and unforgettable
-              moments.
-              <br />
-              Experience the best, where every sip and bite leaves a lasting
+              moments. Experience the best, where every sip and bite leaves a lasting
               impression.
             </p>
             <div className="py-8 flex justify-center lg:justify-start">

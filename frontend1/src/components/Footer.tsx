@@ -195,7 +195,7 @@ export function Footer() {
           <div className="flex items-center justify-between py-4">
             <div className="opacity-100 transform-none">
               <p className="text-sm text-white">
-                © Copyright - Cafe After Hours | Designed by
+                © Copyright - Café After Hours | Designed by
                 {" "}<a
                   href="https://www.victorflow.com/"
                   target="_blank"

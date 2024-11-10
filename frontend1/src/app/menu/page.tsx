@@ -1,4 +1,7 @@
 "use client";
+import { motion } from "framer-motion";
+import { useEffect } from 'react';
+
 import React, { useState } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -12,7 +15,7 @@ export default function Menu() {
     {
       category: "Bar Titbits",
       description: "",
-      image: "/menu6.svg",
+      image: "/menusidebar1.png",
       items: [
         {
           name: "French Fries",
@@ -85,7 +88,7 @@ export default function Menu() {
     {
       category: "Soups",
       description: "",
-      image: "/menu6.svg",
+      image: "/menusidebar2.png",
       items: [
         {
           name: "Thyme infused wild mushroom soup",
@@ -170,7 +173,7 @@ export default function Menu() {
     {
       category: "WHOLESOME SHARING PIATIERS",
       description: "",
-      image: "/menu10.svg",
+      image: "/menusidebar4.png",
       items: [
         {
           name: "VEG MEZZE PLATTER",
@@ -205,7 +208,7 @@ export default function Menu() {
     {
       category: "SOURDOUGH TOASTS/BRUSCHETTAS",
       description: "",
-      image: "/menu10.svg",
+      image: "/menu_item_Sandwich.jpg",
       items: [
         {
           name: "SCHEZWAN MUSHROOM SOURDOUGH TOAST",
@@ -551,7 +554,7 @@ export default function Menu() {
     {
       category: "ORIENTAL",
       description: "",
-      image: "/menu10.svg",
+      image: "/menusidebar5.png",
       items: [
         {
           name: "THAI STYLE SPRING ROLLS",
@@ -665,7 +668,7 @@ export default function Menu() {
     {
       category: "DUMPLINGS",
       description: "(STEAMED/PAN TOSSED/SIZZIERS)",
-      image: "/menu10.svg",
+      image: "/menusidebar6.png",
       items: [
         {
           name: "FUSION DUMPLINGS VEG/CHICKEN",
@@ -714,7 +717,7 @@ export default function Menu() {
     {
       category: "SUSHIS",
       description: "",
-      image: "/menu10.svg",
+      image: "/menusidebar7.png",
       items: [
         {
           name: "VEG CALIFORNIA ROLL",
@@ -823,7 +826,7 @@ export default function Menu() {
     {
       category: "SIZZIERS",
       description: "",
-      image: "/menu10.svg",
+      image: "/menusidebar8.png",
       items: [
         {
           name: "GRILLED COTTAGE CHEESE SIZZLER CHIPOTLE/PERI PERI/BBQ",
@@ -927,7 +930,7 @@ export default function Menu() {
     {
       category: "ARTISANS PIZZAS",
       description: "",
-      image: "/menu10.svg",
+      image: "/menusidebar9.png",
       items: [
         {
           name: "ROCKET MARGHERITA CAPRESE",
@@ -1147,9 +1150,9 @@ export default function Menu() {
       ],
     },
     {
-      category: "MEAL BOWL",
+      category: "rice / noodles",
       description: "",
-      image: "/menu10.svg",
+      image: "/menusidebar11.png",
       items: [
         {
           name: "STEAMED RICE",
@@ -1204,7 +1207,7 @@ export default function Menu() {
     {
       category: "SOULFUL INDIAN DELIGHTS",
       description: "",
-      image: "/menu10.svg",
+      image: "/menusidebar10.png",
       items: [
         {
           name: "Subz handi biryani",
@@ -1629,6 +1632,19 @@ export default function Menu() {
 
   const [activeMenu, setActiveMenu] = useState("food");
 
+  // Animation variants
+  const menuVariant = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.3 } },
+  };
+
+  // Animation variant for menu items
+  const itemVariant = {
+    initial: { opacity: 0, x: -20 },
+    animate: { opacity: 1, x: 0, transition: { duration: 0.4 } },
+  };
+
   return (
     <>
       <div id="content">
@@ -1700,83 +1716,112 @@ export default function Menu() {
           </div>
         </div>
 
-        <div className="bg-white py-20 px-4 lg:px-0">
+        <motion.div
+          variants={menuVariant}
+          className="bg-white py-20 px-4 lg:px-0"
+        >
           <div className="lg:max-w-screen-lg mx-auto">
             <div className="lg:pl-8 pt-4 lg:pt-0">
               {(activeMenu === "food" ? foodItems : drinksItems).map(
                 (category, categoryIndex) => (
-                  <div
-                    key={categoryIndex}
-                    className="py-8 w-full lg:w-full lg:flex"
-                  >
-                    {/* Conditionally render image before or after the category text */}
-                    {category.image && categoryIndex % 2 === 0 && (
-                      <div className="lg:w-2/5 mb-4 lg:mb-0 mr-8 relative min-w-full lg:min-w-fit max-h-screen">
-                        <Image
-                          src={category.image}
-                          width={300}
-                          height={300}
-                          alt={category.category}
-                          priority
-                          className="w-full h-full object-cover object-center"
-                          style={{ objectPosition: "center center" }} // Ensure the image is centered
-                        />
-                      </div>
-                    )}
+                  <div key={categoryIndex}>
+                    <div className="py-8 w-full lg:w-full lg:flex">
+                      {/* Conditionally render image before or after the category text */}
+                      {category.image && categoryIndex % 2 === 0 && (
+                        <motion.div
+                          initial="initial"
+                          whileInView="animate"
+                          variants={itemVariant}
+                          viewport={{ once: true, amount: 0.2 }}
+                          className="lg:w-2/6 mb-4 lg:mb-0 mr-8 relative min-w-full lg:min-w-fit max-h-screen"
+                        >
+                          <Image
+                            src={category.image}
+                            width={300}
+                            height={500}
+                            alt={category.category}
+                            priority
+                            className="h-full object-cover object-center"
+                            style={{ objectPosition: "center center" }} // Ensure the image is centered
+                          />
+                        </motion.div>
+                      )}
 
-                    {/* Category text */}
-                    <div className="lg:w-3/5 pr-4">
-                      <p className="text-2xl font-bold text-black capitalize app-header">
-                        {category.category.toLowerCase()}
-                      </p>
-                      <p className="text-sm text-app-gray capitalize">
-                        {category.description.toLowerCase()}
-                      </p>
-                      {category.items.map((item, index) => (
-                        <div key={index} className="flex py-4">
-                          <div className="pr-2">
-                            <div className={`${item.veg}-dot-container`}>
-                              <div className={`${item.veg}-dot`}></div>
+                      {/* Category text */}
+                      <motion.div
+                        initial="initial"
+                        whileInView="animate"
+                        variants={itemVariant}
+                        viewport={{ once: true, amount: 0.2 }}
+                        className="lg:w-4/6 pr-4"
+                      >
+                        <p className="text-2xl font-bold text-black capitalize app-header">
+                          {category.category.toLowerCase()}
+                        </p>
+                        <p className="text-sm text-app-gray capitalize">
+                          {category.description.toLowerCase()}
+                        </p>
+                        {category.items.map((item, index) => (
+                          <div key={index} className="flex py-4">
+                            <div className="pr-2">
+                              <div className={`${item.veg}-dot-container`}>
+                                <div className={`${item.veg}-dot`}></div>
+                              </div>
+                            </div>
+                            <div className="w-full flex items-end mb-2">
+                              <div>
+                                <p className="text-xl app-header font-bold capitalize">
+                                  {item.name.toLowerCase()}
+                                </p>
+                                <p className="text-sm text-app-gray capitalize">
+                                  {item.description.toLowerCase()}
+                                </p>
+                              </div>
+                              <div className="flex-1 border-b border-dashed border-gray-400"></div>
+                              <div className="w-1/6 flex items-end justify-end font-bold app-header text-xl">
+                                {item.price}
+                              </div>
                             </div>
                           </div>
-                          <div className="w-full flex items-end mb-2">
-                            <div>
-                              <p className="text-xl app-header font-bold capitalize">
-                                {item.name.toLowerCase()}
-                              </p>
-                              <p className="text-sm text-app-gray capitalize">
-                                {item.description.toLowerCase()}
-                              </p>
-                            </div>
-                            <div className="flex-1 border-b border-dashed border-gray-400"></div>
-                            <div className="w-1/6 flex items-end justify-end font-bold app-header text-xl">
-                              {item.price}
-                            </div>
-                          </div>
-                        </div>
-                      ))}
+                        ))}
+                      </motion.div>
+
+                      {/* Image after text for odd-indexed categories */}
+                      {category.image && categoryIndex % 2 !== 0 && (
+                        <motion.div
+                          initial="initial"
+                          whileInView="animate"
+                          variants={itemVariant}
+                          viewport={{ once: true, amount: 0.2 }}
+                          className="lg:w-2/6 mt-4 lg:mt-0 relative min-w-full lg:min-w-fit max-h-screen ml-8"
+                        >
+                          <Image
+                            src={category.image}
+                            width={300}
+                            height={500}
+                            alt={category.category}
+                            priority
+                            className="h-full object-cover object-center"
+                            style={{ objectPosition: "center center" }} // Ensure the image is centered
+                          />
+                        </motion.div>
+                      )}
                     </div>
-
-                    {/* Image after text for odd-indexed categories */}
-                    {category.image && categoryIndex % 2 !== 0 && (
-                      <div className="lg:w-2/5 mt-4 lg:mt-0 relative min-w-full lg:min-w-fit max-h-screen">
-                        <Image
-                          src={category.image}
-                          width={300}
-                          height={300}
-                          alt={category.category}
-                          priority
-                          className="w-full h-full object-cover object-center"
-                          style={{ objectPosition: "center center" }} // Ensure the image is centered
-                        />
-                      </div>
-                    )}
+                    <Image
+                      src="/divider.png"
+                      alt="Menu BG Image"
+                      layout="responsive"
+                      width={1920} // You can set the width to the actual width of the image or use a generic value like 1920px
+                      height={1080} // Set the height to the actual height of the image or adjust accordingly
+                      sizes="100vw" // Ensures that the image scales to the width of the viewport
+                      className="menu-fullwidth-image"
+                    />
                   </div>
                 )
               )}
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <Footer />
       </div>

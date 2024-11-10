@@ -1,5 +1,9 @@
+"use client";
 import { AppButton } from "@/components/AppButton";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
+
 export function Section3() {
   const foodItems = [
     {
@@ -72,157 +76,20 @@ export function Section3() {
       ],
     },
   ];
-
-  const drinksItems = [
-    {
-      category: "Signature Cocktails",
-      image: "/menu12.jpg",
-      items: [
-        {
-          name: "AFTER HOURS SPECIAL",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "ORANGE MINT TO BE",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "DRUNK IN LOVE",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "PENICILLIN",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "PINK YOUR MOMENT",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "VALLEY OF SEX",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "THE SOUTHERN SOMRAS",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "HEART AND SOUL",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "BERRY HAPPY TOGETHER MARGARITA",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "RED BULL ENERGY DRINK VODKA",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-        {
-          name: "RED BULL YELLOW EDITION GIN",
-          description: "",
-          price: "645",
-          veg: "",
-        },
-      ],
-    },
-    {
-      category: "Forever Classic",
-      image: "/gallery2.jpg",
-      items: [
-        {
-          name: "COSMOPOLITAN",
-          description: "",
-          price: "545",
-          veg: "",
-        },
-        {
-          name: "PINACOLADA",
-          description: "",
-          price: "545",
-          veg: "",
-        },
-        {
-          name: "DAIQUIRI - CLASSIC, W/MELON, STRAWBERRY",
-          description: "",
-          price: "545",
-          veg: "",
-        },
-        {
-          name: "BLOODY MARY",
-          description: "",
-          price: "545",
-          veg: "",
-        },
-        {
-          name: "OLD FASHION",
-          description: "",
-          price: "545",
-          veg: "",
-        },
-        {
-          name: "MARTINI - CLASSIC, GIMLET, GIBSON, G/APPLE",
-          description: "",
-          price: "545",
-          veg: "",
-        },
-        {
-          name: "LIIT - CLASSIC, BEACH, SKY",
-          description: "",
-          price: "675/ 2490/ 950",
-          veg: "",
-        },
-        {
-          name: "LIIT - ELECTRIC",
-          description: "",
-          price: "745/ 2690/ 1045",
-          veg: "",
-        },
-        // {
-        //   name: "",
-        //   description: "",
-        //   price: "",
-        //   veg: "",
-        // },
-        // {
-        //   name: "",
-        //   description: "",
-        //   price: "",
-        //   veg: "",
-        // },
-        // {
-        //   name: "",
-        //   description: "",
-        //   price: "",
-        //   veg: "",
-        // },
-      ],
-    },
-  ];
+  const itemVariant = {
+    initial: { opacity: 0, x: -20 },
+    animate: { opacity: 1, x: 0, transition: { duration: 0.4 } },
+  };
 
   return (
     <>
-      <div className="lg:max-w-screen-lg mx-auto lg:flex text-left pt-20 px-4 lg:px-0">
+      <motion.div
+        initial="initial"
+        whileInView="animate"
+        variants={itemVariant}
+        viewport={{ once: true, amount: 0.2 }}
+        className="lg:max-w-screen-lg mx-auto lg:flex text-left pt-20 px-4 lg:px-0"
+      >
         <div className="flex lg:w-2/5 justify-start">
           <div className="w-auto lg:pr-16">
             <div>
@@ -234,7 +101,7 @@ export function Section3() {
               Try Our Special Menu
             </p>
             <p className="pt-3 text-sm text-app-gray text-justify">
-              At Cafe After Hours, our menu is a culinary journey that blends
+              At Café After Hours, our menu is a culinary journey that blends
               flavors from around the world. From comforting classics to
               innovative fusion dishes, every plate is thoughtfully crafted to
               offer something unique.
@@ -268,279 +135,6 @@ export function Section3() {
             </div>
           </div>
         </div>
-        {/* <div className="w-3/5 py-10">
-          <div>
-            <p className="app-header text-3xl font-bold pb-3">Starters</p>
-
-            <div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu2.jpg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">
-                    Raw Scallops from Erquy
-                  </p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $40
-                </div>
-              </div>
-            </div>
-
-            <div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu3.svg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">Spring Roll</p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $20
-                </div>
-              </div>
-            </div>
-
-            <div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu4.svg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">
-                    French Onion Soup
-                  </p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $25
-                </div>
-              </div>
-            </div>
-
-            <div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu5.svg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">
-                    Tomato Bruschetta
-                  </p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $30
-                </div>
-              </div>
-            </div>
-
-</div>
-          <div>
-            <p className="app-header text-3xl font-bold pb-3">Main Dish</p>
-
-            <div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu6.svg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">
-                    Grilled Salmon with Dil Sauce
-                  </p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $40
-                </div>
-              </div>
-            </div>
-
-            <div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu7.svg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">
-                    Roast Beef with Vegetable
-                  </p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $20
-                </div>
-              </div>
-            </div>
-
-            <div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu8.svg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">
-                    Marrkesh Vegetetarian Curruy
-                  </p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $25
-                </div>
-              </div>
-            </div>
-
-            <div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu9.svg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">
-                    Spicy Vegan Potato Curry
-                  </p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $30
-                </div>
-              </div>
-            </div>
-
-</div>
-          <div>
-            <p className="app-header text-3xl font-bold pb-3">Dessert</p>
-
-<div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu10.svg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">
-                    Apple Pie with Cream
-                  </p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $40
-                </div>
-              </div>
-            </div>
-
-            <div className="flex py-4">
-              <div className="pr-2">
-                <Image
-                  src="/menu11.svg"
-                  width="50"
-                  height="50"
-                  alt="home"
-                  className="rounded-full"
-                />
-              </div>
-              <div className="w-full flex">
-                <div>
-                  <p className="text-xl app-header font-bold">
-                    Lemon Meringue Pie
-                  </p>
-                  <p className="text-sm text-app-gray">
-                    Candied Jerusalem artichokes, truffle
-                  </p>
-                </div>
-                <div className="flex-1 border-b border-dotted border-gray-400"></div>
-                <div className="w-1/6 flex items-end font-bold app-header text-xl">
-                  $20
-                </div>
-              </div>
-            </div>
-
-
-</div>
-        </div> */}
         <div>
           {foodItems.map((category, categoryIndex) => (
             <div key={categoryIndex} className="py-8 w-full lg:w-full ">
@@ -576,7 +170,7 @@ export function Section3() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

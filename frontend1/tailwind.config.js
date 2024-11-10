@@ -24,7 +24,7 @@ module.exports = {
       colors: {
         "app-yellow": "#E1B168",
         "app-purple": "#212529", //#212529
-        "app-dark-purple": "#230a28",
+        "app-dark-purple": "#292e36", //"#230a28",
         "app-gray": "#555555",
         "app-green": "#A0AEAF",
       },

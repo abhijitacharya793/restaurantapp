@@ -7,7 +7,7 @@ export function Section5() {
             About Us
           </p>
           <p className="app-header text-3xl font-bold pb-3 pt-4 text-white">
-            Welcome to Cafe After Hours
+            Welcome to Café After Hours
           </p>
           <p className="text-white font-thin text-justify">
             Welcome to Café After Hours, where we bring you the ultimate
