@@ -106,7 +106,7 @@ export function Reservation() {
         />
 
         <div className="relative z-10 bg-app-dark-purple lg:p-8 opacity-90 mx-4">
-          <form className="lg:p-20 p-8" onSubmit={handleSubmit}>
+          <form className="lg:p-20 py-8 px-4 mx-4" onSubmit={handleSubmit}>
             <div className="mb-4 flex flex-col justify-center items-center">
               <p className="w-24 py-1 border-t border-b border-yellow-600 text-sm font-light text-white">
                 RESERVATION
@@ -115,7 +115,7 @@ export function Reservation() {
                 Reserve your table
               </p>
 
-              <div className="lg:flex w-full justify-start lg:justify-center">
+              <div className="lg:flex w-full justify-start lg:justify-center gap-4 flex-wrap">
                 <input
                   type="text"
                   id="name"
@@ -124,7 +124,7 @@ export function Reservation() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mb-3"
+                  className="w-full sm:w-80 px-3 py-2 mb-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black"
                 />
                 <input
                   type="email"
@@ -134,10 +134,11 @@ export function Reservation() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mb-3"
+                  className="w-full sm:w-80 px-3 py-2 mb-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black"
                 />
               </div>
-              <div className="lg:flex w-full">
+
+              <div className="lg:flex w-full justify-start lg:justify-center gap-4 flex-wrap">
                 <input
                   type="number"
                   id="phoneNumber"
@@ -146,10 +147,8 @@ export function Reservation() {
                   value={phoneNumber}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                   required
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
+                  className="w-full sm:w-80 px-3 py-2 mb-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black"
                 />
-              </div>
-              <div className="lg:flex w-full">
                 <input
                   type="number"
                   id="persons"
@@ -158,23 +157,16 @@ export function Reservation() {
                   value={persons}
                   onChange={(e) => setPersons(e.target.value)}
                   required
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
+                  className="w-full sm:w-80 px-3 py-2 mb-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black"
                 />
-                {/* <input
-                  type="text"
-                  id="timing"
-                  name="timing"
-                  placeholder="Timing (Eg. 12 pm)"
-                  value={timing}
-                  onChange={(e) => setTiming(e.target.value)}
-                  required
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
-                /> */}
-                <div className="relative w-full m-4">
+              </div>
+
+              <div className="lg:flex w-full justify-start lg:justify-center gap-4 flex-wrap">
+                <div className="relative w-full sm:w-80 mb-4">
                   <button
                     type="button"
                     onClick={() => setDropdownOpen((prev) => !prev)} // Toggle dropdown visibility
-                    className="w-full px-8 py-3 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black mr-3"
+                    className="w-full px-3 py-2 text-left border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black"
                   >
                     {timing || "Select Time"}
                   </button>
@@ -204,7 +196,7 @@ export function Reservation() {
                   name="date"
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
-                  className="w-full px-3 py-2 m-4 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black"
+                  className="w-full sm:w-80 px-3 lg:py-2 mb-4 py-3 border focus:outline-none bg-white text-black transition duration-200 ease-in-out focus:bg-white focus:text-black"
                   required
                 />
               </div>
