@@ -1,11 +1,8 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-
-import { redirect } from "next/navigation";
-
-import { AppButton } from "@/components/AppButton";
 import Image from "next/image";
+import { AppButton } from "@/components/AppButton";
 
 const generateTimeSlots = () => {
   const slots = [
@@ -40,7 +37,6 @@ const generateTimeSlots = () => {
   return slots;
 };
 
-// TODO: Reservation
 export function Reservation() {
   const router = useRouter();
 
@@ -52,11 +48,13 @@ export function Reservation() {
   const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
   const [status, setStatus] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [loading, setLoading] = useState(false); // Loading state
 
   const timeSlots = generateTimeSlots();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true); // Show loader when the form is submitted
     const button = document.getElementById("book_a_table") as HTMLButtonElement;
     button.disabled = true;
 
@@ -66,13 +64,14 @@ export function Reservation() {
       parseInt(phoneNumber) > 9999999999
     ) {
       setStatus("Invalid Phone number.");
+      setLoading(false); // Hide loader if validation fails
       return;
     }
     if (parseInt(persons) <= 0 || parseInt(persons) > 10) {
       setStatus("Please set persons between 1 and 10.");
+      setLoading(false); // Hide loader if validation fails
       return;
     }
-    console.log("############# Calling api #############");
 
     const response = await fetch("/api/send_email", {
       method: "POST",
@@ -88,15 +87,25 @@ export function Reservation() {
 
     if (response.ok) {
       setStatus("Reservation created!");
-      router.push("/home");
+      setTimeout(() => {
+        router.push("/home");
+      }, 1000); // Wait for 1 second before redirecting
     } else {
       setStatus("Failed to send reservation request.");
     }
+    setLoading(false); // Hide loader after response
   };
 
   return (
     <>
       <div className="relative bg-gray-100 min-h-screen flex items-center justify-center">
+        {/* Loader */}
+        {loading && (
+          <div className="fixed top-0 left-0 w-full h-full bg-app-purple flex items-center justify-center z-50">
+            <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
+          </div>
+        )}
+
         <Image
           width={100}
           height={100}
@@ -106,6 +115,19 @@ export function Reservation() {
         />
 
         <div className="relative z-10 bg-app-dark-purple lg:p-8 opacity-90 mx-4">
+          {/* Status Notification */}
+          {status && (
+            <div
+              className={`text-white text-center py-2 mb-4 ${
+                status === "Reservation created!"
+                  ? "bg-green-500"
+                  : "bg-red-500"
+              }`}
+            >
+              {status}
+            </div>
+          )}
+
           <form className="lg:p-20 py-8 px-4 mx-4" onSubmit={handleSubmit}>
             <div className="mb-4 flex flex-col justify-center items-center">
               <p className="w-24 py-1 border-t border-b border-yellow-600 text-sm font-light text-white">
@@ -213,7 +235,6 @@ export function Reservation() {
                 hover_fontcolor={"hover:text-app-purple"}
               />
             </div>
-            {status && <p className="text-center text-white mt-4">{status}</p>}
           </form>
         </div>
       </div>

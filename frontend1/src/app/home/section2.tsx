@@ -22,7 +22,7 @@ export function Section2() {
         viewport={{ once: true, amount: 0.2 }}
       >
         {/* P1 */}
-        <div className="lg:max-w-screen-lg mx-auto lg:flex items-center pt-4 lg:pt-32 pl-10 lg:pl-0">
+        {/* <div className="lg:max-w-screen-lg mx-auto lg:flex items-center pt-4 lg:pt-32 pl-10 lg:pl-0">
           <div className="lg:w-1/3 lg:justify-start">
             <div className="flex text-left my-4">
               <div className="lg:w-1/6 lg:h-16 flex lg:items-center lg:justify-start">
@@ -51,9 +51,6 @@ export function Section2() {
                 <p className="text-xs text-app-gray">
                   <span className=" font-bold">All Days: </span>12:00 pm to 1:00
                   am
-                  {/* <br /> */}
-                  {/* <span className=" font-bold">Sat – Sun: </span>12:00 pm to
-                  1:00 am */}
                 </p>
               </div>
             </div>
@@ -73,9 +70,10 @@ export function Section2() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* P2 */}
-        <div className="lg:max-w-screen-lg mx-auto flex pt-10 pb-20">
+        <div className="lg:max-w-screen-lg mx-auto flex pt-10 pb-20"> 
+        {/* lg:max-w-screen-lg mx-auto lg:flex items-center pt-4 lg:pt-32 pl-10 lg:pl-0 */}
           <div className="w-1/2 border-r border-gray-300 pr-4 hide_mobile">
             <div className="flex w-full items-center justify-left">
               <Image

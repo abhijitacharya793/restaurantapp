@@ -35,8 +35,8 @@ export function Section1() {
             </h1>
             <p className="text-sm text-app-gray text-justify">
               We love hearing from customers, visitors and people from the
-              CAH. We really appreciate you taking the time to get in
-              touch. Please fill in the form below.
+              Café After Hours. We really appreciate you taking the time to get in
+              touch.
             </p>
             {/*  */}
             <div className="lg:max-w-screen-lg mx-auto items-center pt-4 pl-10">

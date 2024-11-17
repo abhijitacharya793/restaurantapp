@@ -14,7 +14,7 @@ export function Section1() {
               <p className="app-header text-3xl font-bold pt-3">
                 Quality and Experience
               </p>
-              <p className="pt-3 text-sm text-app-gray1 font-light mr-10 text-justify">
+              <p className="pt-3 text-sm text-app-gray1 font-normal mr-10 text-justify">
                 Our CEO, Mr. Sunil Luthra is incredibly passionate about our
                 restaurants and the F&B Industry. He envisions it as a vibrant
                 and welcoming space where people can gather to enjoy delicious
@@ -23,7 +23,7 @@ export function Section1() {
                 dining experience for every guest.
               </p>
               <br />
-              <p className="pt-3 text-sm text-app-gray1 font-light mr-10 text-justify">
+              <p className="pt-3 text-sm text-app-gray1 font-normal mr-10 text-justify">
                 The CEO is committed to using fresh, locally sourced ingredients
                 to create innovative and mouthwatering dishes that cater to
                 various dietary preferences. He is dedicated to fostering a
