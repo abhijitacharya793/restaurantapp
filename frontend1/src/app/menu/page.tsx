@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 
-
 import React, { useState } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -473,7 +472,7 @@ export default function Menu() {
           veg: "red",
         },
         {
-          name: "CLUCKNOWEE MUTTON GALOUTI",
+          name: "LUCKNOWEE MUTTON GALOUTI",
           description:
             "MOUTH MELTING MINCED MUTTON BLENDED WITH LUCKNOWEE SPICES AND DESI GHEE SERVED ON ULTA TAWA PARATHA",
           price: "795",
@@ -1463,18 +1462,6 @@ export default function Menu() {
           name: "MOCHA MUD CAKE",
           description: "",
           price: "345",
-          veg: "black",
-        },
-        {
-          name: "CHOCOLATE FUDGE CAKE",
-          description: "",
-          price: "495",
-          veg: "black",
-        },
-        {
-          name: "CARAMEL TOFFEE PUDDING",
-          description: "",
-          price: "495",
           veg: "black",
         },
       ],
@@ -2939,7 +2926,7 @@ export default function Menu() {
                                   {item.description.toLowerCase()}
                                 </p>
                               </div>
-                              <div className="flex-1 lg:border-b lg:border-dashed border-gray-400"></div>
+                              <div className="flex-1 lg:border-b1 lg:border-dashed1 border-gray-400"></div>
                               <div className="w-1/6 flex items-end justify-end font-bold app-header text-xl">
                                 {item.price}
                               </div>
