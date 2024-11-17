@@ -125,7 +125,7 @@ export function Section2() {
             </p>
 
             {/* Call to action */}
-            <p className="text-sm text-app-gray text-center lg:text-left">
+            <p className="text-sm text-app-gray text-justify">
               At Café After Hours, we believe that good drinks and great company
               are the perfect pairing. So whether you&apos;re here for a morning
               coffee or a late-night cocktail, we invite you to make yourself at

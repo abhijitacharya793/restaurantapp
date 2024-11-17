@@ -119,7 +119,7 @@ export function Section6() {
           <p className="app-header text-3xl font-bold pb-3 pt-4">
             Popular Dishes
           </p>
-          <p className="pt-1 pb-4 text-sm text-app-gray lg:w-96">
+          <p className="pt-1 pb-4 text-sm text-app-gray lg:w-2/3 flex items-center justify-center">
             Explore our most popular drinks and snacks, perfect for a night out
             with friends.
           </p>

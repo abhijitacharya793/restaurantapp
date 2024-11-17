@@ -12,8 +12,11 @@ export function Section7() {
             Our Great Services
           </div>
           <p className="pt-1 pb-4 text-sm text-white w-80">
-            Lorem Ipsum is that it has a more-or-less normal distribution
-            content making it look like readable English.{" "}
+            At Café After Hours, we offer an exceptional blend of global
+            flavors, signature cocktails, and handcrafted coffee, all in a
+            welcoming, stylish space. From delicious bites to refreshing drinks,
+            every detail is designed to create a memorable experience tailored
+            just for you
           </p>
         </div>
         {/* TODO: */}

@@ -14,7 +14,7 @@ export default function About() {
       <PageWrapper>
         <div>
           <Header active_page="about" />
-          <div className="bg-app-purple py-16 flex justify-center">
+          <div className="bg-app-purple py-8 flex justify-center">
             <p className="w-32 p-1 border-t border-b border-yellow-600 text-3xl text-white app-header font-bold">
               About Us
             </p>

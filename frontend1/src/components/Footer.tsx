@@ -1,10 +1,34 @@
 "use client";
+import React, { useState } from "react";
+import { useEffect } from "react";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AppButton } from "./AppButton";
 
 export function Footer() {
+  // SCROLL TO TOP BUTTON VISIBILITY.
+  const [showScrollButton, setShowScrollButton] = useState(false); // SHOW/HIDE SCROLL TO TOP BUTTON
+
+  const handleScroll = () => {
+    if (window.scrollY > 300) {
+      // SHOW BUTTON AFTER SCROLLING DOWN 300px
+      setShowScrollButton(true);
+    } else {
+      setShowScrollButton(false);
+    }
+  };
+  // ADD EVENT LISTENER FOR SCROLL
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // SCROLL TO TOP FUNCTION
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       {/* Footer top */}
@@ -94,14 +118,14 @@ export function Footer() {
               CONTACT
             </p>
             <p className="text-sm show_mobile text-center py-2">
-              1st Floor, City Centre Mall, Sector 12, Dwarka
-              <br />
-              New Delhi - 110075
-              <br />
               <span className="text-app-yellow">
                 <a href="tel:+919810252704">+91 98102 52704</a> /{" "}
                 <a href="tel:+919810363405">+91 98103 63405</a>
               </span>
+              <br />
+              1st Floor, City Centre Mall, Sector 12, Dwarka
+              <br />
+              New Delhi - 110075
             </p>
           </div>
           <div className="lg:w-1/3 lg:flex items-center justify-center text-center mx-10 lg:mx-0 py-4 lg:py-0">
@@ -127,8 +151,8 @@ export function Footer() {
             </div> */}
           </div>
           <div className="lg:w-1/3 flex lg:flex-row flex-col items-center lg:justify-end justify-center py-4 lg:py-0">
-            <p className="w-30 py-1 border-t border-b border-yellow-600 text-sm font-light text-center">
-              WORKING HOURS
+            <p className="w-30 py-1 border-t border-b border-yellow-600 text-sm font-light text-center uppercase">
+              Opening hours
             </p>
             <p className="text-sm font-light text-center show_mobile py-2">
               <span className="text-app-yellow font-bold">All Days: </span>
@@ -142,14 +166,14 @@ export function Footer() {
         <div className="flex items-center justify-center text-white hide_mobile">
           <div className="w-1/3 flex items-center justify-start">
             <p className="text-sm ">
-              1st Floor, City Centre Mall, Sector 12, Dwarka
-              <br />
-              New Delhi - 110075
-              <br />
               <span className="text-app-yellow">
                 <a href="tel:+919810252704">+91 98102 52704</a> /{" "}
                 <a href="tel:+919810363405">+91 98103 63405</a>
               </span>
+              <br />
+              1st Floor, City Centre Mall, Sector 12, Dwarka
+              <br />
+              New Delhi - 110075
               <br />
               <span className="text-app-yellow">
                 <a href="mailto:cafeafterhours@gmail.com">
@@ -192,11 +216,11 @@ export function Footer() {
       <hr />
       <div className="lg:max-w-screen-lg mx-auto copyright-block">
         <div className="container mx-auto">
-          <div className="flex items-center justify-between py-4">
+          <div className="flex items-center justify-center py-4">
             <div className="opacity-100 transform-none">
               <p className="text-sm text-white">
-                © Copyright - Café After Hours | Designed by
-                {" "}<a
+                © Copyright - Café After Hours | Designed by{" "}
+                <a
                   href="https://www.victorflow.com/"
                   target="_blank"
                   className="underline"
@@ -242,6 +266,15 @@ export function Footer() {
           </div>
         </div>
       </div>
+      {/* FLOATING SCROLL TO TOP BUTTON */}
+      {showScrollButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-app-yellow text-white rounded-full py-3 px-5 shadow-lg hover:bg-yellow-400"
+        >
+          ↑
+        </button>
+      )}
     </>
   );
 }

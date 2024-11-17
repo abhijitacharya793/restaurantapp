@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+
 
 import React, { useState } from "react";
 import { Footer } from "@/components/Footer";
@@ -19,19 +19,19 @@ export default function Menu() {
       items: [
         {
           name: "French Fries",
-          description: "Plain/Peri Peri/Cheesey",
+          description: "Plain / Peri Peri / Cheesey",
           price: "295/345",
           veg: "green",
         },
         {
           name: "Garlic Bread",
-          description: "Plain/Cheese",
+          description: "Plain / Cheese",
           price: "295/345",
           veg: "green",
         },
         {
           name: "Potato Wedges",
-          description: "Plain/Peri Peri",
+          description: "Plain / Peri Peri",
           price: "295/345",
           veg: "green",
         },
@@ -97,26 +97,26 @@ export default function Menu() {
           veg: "green",
         },
         {
-          name: "TOMATO BASIL SOUP VEG/CHICKEN",
+          name: "TOMATO BASIL SOUP VEG / CHICKEN",
           description: "BASIL FLAVORED TOMATO BROTH IS EVERYONE'S CHOICE",
           price: "295/345",
           veg: "black",
         },
         {
-          name: "TIBETIAN THUPKA VEG/CHICKEN",
+          name: "TIBETIAN THUPKA VEG / CHICKEN",
           description:
             "A WARM HEARTY BOWL OF SOUP WITH VEG & CHICKEN DUMPLINGS",
           price: "295/345",
           veg: "black",
         },
         {
-          name: "SWEET CORN SOUP VEG/CHICKEN",
+          name: "SWEET CORN SOUP VEG / CHICKEN",
           description: "THIS SOUP IS SURE TO WARM HEARTS & STOMACHS!!!!",
           price: "295/345",
           veg: "black",
         },
         {
-          name: "MANCHOW SOUP VEG/CHICKEN",
+          name: "MANCHOW SOUP VEG / CHICKEN",
           description: "ONE OF THE MOST POPULAR INDO-CHINESE SOUP",
           price: "295/345",
           veg: "black",
@@ -163,7 +163,7 @@ export default function Menu() {
           veg: "green",
         },
         {
-          name: "CLASSIC CAESAR VEG/CHICKEN",
+          name: "CLASSIC CAESAR VEG / CHICKEN",
           description: "FRESH GREENS TOSSED WITH CAESAR DRESSING & CROUTONS",
           price: "395/445",
           veg: "black",
@@ -671,7 +671,7 @@ export default function Menu() {
       image: "/menusidebar6.png",
       items: [
         {
-          name: "FUSION DUMPLINGS VEG/CHICKEN",
+          name: "FUSION DUMPLINGS VEG / CHICKEN",
           description: "",
           price: "495/595",
           veg: "black",
@@ -1044,20 +1044,20 @@ export default function Menu() {
       image: "/menu10.svg",
       items: [
         {
-          name: "KHOW SUEY VEG/CHICKEN",
+          name: "KHOW SUEY VEG / CHICKEN",
           description: "",
           price: "",
           veg: "black",
         },
         {
-          name: "THAI RED/GREEN CURRY BOWL VEG/CHICKEN/PRAWN",
+          name: "THAI RED / GREEN CURRY BOWL VEG / CHICKEN / PRAWN",
           description: "Choice of curry with steamed rice and kimchi salad",
           price: "495/595/695",
           veg: "black",
         },
         {
-          name: "MANCHURIAN BOWL VEG/CHICKEN",
-          description: "Hot garlic sauce with fried rice/noodles",
+          name: "MANCHURIAN BOWL VEG / CHICKEN",
+          description: "Hot garlic sauce with fried rice / noodles",
           price: "495/595",
           veg: "black",
         },
@@ -1167,37 +1167,37 @@ export default function Menu() {
           veg: "green",
         },
         {
-          name: "FRIED RICE VEG/CHICKEN",
+          name: "FRIED RICE VEG / CHICKEN",
           description: "",
           price: "295/395",
           veg: "black",
         },
         {
-          name: "BURNT GARLIC RICE VEG/CHICKEN",
+          name: "BURNT GARLIC RICE VEG / CHICKEN",
           description: "",
           price: "375/475",
           veg: "black",
         },
         {
-          name: "THAI FRIED RICE VEG/CHICKEN",
+          name: "THAI FRIED RICE VEG / CHICKEN",
           description: "",
           price: "375/475",
           veg: "black",
         },
         {
-          name: "HAKKA NOODLES VEG/CHICKEN",
+          name: "HAKKA NOODLES VEG / CHICKEN",
           description: "",
           price: "375/475",
           veg: "black",
         },
         {
-          name: "ASIAN NOODLES VEG/CHICKEN",
+          name: "ASIAN NOODLES VEG / CHICKEN",
           description: "",
           price: "375/475",
           veg: "black",
         },
         {
-          name: "PAN FRIED NOODLES VEG/CHICKEN",
+          name: "PAN FRIED NOODLES VEG / CHICKEN",
           description: "",
           price: "375/475",
           veg: "black",
@@ -1264,7 +1264,7 @@ export default function Menu() {
           veg: "green",
         },
         {
-          name: "PANEER BUTTER MASALA/LABABDAR/KADHAI",
+          name: "PANEER BUTTER MASALA / LABABDAR / KADHAI",
           description:
             "Cubes of paneer in choice of butter masala, lababdar, or kadai gravy",
           price: "545",
@@ -1312,7 +1312,7 @@ export default function Menu() {
           veg: "red",
         },
         {
-          name: "MURGH MAKHNI WITH BONE/BONELESS",
+          name: "MURGH MAKHNI WITH BONE / BONELESS",
           description:
             "Tandoori chicken done in rich creamy tomato gravy, available with or without bone",
           price: "595",
@@ -1366,7 +1366,7 @@ export default function Menu() {
           veg: "black",
         },
         {
-          name: "PUDINA PARATHA/LACHHA PARATHA",
+          name: "PUDINA PARATHA / LACHHA PARATHA",
           description:
             "Flatbreads, available in mint-flavored Pudina Paratha or layered Lachha Paratha",
           price: "95",
@@ -1379,14 +1379,14 @@ export default function Menu() {
           veg: "black",
         },
         {
-          name: "TANDOORI ROTI PLAIN/BUTTER",
+          name: "TANDOORI ROTI PLAIN / BUTTER",
           description:
             "Classic tandoori baked flatbread, available in plain or buttered versions",
           price: "45/75",
           veg: "black",
         },
         {
-          name: "AMRITSARI KULCHA ALOO/ONION/PANEER",
+          name: "AMRITSARI KULCHA ALOO / ONION / PANEER",
           description:
             "Stuffed bread, available with spiced potatoes, onions, or paneer",
           price: "145/195",
@@ -1399,7 +1399,7 @@ export default function Menu() {
           veg: "black",
         },
         {
-          name: "CHUR-CHUR NAAN/PARATHA",
+          name: "CHUR-CHUR NAAN / PARATHA",
           description: "Crispy, flaky naan or paratha with a crunchy texture",
           price: "125",
           veg: "black",
@@ -2428,7 +2428,7 @@ export default function Menu() {
         {
           name: "OLD MONK",
           description: "",
-          price: "325 / 5950",
+          price: "325/5950",
           veg: "",
         },
         {
@@ -2744,19 +2744,19 @@ export default function Menu() {
           veg: "",
         },
         {
-          name: "ICED TEA (CHOICE OF FLAVOURS) - LEMON/ORANGE/MANGO/LITCHI",
+          name: "ICED TEA (CHOICE OF FLAVOURS) - LEMON / ORANGE / MANGO / LITCHI",
           description: "",
           price: "275",
           veg: "",
         },
         {
-          name: "SLUSHES MANGO PINEAPPLE/ WATERMELON LITCHI/ORANGE KIWI",
+          name: "SLUSHES MANGO PINEAPPLE / WATERMELON LITCHI / ORANGE KIWI",
           description: "",
           price: "275",
           veg: "",
         },
         {
-          name: "SHAKES CHOCOLATE/OREO CHOCOLATE",
+          name: "SHAKES CHOCOLATE / OREO CHOCOLATE",
           description: "",
           price: "275",
           veg: "",
@@ -2774,7 +2774,7 @@ export default function Menu() {
           veg: "",
         },
         {
-          name: "SHAKES STRAWBERRY/VANILLA",
+          name: "SHAKES STRAWBERRY / VANILLA",
           description: "",
           price: "275",
           veg: "",
@@ -2808,7 +2808,7 @@ export default function Menu() {
     <>
       <div id="content">
         <Header active_page={"home"} />
-        <div className="bg-app-purple py-16 flex justify-center">
+        <div className="bg-app-purple py-8 flex justify-center">
           <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
             <a onClick={() => setActiveMenu("food")}>
               <AppButton
@@ -2931,7 +2931,7 @@ export default function Menu() {
                               </div>
                             </div>
                             <div className="w-full flex items-end mb-2">
-                              <div>
+                              <div className="w-2/3">
                                 <p className="text-xl app-header font-bold capitalize">
                                   {item.name.toLowerCase()}
                                 </p>
@@ -2939,7 +2939,7 @@ export default function Menu() {
                                   {item.description.toLowerCase()}
                                 </p>
                               </div>
-                              <div className="flex-1 border-b border-dashed border-gray-400"></div>
+                              <div className="flex-1 lg:border-b lg:border-dashed border-gray-400"></div>
                               <div className="w-1/6 flex items-end justify-end font-bold app-header text-xl">
                                 {item.price}
                               </div>
@@ -2987,7 +2987,6 @@ export default function Menu() {
             </div>
           </div>
         </motion.div>
-
         <Footer />
       </div>
     </>
