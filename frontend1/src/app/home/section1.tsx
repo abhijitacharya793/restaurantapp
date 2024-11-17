@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { AppButton } from "@/components/AppButton";
 
@@ -15,13 +15,24 @@ export function Section1() {
   ];
   const [index, setIndex] = useState(0);
 
+  // Move to the next slide
   const nextSlide = () => {
     setIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
+  // Move to the previous slide
   const prevSlide = () => {
     setIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
   };
+
+  useEffect(() => {
+    // Automatically change slide every 3 seconds
+    const interval = setInterval(nextSlide, 3000);
+
+    // Cleanup the interval on component unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <div className="relative w-full overflow-hidden">
@@ -30,7 +41,7 @@ export function Section1() {
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
           {slides.map((slide) => (
-            <div key={slide.id} className="lg:min-w-full min-w-full">
+            <div key={slide.id} className="lg:min-w-full min-w-full relative">
               <Image
                 className="w-full h-auto"
                 src={slide.src}
@@ -39,7 +50,8 @@ export function Section1() {
                 alt="logo"
                 priority
               />
-              <div className="hidden absolute bottom-0 left-0 w-full lg:flex items-center justify-center bg-black bg-opacity-25 p-4 text-white text-3xl">
+              {/* Overlay */}
+              <div className="absolute bottom-0 left-0 w-full lg:flex items-center justify-center bg-black bg-opacity-75 p-4 text-white text-3xl">
                 <p className="app-header">
                   Café <span className="text-app-yellow">After Hours</span>
                 </p>
@@ -48,6 +60,7 @@ export function Section1() {
             </div>
           ))}
         </div>
+
         <button
           onClick={prevSlide}
           className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 rounded-lg shadow-lg p-8 hover:bg-opacity-50 focus:outline-none text-white"
@@ -78,8 +91,8 @@ export function Section1() {
 
             <p className="text-sm text-white pt-8 px-10 lg:px-0 lg:text-left text-justify">
               One of the finest destinations for food, drinks, and unforgettable
-              moments. Experience the best, where every sip and bite leaves a lasting
-              impression.
+              moments. Experience the best, where every sip and bite leaves a
+              lasting impression.
             </p>
             <div className="py-8 flex justify-center lg:justify-start">
               <a href="/menu">

@@ -171,7 +171,7 @@ export default function Menu() {
       ],
     },
     {
-      category: "WHOLESOME SHARING PIATIERS",
+      category: "WHOLESOME SHARING platters",
       description: "",
       image: "/menusidebar4.png",
       items: [
