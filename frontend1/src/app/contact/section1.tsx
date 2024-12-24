@@ -34,8 +34,8 @@ export function Section1() {
               Contact Information
             </h1>
             <p className="text-sm text-app-gray text-justify">
-              We love hearing from customers, visitors and people from the
-              Café After Hours. We really appreciate you taking the time to get in
+              We love hearing from customers, visitors and people from the Café
+              After Hours. We really appreciate you taking the time to get in
               touch.
             </p>
             {/*  */}
@@ -66,8 +66,8 @@ export function Section1() {
                   <div className="w-4/6 lg:h-16 pl-2 mx-4">
                     <p className="text-lg app-header font-bold">Open Hours</p>
                     <p className="text-xs text-app-gray">
-                      <span className=" font-bold">All Days: </span>12:00 pm
-                      to 1:00 am
+                      <span className=" font-bold">All Days: </span>12:00 pm to
+                      1:00 am
                       <br />
                       {/* <span className=" font-bold">Sat – Sun: </span>12:00 pm to
                       1:00 am */}
@@ -83,7 +83,14 @@ export function Section1() {
                   <div className="w-3/6 pl-2 mx-4">
                     <p className="text-lg app-header font-bold">Reservation</p>
                     <p className="text-xs text-app-gray">
-                    <a href="mailto:cafeafterhours@gmail.com">cafeafterhours@gmail.com</a>
+                      <a href="mailto:cafeafterhours@gmail.com">
+                        cafeafterhours@gmail.com
+                      </a>
+                      <br />
+                      <span className="">
+                        <a href="tel:+919810252704">+91 98102 52704</a> /{" "}
+                        <a href="tel:+919810363405">+91 98103 63405</a>
+                      </span>
                     </p>
                   </div>
                 </div>

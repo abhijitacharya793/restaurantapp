@@ -12,8 +12,8 @@ export function Header({ active_page }: HeaderProps) {
   return (
     <>
       {/* Header top */}
-      <div className="lg:flex items-center lg:max-w-screen-lg mx-auto py-5 bg-app-purple">
-        <div className="lg:h-44 lg:w-1/3 flex items-center md:justify-start justify-center mx-auto pt-4">
+      <div className="lg:flex items-center lg:max-w-screen-lg mx-auto py-2 bg-app-purple">
+        <div className="lg:h-44 lg:w-1/3 flex items-center md:justify-start justify-center mx-auto pt-2">
           <a href="tel:+919810252704">
             <AppButton
               color="border-app-yellow"
@@ -26,11 +26,11 @@ export function Header({ active_page }: HeaderProps) {
             />
           </a>
         </div>
-        <div className="lg:h-44 lg:w-1/3 flex items-center justify-center">
+        <div className="lg:h-44 lg:w-1/3 flex items-center justify-center py-0 my-0">
           <a href="/home">
             <Image
               className="h-36 lg:h-96"
-              src="/logo1.svg"
+              src="/logo2.svg"
               width={250}
               height={100}
               alt="logo"
@@ -38,7 +38,7 @@ export function Header({ active_page }: HeaderProps) {
             />
           </a>
         </div>
-        <div className="lg:h-44 lg:w-1/3 flex items-center md:justify-end justify-center mx-auto pb-4">
+        <div className="lg:h-44 lg:w-1/3 flex items-center md:justify-end justify-center mx-auto pb-2">
           <a href="/reservation">
             <AppButton
               color="border-app-yellow"

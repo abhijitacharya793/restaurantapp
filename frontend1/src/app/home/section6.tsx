@@ -19,43 +19,35 @@ export function Section6() {
       name: "burrah kebab",
       image: "/popular6.jpg",
       description:
-        "WHOLE POMFRET MARINATED IN SPICY TANDOORI YOGURT & COOKED TO PERFECTION IN TANDOOR",
+        "a mesmerizing jewel from the mughlai kitchen the burrah or big kebab is melange of tender lamb chops",
       price: "",
     },
     {
       name: "Chicken Sharabi Tikka",
       image: "/popular7.jpg",
-      description: "",
+      description:
+        "after hour's patrons favourite chicken marinated in rum cooked in charcoal oven and flambe in rum",
       price: "",
     },
     {
       name: "Dumplings",
       image: "/popular8.jpeg",
-      description: "",
+      description:
+        "hand-crafted and filled with savory treasures, steamed to perfection, then crisped to golden-brown bliss",
       price: "",
     },
     {
       name: "Lucknowee Mutton Galouti Kebab",
       image: "/popular9.jpg",
-      description: "",
-      price: "",
-    },
-    {
-      name: "Mocha mud cake",
-      image: "/popular10.jpg",
-      description: "",
-      price: "",
-    },
-    {
-      name: "Pink your moment",
-      image: "/popular11.jpeg",
-      description: "",
+      description:
+        "mouth melting minced mutton blended with lucknowee spices and desi ghee served on ulta tawa paratha",
       price: "",
     },
     {
       name: "Smoked chicken Quesadillas",
       image: "/popular12.jpeg",
-      description: "",
+      description:
+        "a mixture of smoky chicken and cheese to create one of the best quesadillas ever!!!!",
       price: "",
     },
     {
@@ -63,7 +55,21 @@ export function Section6() {
       image: "/popular13.jpeg",
       description:
         "WHOLE POMFRET MARINATED IN SPICY TANDOORI YOGURT & COOKED TO PERFECTION IN TANDOOR",
-      price: "1095",
+      price: "",
+    },
+    {
+      name: "Mocha mud cake",
+      image: "/popular10.jpg",
+      description:
+        "a rich, indulgent chocolate cake layered with velvety mocha cream, creating the perfect balance of coffee and cocoa flavors",
+      price: "",
+    },
+    {
+      name: "Pink your moment",
+      image: "/popular11.jpeg",
+      description:
+        "a vibrant, refreshing pink drink made with a blend of fruits and a hint of citrus, perfect for celebrating special moments",
+      price: "",
     },
   ];
 

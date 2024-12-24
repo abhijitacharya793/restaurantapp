@@ -36,7 +36,7 @@ export function Section1() {
   return (
     <>
       <div className="relative w-full overflow-hidden">
-        <div
+        {/* <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${index * 100}%)` }}
         >
@@ -50,7 +50,6 @@ export function Section1() {
                 alt="logo"
                 priority
               />
-              {/* Overlay */}
               <div className="absolute bottom-0 left-0 w-full lg:flex items-center justify-center bg-black bg-opacity-75 p-4 text-white text-3xl">
                 <p className="app-header">
                   Café <span className="text-app-yellow">After Hours</span>
@@ -59,7 +58,7 @@ export function Section1() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <button
           onClick={prevSlide}
