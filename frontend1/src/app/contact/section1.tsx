@@ -82,14 +82,19 @@ export function Section1() {
                   </div>
                   <div className="w-3/6 pl-2 mx-4">
                     <p className="text-lg app-header font-bold">Reservation</p>
-                    <p className="text-xs text-app-gray">
-                      <a href="mailto:cafeafterhours@gmail.com">
+                    <p className="text-xs text-app-gray ">
+                      <a href="mailto:cafeafterhours@gmail.com" className="hover:underline">
                         cafeafterhours@gmail.com
                       </a>
                       <br />
-                      <span className="">
-                        <a href="tel:+919810252704">+91 98102 52704</a> /{" "}
-                        <a href="tel:+919810363405">+91 98103 63405</a>
+                      <span className="flex flex-wrap lg:flex-nowrap mt-1">
+                        <a href="tel:+919810252704" className="hover:underline">
+                          +91 98102 52704
+                        </a>
+                        <span className="hidden lg:block mx-1">/</span>
+                        <a href="tel:+919810363405" className="hover:underline">
+                          +91 98103 63405
+                        </a>
                       </span>
                     </p>
                   </div>
